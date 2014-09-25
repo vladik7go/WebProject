@@ -1,0 +1,5 @@
+25.09.2014 14:37:22 [http-bio-8080-exec-4]  INFO Controller:init:39 - init method started ----------------------------------------------
+25.09.2014 14:37:22 [http-bio-8080-exec-4]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
+25.09.2014 14:37:22 [http-bio-8080-exec-4] ERROR Dao:checkLogin:52 - java.sql.SQLException: Illegal operation on empty result set.
+25.09.2014 14:37:28 [http-bio-8080-exec-5]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
+25.09.2014 14:37:30 [http-bio-8080-exec-6]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
