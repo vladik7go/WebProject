@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/staff"
+	xmlns:tns="http://www.example.com/staff" elementFormDefault="qualified">
+	<element name="staff">
+		<complexType>
+			<sequence>
+				<element ref="tns:employee" minOccurs="1" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	<element name="employee" type="tns:employeeType" abstract="true" />
+	<element name="manager" type="tns:managerType"
+		substitutionGroup="tns:employee" />
+	<element name="operator" type="tns:operatorType"
+		substitutionGroup="tns:employee" />
+
+	<complexType name="employeeType" abstract="true">
+		<sequence>
+
+			<element name="firstName" type="string" />
+			<element name="id" type="tns:idType" />
+			<element name="secondName" type="string" />
+		</sequence>
+		<attribute name="city" use="optional" default="Minsk">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="Minsk"></enumeration>
+					<enumeration value="Berlin"></enumeration>
+					<enumeration value="Bonn"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+
+	<complexType name="managerType">
+		<complexContent>
+			<extension base="tns:employeeType">
+
+				<sequence>
+					<element name="bonus" type="int" />
+				</sequence>
+				<attribute name="pass" type="tns:password" use="required" />
+
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<simpleType name="password">
+		<restriction base="ID">
+			<pattern value="([a-zA-Z])[a-zA-Z0-9]{7,12}"></pattern>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="idType">
+		<restriction base="ID">
+			<pattern value="[a-zA-Z].*" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="operatorType">
+		<complexContent>
+			<extension base="tns:employeeType">
+				<sequence>
+					<element name="numberOfTools" type="int" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
+
