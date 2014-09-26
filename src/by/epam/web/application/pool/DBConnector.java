@@ -5,12 +5,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import com.sun.xml.internal.bind.v2.util.FatalAdapter;
+
+
+
+import org.apache.log4j.Logger;
+
 
 import by.epam.web.application.resource.ConfigurationManager;
-import static by.epam.web.application.controller.Controller.LOG;
+
 
 public class DBConnector {
+	public static  Logger log = Logger.getLogger(DBConnector.class);
 	Properties properties = new Properties();
 
 	public String createConnection() {
@@ -52,7 +57,7 @@ public class DBConnector {
 					properties);// создаем
 			// соединение
 		} catch (SQLException e) {
-			LOG.error("Technical Exception", e);
+			log.error("Technical Exception", e);
 		}
 
 		return connection;

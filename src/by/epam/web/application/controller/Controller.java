@@ -25,7 +25,7 @@ import by.epam.web.application.resource.MessageManager;
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public static final Logger LOG = Logger.getLogger(Controller.class);
+	public static  Logger log = Logger.getLogger(Controller.class);
 
 
 	
@@ -36,7 +36,7 @@ public class Controller extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
-		LOG.info("init method started ----------------------------------------------");
+		log.info("init method started ----------------------------------------------");
 		super.init();
 		String log4jConfigPath = ConfigurationManager.getProperty("path.log4j.config");
 		PropertyConfigurator.configure(log4jConfigPath);
@@ -50,7 +50,7 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		LOG.info("doGet method started--------------------------------------------------------------------------------------------------");
+		log.info("doGet method started--------------------------------------------------------------------------------------------------");
 		processRequest(request, response);
 	}
 
@@ -60,12 +60,13 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		LOG.info("doPost method started -------------------------------------------------------------------------");
+		log.info("doPost method started -------------------------------------------------------------------------");
 		processRequest(request, response);
 	}
 
 	private void processRequest(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String page = null;
 		// определение команды, пришедшей из JSP
 		ActionFactory client = new ActionFactory();

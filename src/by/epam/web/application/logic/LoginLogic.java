@@ -1,20 +1,15 @@
 package by.epam.web.application.logic;
 
-import by.epam.web.application.dao.Dao;
+import by.epam.web.application.dao.DaoPerson;
 
 public class LoginLogic {
 
-	
+	DaoPerson dao = new DaoPerson();
 
-	Dao dao = Dao.getDao();
-	
-	public  boolean checkLogin(String enterLogin, String enterPass) {
-		
+	public boolean checkLogin(String enterLogin, String enterPass) {
+
 		return dao.checkLogin(enterLogin, enterPass);
-		
-		
-		
-		
+
 	}
 
 }

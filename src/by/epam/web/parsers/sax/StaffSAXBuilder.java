@@ -8,7 +8,7 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
 import by.epam.web.parsers.entities.Employee;
-import static by.epam.web.application.controller.Controller.LOG;
+import static by.epam.web.application.controller.Controller.log;
 
 
 
@@ -25,7 +25,7 @@ public class StaffSAXBuilder {
 			reader = XMLReaderFactory.createXMLReader();
 			reader.setContentHandler(sh);
 		} catch (SAXException e) {
-			LOG.error(e);
+			log.error(e);
 		}
 		
 		
@@ -37,7 +37,7 @@ public class StaffSAXBuilder {
 		try {
 			reader.parse(fileName);
 		} catch (IOException | SAXException e) {
-			LOG.error(e);
+			log.error(e);
 		}
 		staff = sh.getEmployee();
 	}

@@ -1,13 +1,19 @@
 package by.epam.web.application.commands.client;
 
 import by.epam.web.application.commands.ActionCommand;
+import by.epam.web.application.commands.AddPersonCommand;
 import by.epam.web.application.commands.ChooseCommand;
+
 import by.epam.web.application.commands.LoginCommand;
 import by.epam.web.application.commands.LogoutCommand;
+import by.epam.web.application.commands.RegistrationCommand;
 
 public enum CommandEnum {
 
 	LOGIN(new LoginCommand()), 
+	
+	REGISTRATION(new RegistrationCommand()),
+	ADDPERSON(new AddPersonCommand()),
 	CHOOSE(new ChooseCommand()), 
 	LOGOUT(new LogoutCommand());
 

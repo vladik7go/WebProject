@@ -17,7 +17,7 @@ import by.epam.web.parsers.entities.Employee;
 import by.epam.web.parsers.entities.EmployeeEnum;
 import by.epam.web.parsers.entities.Manager;
 import by.epam.web.parsers.entities.Operator;
-import static by.epam.web.application.controller.Controller.LOG;
+import static by.epam.web.application.controller.Controller.log;
 
 public class StaffStAXBuilder {
 	private HashSet<Employee> staff = new HashSet<>();
@@ -55,16 +55,16 @@ public class StaffStAXBuilder {
 			}
 
 		} catch (XMLStreamException e) {
-			LOG.error(e);
+			log.error(e);
 		} catch (FileNotFoundException e) {
-			LOG.error(e);
+			log.error(e);
 		} finally {
 			try {
 				if (fis != null) {
 					fis.close();
 				}
 			} catch (IOException e) {
-				LOG.error("Impossible to close file " + fileName + " : " + e);
+				log.error("Impossible to close file " + fileName + " : " + e);
 			}
 		}
 	}
@@ -107,7 +107,7 @@ public class StaffStAXBuilder {
 					manager.setPassword(name);
 					break;
 				default:
-					LOG.info("UnExisting element in tag Manager");
+					log.info("UnExisting element in tag Manager");
 				}
 				break;
 			case XMLStreamConstants.END_ELEMENT:
@@ -149,7 +149,7 @@ public class StaffStAXBuilder {
 					operator.setNumberOfTools(Integer.parseInt(name));
 					break;
 				default:
-					LOG.info("Unexisting element in gag Operator");
+					log.info("Unexisting element in gag Operator");
 				}
 				break;
 			case XMLStreamConstants.END_ELEMENT:

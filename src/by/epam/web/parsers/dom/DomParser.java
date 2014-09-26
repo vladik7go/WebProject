@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
 import by.epam.web.parsers.entities.Employee;
 import by.epam.web.parsers.entities.Manager;
 import by.epam.web.parsers.entities.Operator;
-import static by.epam.web.application.controller.Controller.LOG;
+import static by.epam.web.application.controller.Controller.log;
 
 public class DomParser {
 
@@ -40,7 +40,7 @@ public class DomParser {
 			builder = factory.newDocumentBuilder();
 
 		} catch (ParserConfigurationException e) {
-			LOG.error(e);
+			log.error(e);
 
 		}
 		File f = new File(xmlDocument);
@@ -48,10 +48,10 @@ public class DomParser {
 			doc = builder.parse(f);
 
 		} catch (SAXException e) {
-			LOG.error(e);
+			log.error(e);
 
 		} catch (IOException e) {
-			LOG.error(e);
+			log.error(e);
 
 		}
 

@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static by.epam.web.application.controller.Controller.LOG;
+import static by.epam.web.application.controller.Controller.log;
 
 public class ConnectionPool {
 	private static Lock lock = new ReentrantLock();
@@ -29,7 +29,7 @@ public class ConnectionPool {
 			try {
 				pool.put(connection);
 			} catch (InterruptedException e) {
-				LOG.error("TechnicalException", e);
+				log.error("TechnicalException", e);
 			}
 
 		}
@@ -60,7 +60,7 @@ public class ConnectionPool {
 		try {
 			connection = pool.take();
 		} catch (InterruptedException e) {
-			LOG.error("Technical Exception", e);
+			log.error("Technical Exception", e);
 		}
 		System.out.println("pool size = " + pool.size());
 		return connection;
@@ -72,7 +72,7 @@ public class ConnectionPool {
 			try {
 				pool.put(connection);
 			} catch (InterruptedException e) {
-				LOG.error("TechnicalException", e);
+				log.error("TechnicalException", e);
 			}
 		}
 		System.out.println("pool size = " + pool.size());
@@ -84,7 +84,7 @@ public class ConnectionPool {
 				Connection connection = pool.take();
 				connection.close();
 			} catch (SQLException | InterruptedException e) {
-				LOG.error("TechnicalException", e);
+				log.error("TechnicalException", e);
 			}
 		}
 	}
