@@ -4,14 +4,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 
+
+
+<html><head><title><fmt:message key="login.lang.select" /></title></head>
+<body>
+
 <c:set var="language" value="${param.language }" scope="session" />
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 
-<html><head><title><fmt:message key="login.lang.select" /></title></head>
-<body>
 <!--  fmt:message key="login.lang.select" /-->
-
+aaaaaaaaaa ${language }
 <form>
             <select id="language" name="language" onchange="submit()">
                	<option selected disabled><fmt:message key="login.lang.select" /></option>
@@ -21,6 +24,9 @@
         </form>
 <form name="loginForm" method="POST" action="controller">
 <input type="hidden" name="command" value="login" />
+
+<input type="hidden" name="language" value="${language }" />
+
 <fmt:message key="login.label.login" />:<br/>
 <input type="text" name="login" value=""/>
 <br/><fmt:message key="login.label.password" />:<br/>

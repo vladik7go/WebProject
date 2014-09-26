@@ -6,8 +6,6 @@ import by.epam.web.application.logic.LoginLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
 
-
-
 public class LoginCommand implements ActionCommand {
 
 	private static final String PARAM_NAME_LOGIN = "login";
@@ -26,11 +24,18 @@ public class LoginCommand implements ActionCommand {
 			// определение пути к main.jsp
 			page = ConfigurationManager.getProperty("path.page.main");
 		} else {
+			// добавляем к запросу аттрибут с именем "language" и значением
+			// пришедшим в запросе во втором скрытом параметре "language".
+			// Переменная
+			// была задана формой выбора
+			// языка в login.jsp с областью видимости - сессия.
+
+			request.setAttribute("language", request.getParameter("language"));
+
 			request.setAttribute("errorLoginPassMessage",
 					MessageManager.getProperty("message.loginerror"));
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
 		return page;
 	}
-
 }

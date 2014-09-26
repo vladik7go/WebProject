@@ -1,10 +1,38 @@
-25.09.2014 21:57:27 [http-bio-8080-exec-8]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 21:57:35 [http-bio-8080-exec-9]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:00:04 [http-bio-8080-exec-3]  INFO Controller:init:39 - init method started ----------------------------------------------
-25.09.2014 22:00:04 [http-bio-8080-exec-3]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:00:09 [http-bio-8080-exec-4]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:07:44 [http-bio-8080-exec-6]  INFO Controller:init:39 - init method started ----------------------------------------------
-25.09.2014 22:07:44 [http-bio-8080-exec-6]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:07:45 [http-bio-8080-exec-8]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:07:47 [http-bio-8080-exec-10]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
-25.09.2014 22:07:51 [http-bio-8080-exec-1]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
+26.09.2014 13:39:09 [http-bio-8080-exec-7]  INFO Controller:doPost:63 - doPost method started -------------------------------------------------------------------------
+26.09.2014 13:39:09 [http-bio-8080-exec-7] ERROR DaoPerson:checkLogin:39 - TechnicalException
+java.sql.SQLException: Illegal operation on empty result set.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5768)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
+	at by.epam.web.application.dao.DaoPerson.checkLogin(DaoPerson.java:35)
+	at by.epam.web.application.logic.LoginLogic.checkLogin(LoginLogic.java:11)
+	at by.epam.web.application.commands.LoginCommand.execute(LoginCommand.java:22)
+	at by.epam.web.application.controller.Controller.processRequest(Controller.java:78)
+	at by.epam.web.application.controller.Controller.doPost(Controller.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+26.09.2014 13:39:10 [http-bio-8080-exec-7]  INFO Controller:doGet:53 - doGet method started--------------------------------------------------------------------------------------------------
+26.09.2014 13:39:13 [http-bio-8080-exec-7]  INFO Controller:doGet:53 - doGet method started--------------------------------------------------------------------------------------------------
+26.09.2014 13:39:15 [http-bio-8080-exec-7]  INFO Controller:doGet:53 - doGet method started--------------------------------------------------------------------------------------------------
+26.09.2014 13:39:19 [http-bio-8080-exec-7]  INFO Controller:doGet:53 - doGet method started--------------------------------------------------------------------------------------------------
