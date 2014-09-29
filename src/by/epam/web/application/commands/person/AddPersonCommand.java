@@ -23,7 +23,7 @@ public class AddPersonCommand implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
-		// извлечение из запроса логина и пароля
+		// извлечение из запроса параметров
 		String login = request.getParameter(PARAM_NAME_LOGIN);
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
 		String firstName = request.getParameter(PARAM_NAME_FIRST_NAME);

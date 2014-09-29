@@ -20,6 +20,7 @@ public class DaoPerson extends Dao {
 	private static final String SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD = "select login, password, role_type from person where login=? and password=?";
 	private static final String SQL_ADD_PERSON = "INSERT INTO person (role_type, first_name, second_name, login, password) VALUES (?,?,?,?,?)";
 	private static final String SQL_SHOW_PERSONS = "SELECT * FROM person";
+	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
 
 	public DaoPerson() {
 
@@ -45,7 +46,7 @@ public class DaoPerson extends Dao {
 			roleType = resultSet.getInt("role_type");
 
 		} catch (SQLException e) {
-			log.error("TechnicalException", e);
+			log.error("Technical Exception", e);
 
 			return 0;
 		} finally {
@@ -69,8 +70,7 @@ public class DaoPerson extends Dao {
 			ResultSet result = st.executeQuery(SQL_SHOW_PERSONS);
 			while (result.next()) {
 				person = new Person();
-				
-				
+
 				person.setId(result.getInt(1));
 				person.setRoleType(result.getInt(2));
 				person.setFirstName(result.getString(3));
@@ -82,13 +82,38 @@ public class DaoPerson extends Dao {
 
 		} catch (SQLException e) {
 			throw new TechnicalException(e);
-		}finally {
+		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
 		return persons;
 
+	}
+
+	public Person showPerson(int id) {
+		Connection cn = null;
+		PreparedStatement st = null;
+		Person person = new Person();
+
+		cn = ConnectionPool.getSinglePool().getConnection();
+		try {
+			st = cn.prepareStatement(SQL_SHOW_PERSON_BY_ID);
+
+			st.setInt(1, id);
+			ResultSet result = st.executeQuery();
+			result.next();
+			
+			person.setRoleType(result.getInt("role_type"));
+			person.setFirstName(result.getString("first_name"));
+			person.setSecondName(result.getString("second_name"));
+			person.setLogin(result.getString("login"));
+			person.setPassword(result.getString("password"));
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+		}
+
+		return person;
 	}
 
 	public void addPerson(String firstName, String SecondName, String login,

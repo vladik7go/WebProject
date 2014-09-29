@@ -41,6 +41,7 @@
 <form name="edit_person_form" method="POST" action="controller">
 <input type="hidden" name="command" value="editPerson" />
 <input type="hidden" name="personId" value="${ elem.id }" />
+
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
 </form>
 
