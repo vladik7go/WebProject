@@ -1,7 +1,8 @@
-package by.epam.web.application.commands;
+package by.epam.web.application.commands.login;
 
 import javax.servlet.http.HttpServletRequest;
 
+import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.resource.ConfigurationManager;
 
 

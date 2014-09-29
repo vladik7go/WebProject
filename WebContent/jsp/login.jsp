@@ -14,7 +14,7 @@
 <fmt:setBundle basename="resources.messages_bundle" />
 
 <!--  fmt:message key="login.lang.select" /-->
-aaaaaaaaaa ${language }
+--- ${language }
 <form>
             <select id="language" name="language" onchange="submit()">
                	<option selected disabled><fmt:message key="login.lang.select" /></option>
@@ -37,9 +37,12 @@ aaaaaaaaaa ${language }
 <br/>
 <!-- ${errorLoginPassMessage} -->
 <br/>
-${wrongAction}
+
+<c:if test="${wrongAction != null }"><fmt:message key="login.label.wrongaction"/></c:if>
+
 <br/>
-${nullPage}
+
+<c:if test="${nullPage != null }"><fmt:message key="login.label.nullpage"/></c:if>
 <br/>
 <input type="submit" value="<fmt:message key="login.button.submit" />"/>
 </form>

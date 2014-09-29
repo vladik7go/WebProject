@@ -3,11 +3,9 @@ package by.epam.web.application.commands.factory;
 import javax.servlet.http.HttpServletRequest;
 
 import by.epam.web.application.commands.ActionCommand;
-import by.epam.web.application.commands.EmptyCommand;
 import by.epam.web.application.commands.client.CommandEnum;
+import by.epam.web.application.commands.login.EmptyCommand;
 import by.epam.web.application.resource.MessageManager;
-
-
 
 public class ActionFactory {
 
@@ -15,6 +13,8 @@ public class ActionFactory {
 		ActionCommand current = new EmptyCommand();
 		// извлечение имени команды из запроса
 		String action = request.getParameter("command");
+		//заглушка. для дебага. не забыть убрать -----------------------------------------
+		System.out.println("----" + action);
 		if (action == null || action.isEmpty()) {
 			// если команда не задана в текущем запросе
 			return current;
@@ -25,9 +25,9 @@ public class ActionFactory {
 
 			current = currentEnum.getCurrentCommand();
 		} catch (IllegalArgumentException e) {
-			request.setAttribute("wrongAction",
-					action + MessageManager.getProperty("message.wrongaction"));
+			request.setAttribute("wrongAction", "true");
 		}
+		
 		return current;
 	}
 

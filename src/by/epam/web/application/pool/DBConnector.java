@@ -5,19 +5,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-
-
-
 import org.apache.log4j.Logger;
-
 
 import by.epam.web.application.resource.ConfigurationManager;
 
-
 public class DBConnector {
-	public static  Logger log = Logger.getLogger(DBConnector.class);
+	public static Logger log = Logger.getLogger(DBConnector.class);
 	Properties properties = new Properties();
 
+	// метод, возвращает необходимые данные для создания соединения. Нужен,
+	// чтобы при создании пула, обращаться к внешним ресурсам только один раз.
 	public String createConnection() {
 		String url = ConfigurationManager.getProperty("db.url");// берем из
 																// проперти
@@ -40,7 +37,8 @@ public class DBConnector {
 				ConfigurationManager.getProperty("db.encoding"));
 
 		try {
-			DriverManager.registerDriver(new com.mysql.jdbc.Driver());// регистрируем драйвер
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver());// регистрируем
+																		// драйвер
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
@@ -52,10 +50,11 @@ public class DBConnector {
 		Connection connection = null;
 
 		try {
-
+			// создаем соединение не обращаясь к внешним ресурсам, используя
+			// данные, сгенерированные методом "createConnection()"
 			connection = DriverManager.getConnection(createConnection(),
-					properties);// создаем
-			// соединение
+					properties);
+
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);
 		}

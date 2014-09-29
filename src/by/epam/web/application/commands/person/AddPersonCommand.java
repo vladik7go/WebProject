@@ -1,4 +1,4 @@
-package by.epam.web.application.commands;
+package by.epam.web.application.commands.person;
 
 import java.awt.SecondaryLoop;
 
@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 
+import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.controller.Controller;
 import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.resource.ConfigurationManager;
@@ -27,24 +28,19 @@ public class AddPersonCommand implements ActionCommand {
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
 		String firstName = request.getParameter(PARAM_NAME_FIRST_NAME);
 		String secondName = request.getParameter(PARAM_NAME_SECOND_NAME);
-		
-		if (firstName == "" || secondName == "" || login == "" || pass == "") {
 
-			request.setAttribute("errorEmptyFieldMessage",
-					MessageManager.getProperty("message.emptyfielderror"));
+		if (firstName.length() * secondName.length() * login.length()
+				* pass.length() == 0) {
+
+			request.setAttribute("errorEmptyFieldMessage", "true");
 			page = ConfigurationManager.getProperty("path.page.registration");
 		} else {
 			DaoPerson dao = new DaoPerson();
 
 			dao.addPerson(firstName, secondName, login, pass);
-			
+			// возвращаем строку с адресом логин страницы
+			page = ConfigurationManager.getProperty("path.page.login");
 
-			page = ConfigurationManager.getProperty("path.page.main");// возвращаем
-																		// строку
-																		// с
-																		// адресом
-																		// главной
-																		// страницы
 		}
 
 		return page;

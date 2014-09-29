@@ -12,36 +12,32 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
-
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.factory.ActionFactory;
 import by.epam.web.application.pool.ConnectionPool;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
 
-
-
-@WebServlet("/controller")
+//@WebServlet("/controller")
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public static  Logger log = Logger.getLogger(Controller.class);
+	public static Logger log = Logger.getLogger(Controller.class);
 
-
-	
 	public Controller() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
 	@Override
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
 		log.info("init method started ----------------------------------------------");
 		super.init();
-		String log4jConfigPath = ConfigurationManager.getProperty("path.log4j.config");
+		String log4jConfigPath = ConfigurationManager
+				.getProperty("path.log4j.config");
 		PropertyConfigurator.configure(log4jConfigPath);
 		ConnectionPool.getSinglePool();
-		
+
 	}
 
 	/**
@@ -66,7 +62,8 @@ public class Controller extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");//заглушка, пока не сделал фильтры
+		// заглушка, пока не сделал фильтры
+		// request.setCharacterEncoding("UTF-8");
 		String page = null;
 		// определение команды, пришедшей из JSP
 		ActionFactory client = new ActionFactory();
@@ -91,6 +88,13 @@ public class Controller extends HttpServlet {
 			response.sendRedirect(request.getContextPath() + page);
 		}
 
+	}
+
+	@Override
+	public void destroy() {
+
+		super.destroy();
+		ConnectionPool.getSinglePool().cleanUpPool();
 	}
 
 }

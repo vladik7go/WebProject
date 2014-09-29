@@ -6,7 +6,7 @@ public class LoginLogic {
 
 	DaoPerson dao = new DaoPerson();
 
-	public boolean checkLogin(String enterLogin, String enterPass) {
+	public int checkLogin(String enterLogin, String enterPass) {
 
 		return dao.checkLogin(enterLogin, enterPass);
 
