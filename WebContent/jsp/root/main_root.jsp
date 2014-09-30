@@ -24,6 +24,8 @@
         </form>
         
       
+ <c:if test="${personsList != null }">     
+      
  <table border="1">
 <th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th>
 <c:forEach var="elem" items="${personsList}" >
@@ -50,6 +52,8 @@
 
 </c:forEach>
 </table>
+
+</c:if>
 
 main root page
 </body>

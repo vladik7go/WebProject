@@ -7,13 +7,14 @@ import by.epam.web.application.commands.login.RegistrationCommand;
 import by.epam.web.application.commands.person.AddPersonCommand;
 import by.epam.web.application.commands.person.ShowPersonsCommand;
 import by.epam.web.application.commands.person.EditPersonCommand;
-
+import by.epam.web.application.commands.person.EditWritePersonCommand;
 public enum CommandEnum {
 
 	LOGIN(new LoginCommand()),
 	REGISTRATION(new RegistrationCommand()), 
 	ADDPERSON(new AddPersonCommand()), 
 	EDITPERSON(new EditPersonCommand()),
+	EDITWRITEPERSON(new EditWritePersonCommand()),
 	SHOWPERSONS(new ShowPersonsCommand()),
 	LOGOUT(	new LogoutCommand());
 

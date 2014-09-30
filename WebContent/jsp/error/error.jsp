@@ -8,4 +8,10 @@ Servlet name or type: ${pageContext.errorData.servletName}
 Status code: ${pageContext.errorData.statusCode}
 <br/>
 Exception: ${pageContext.errorData.throwable}
+
+<form name="toLoginPage" method="POST" action="controller">
+						<input type="hidden" name="command" value="" />
+						<input type="submit" value="Return to Login page"/>
+</form>
+
 </body></html>

@@ -7,14 +7,45 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>page edit_user.jsp</title>
 </head>
 <body>
-${person }
-page edit_user
+<fmt:setLocale value="${language }" />
+<fmt:setBundle basename="resources.messages_bundle" />
 
-<c:out value="${ person.roleType }" />
-<c:out value="${ person.firstName }" />
-<c:out value="${ person.secondName }" />
+
+page edit_user
+${person.id }
+${person.firstName }
+<table >
+<tr>
+<td >
+				<form action="controller" method="post">
+					<input name="command" type="hidden" value="editWritePerson" />
+					<input name="id" type="hidden" value="${person.id }" />
+					<fieldset>
+						
+						<p>
+							<fmt:message key="login.label.role" />(1-root, 2-tutor, 3-student):<input type="text" name="role" value="${person.roleType } " /> <br>
+							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" value="${person.firstName }" /><br>
+							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" value="${person.secondName }" /><br>
+							
+							<fmt:message key="login.label.login" />:<input type="text" name="login" value="${person.login }" /><br>
+							<fmt:message key="login.label.password" />: <input type="text" name="password" value="${person.password }" /><br> 
+							<input type="submit" value="<fmt:message key="login.button.submit" />" />
+						</p>
+						
+						
+						
+					</fieldset>
+				</form>
+			</td>
+			
+		</tr>
+	</table>
+<c:if test="${errorNonNumberMessage !=null }"><fmt:message key="edit.label.nonnumbererror"/></c:if>
+
+
+
 </body>
 </html>

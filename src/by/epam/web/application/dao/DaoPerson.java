@@ -19,6 +19,7 @@ public class DaoPerson extends Dao {
 
 	private static final String SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD = "select login, password, role_type from person where login=? and password=?";
 	private static final String SQL_ADD_PERSON = "INSERT INTO person (role_type, first_name, second_name, login, password) VALUES (?,?,?,?,?)";
+	private static final String SQL_EDIT_PERSON = "update person SET role_type=?, first_name=?, second_name=?, login=?, password=? where id=?";
 	private static final String SQL_SHOW_PERSONS = "SELECT * FROM person";
 	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
 
@@ -47,7 +48,6 @@ public class DaoPerson extends Dao {
 
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);
-
 			return 0;
 		} finally {
 			Dao.closeStatement(st);
@@ -103,7 +103,7 @@ public class DaoPerson extends Dao {
 			st.setInt(1, id);
 			ResultSet result = st.executeQuery();
 			result.next();
-
+			person.setId(result.getInt("id"));
 			person.setRoleType(result.getInt("role_type"));
 			person.setFirstName(result.getString("first_name"));
 			person.setSecondName(result.getString("second_name"));
@@ -116,27 +116,56 @@ public class DaoPerson extends Dao {
 		return person;
 	}
 
-	public void addPerson(String firstName, String SecondName, String login,
-			String password) {
+	public boolean addPerson(String firstName, String SecondName, String login,
+			String password, int role) {
 
 		Connection cn = null;
 		PreparedStatement st = null;
 		try {
 			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_ADD_PERSON);
-			st.setInt(1, 3);
+			st.setInt(1, role);
 			st.setString(2, firstName);
 			st.setString(3, SecondName);
 			st.setString(4, login);
 			st.setString(5, password);
+
 			st.executeUpdate();
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);
+			return false;
 		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
+		return true;
+	}
 
+	public boolean editPerson(int id, int role, String firstName,
+			String SecondName, String login, String password) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_EDIT_PERSON);
+			st.setInt(1, role);
+			st.setString(2, firstName);
+			st.setString(3, SecondName);
+			st.setString(4, login);
+			st.setString(5, password);
+			st.setInt(6, id);
+			log.debug("edit user, id = " + id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		}finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
 	}
 
 }

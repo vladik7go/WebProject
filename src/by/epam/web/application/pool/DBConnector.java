@@ -38,7 +38,7 @@ class DBConnector {
 
 		try {
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());// регистрируем
-																		// драйвер
+																// драйвер
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

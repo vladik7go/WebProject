@@ -16,11 +16,12 @@
 <br/>
 
 
-<table>
+<table >
 <tr>
-<td class = "alignTop">
+<td >
 				<form action="controller" method="post">
 					<input name="command" type="hidden" value="addperson" />
+					<input name="role" type="hidden" value="3" />
 					<fieldset>
 						
 						<p>

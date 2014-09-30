@@ -18,6 +18,7 @@ public class AddPersonCommand implements ActionCommand {
 	private static final String PARAM_NAME_PASSWORD = "password";
 	private static final String PARAM_NAME_FIRST_NAME = "firstName";
 	private static final String PARAM_NAME_SECOND_NAME = "secondName";
+	private static final String PARAM_NAME_ROLE = "role";
 
 	@Override
 	public String execute(HttpServletRequest request) {
@@ -28,6 +29,7 @@ public class AddPersonCommand implements ActionCommand {
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
 		String firstName = request.getParameter(PARAM_NAME_FIRST_NAME);
 		String secondName = request.getParameter(PARAM_NAME_SECOND_NAME);
+		int role = Integer.parseInt(request.getParameter(PARAM_NAME_ROLE));
 
 		if (firstName.length() * secondName.length() * login.length()
 				* pass.length() == 0) {
@@ -37,7 +39,7 @@ public class AddPersonCommand implements ActionCommand {
 		} else {
 			DaoPerson dao = new DaoPerson();
 
-			dao.addPerson(firstName, secondName, login, pass);
+			dao.addPerson(firstName, secondName, login, pass, role);
 			// возвращаем строку с адресом логин страницы
 			page = ConfigurationManager.getProperty("path.page.login");
 
