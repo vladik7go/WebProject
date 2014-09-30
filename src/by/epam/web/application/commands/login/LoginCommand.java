@@ -7,6 +7,10 @@ import by.epam.web.application.logic.LoginLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
 
+//Команда: извлекает логин и пароль из запроса. 
+//Пытается извлечь ID пользователя с этими данными из таблицы person. 
+//Возвращает адрес страницы перенаправления, соответствующей ID пользователя. 
+//Если таких логина и пароля в таблице не было - возвращает ссылку на страницу логина снова.
 public class LoginCommand implements ActionCommand {
 
 	private static final String PARAM_NAME_LOGIN = "login";
