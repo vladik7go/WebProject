@@ -3,7 +3,6 @@ package by.epam.web.application.commands.login;
 import javax.servlet.http.HttpServletRequest;
 
 import by.epam.web.application.commands.ActionCommand;
-import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.logic.LoginLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
@@ -18,7 +17,7 @@ public class LoginCommand implements ActionCommand {
 	private static final String PARAM_NAME_PASSWORD = "password";
 
 	@Override
-	public String execute(HttpServletRequest request) throws TechnicalException {
+	public String execute(HttpServletRequest request) {
 		String page = null;
 		// извлечение из запроса логина и пароля
 		String login = request.getParameter(PARAM_NAME_LOGIN);
