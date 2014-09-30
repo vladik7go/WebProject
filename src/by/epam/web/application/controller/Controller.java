@@ -14,6 +14,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.factory.ActionFactory;
+import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.pool.ConnectionPool;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
@@ -47,7 +48,11 @@ public class Controller extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		log.debug("doGet method started--------------------------------------------------------------------------------------------------");
-		processRequest(request, response);
+		try {
+			processRequest(request, response);
+		} catch (TechnicalException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	/**
@@ -57,11 +62,15 @@ public class Controller extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		log.debug("doPost method started DEBUG -------------------------------------------------------------------------");
-		processRequest(request, response);
+		try {
+			processRequest(request, response);
+		} catch (TechnicalException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	private void processRequest(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+			HttpServletResponse response) throws ServletException, IOException, TechnicalException {
 		// заглушка, пока не сделал фильтры
 		// request.setCharacterEncoding("UTF-8");
 		String page = null;
