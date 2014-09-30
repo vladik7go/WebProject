@@ -1,8 +1,20 @@
-29.09.2014 19:43:49 [http-bio-8080-exec-2] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 19:43:50 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 19:43:50 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:21 - ----login
-29.09.2014 19:43:50 [http-bio-8080-exec-2] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 19:43:50 [http-bio-8080-exec-2] ERROR DaoPerson:checkLogin:49 - Technical Exception
+30.09.2014 17:41:48 [http-bio-8080-exec-3] DEBUG Controller:createPool:36 - pool size = 10
+30.09.2014 17:41:48 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:41:48 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:42:37 [http-bio-8080-exec-6] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:42:37 [http-bio-8080-exec-6] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:42:40 [http-bio-8080-exec-7] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:42:40 [http-bio-8080-exec-7] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:42:49 [http-bio-8080-exec-3] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
+30.09.2014 17:42:50 [http-bio-8080-exec-3] DEBUG Controller:createPool:36 - pool size = 10
+30.09.2014 17:42:50 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:42:50 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:48:15 [http-bio-8080-exec-3] DEBUG Controller:init:35 - init method started (level DEBUG) ----------------------------------------------
+30.09.2014 17:48:16 [http-bio-8080-exec-3] DEBUG Controller:createPool:36 - pool size = 10
+30.09.2014 17:48:16 [http-bio-8080-exec-3] DEBUG Controller:doPost:64 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:48:16 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:48:16 [http-bio-8080-exec-3] DEBUG Controller:getConnection:65 - pool size = 9
+30.09.2014 17:48:16 [http-bio-8080-exec-3] ERROR DaoPerson:checkLogin:50 - Technical Exception
 java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
@@ -13,10 +25,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
 	at by.epam.web.application.dao.DaoPerson.checkLogin(DaoPerson.java:44)
-	at by.epam.web.application.logic.LoginLogic.checkLogin(LoginLogic.java:11)
-	at by.epam.web.application.commands.login.LoginCommand.execute(LoginCommand.java:24)
-	at by.epam.web.application.controller.Controller.processRequest(Controller.java:75)
-	at by.epam.web.application.controller.Controller.doPost(Controller.java:60)
+	at by.epam.web.application.logic.LoginLogic.checkLogin(LoginLogic.java:12)
+	at by.epam.web.application.commands.login.LoginCommand.execute(LoginCommand.java:29)
+	at by.epam.web.application.controller.Controller.processRequest(Controller.java:84)
+	at by.epam.web.application.controller.Controller.doPost(Controller.java:66)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
@@ -34,23 +46,15 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-29.09.2014 19:43:50 [http-bio-8080-exec-2] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 19:43:55 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 19:43:55 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:21 - ----login
-29.09.2014 19:43:55 [http-bio-8080-exec-2] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 19:43:55 [http-bio-8080-exec-2] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 19:43:57 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 19:43:57 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:21 - ----showPersons
-29.09.2014 19:43:57 [http-bio-8080-exec-2] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 19:43:57 [http-bio-8080-exec-2] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 19:44:14 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 19:44:14 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:21 - ----login
-29.09.2014 19:44:14 [http-bio-8080-exec-2] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 19:44:14 [http-bio-8080-exec-2] ERROR DaoPerson:checkLogin:49 - Technical Exception
+30.09.2014 17:48:16 [http-bio-8080-exec-3] DEBUG Controller:returnConnection:78 - pool size = 10
+30.09.2014 17:48:21 [http-bio-8080-exec-4] DEBUG Controller:doPost:64 - doPost method started DEBUG -------------------------------------------------------------------------
+30.09.2014 17:48:21 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:21 - ----login
+30.09.2014 17:48:21 [http-bio-8080-exec-4] DEBUG Controller:getConnection:65 - pool size = 9
+30.09.2014 17:48:21 [http-bio-8080-exec-4] ERROR DaoPerson:checkLogin:50 - Technical Exception
 java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
@@ -61,10 +65,10 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
 	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
 	at by.epam.web.application.dao.DaoPerson.checkLogin(DaoPerson.java:44)
-	at by.epam.web.application.logic.LoginLogic.checkLogin(LoginLogic.java:11)
-	at by.epam.web.application.commands.login.LoginCommand.execute(LoginCommand.java:24)
-	at by.epam.web.application.controller.Controller.processRequest(Controller.java:75)
-	at by.epam.web.application.controller.Controller.doPost(Controller.java:60)
+	at by.epam.web.application.logic.LoginLogic.checkLogin(LoginLogic.java:12)
+	at by.epam.web.application.commands.login.LoginCommand.execute(LoginCommand.java:29)
+	at by.epam.web.application.controller.Controller.processRequest(Controller.java:84)
+	at by.epam.web.application.controller.Controller.doPost(Controller.java:66)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
@@ -82,26 +86,8 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-29.09.2014 19:44:14 [http-bio-8080-exec-2] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 19:44:17 [http-bio-8080-exec-2] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-29.09.2014 19:44:17 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:21 - ----null
-29.09.2014 20:06:32 [http-bio-8080-exec-11] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-29.09.2014 20:06:33 [http-bio-8080-exec-11] DEBUG Controller:createPool:36 - pool size = 10
-29.09.2014 20:06:33 [http-bio-8080-exec-11] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-29.09.2014 20:06:33 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:21 - ----null
-29.09.2014 20:06:36 [http-bio-8080-exec-12] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-29.09.2014 20:06:36 [http-bio-8080-exec-12] DEBUG ActionFactory:defineCommand:21 - ----null
-29.09.2014 20:06:38 [http-bio-8080-exec-12] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-29.09.2014 20:06:38 [http-bio-8080-exec-12] DEBUG ActionFactory:defineCommand:21 - ----null
-29.09.2014 20:08:01 [http-bio-8080-exec-15] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 20:08:01 [http-bio-8080-exec-15] DEBUG ActionFactory:defineCommand:21 - ----login
-29.09.2014 20:08:01 [http-bio-8080-exec-15] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 20:08:01 [http-bio-8080-exec-15] DEBUG Controller:returnConnection:78 - pool size = 10
-29.09.2014 20:08:07 [http-bio-8080-exec-15] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-29.09.2014 20:08:07 [http-bio-8080-exec-15] DEBUG ActionFactory:defineCommand:21 - ----showPersons
-29.09.2014 20:08:07 [http-bio-8080-exec-15] DEBUG Controller:getConnection:65 - pool size = 9
-29.09.2014 20:08:07 [http-bio-8080-exec-15] DEBUG Controller:returnConnection:78 - pool size = 10
+30.09.2014 17:48:21 [http-bio-8080-exec-4] DEBUG Controller:returnConnection:78 - pool size = 10
