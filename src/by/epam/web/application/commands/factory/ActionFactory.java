@@ -2,19 +2,23 @@ package by.epam.web.application.commands.factory;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
+
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.client.CommandEnum;
 import by.epam.web.application.commands.login.EmptyCommand;
+import by.epam.web.application.controller.Controller;
 import by.epam.web.application.resource.MessageManager;
 
 public class ActionFactory {
+	public static Logger log = Logger.getLogger(ActionFactory.class);
 
 	public ActionCommand defineCommand(HttpServletRequest request) {
 		ActionCommand current = new EmptyCommand();
 		// извлечение имени команды из запроса
 		String action = request.getParameter("command");
 		//заглушка. для дебага. не забыть убрать -----------------------------------------
-		System.out.println("----" + action);
+		log.debug("----" + action);
 		if (action == null || action.isEmpty()) {
 			// если команда не задана в текущем запросе
 			return current;

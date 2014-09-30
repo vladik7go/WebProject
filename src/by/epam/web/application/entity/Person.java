@@ -8,9 +8,7 @@ public class Person {
 	private String login;
 	private String password;
 
-	public Person() {// constructor
-		// TODO Auto-generated constructor stub
-	}
+
 
 	public int getId() {
 		return id;

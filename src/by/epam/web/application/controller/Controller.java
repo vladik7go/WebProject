@@ -31,7 +31,7 @@ public class Controller extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
-		log.info("init method started ----------------------------------------------");
+		log.debug("init method started (level DEBUG) ----------------------------------------------");
 		super.init();
 		String log4jConfigPath = ConfigurationManager
 				.getProperty("path.log4j.config");
@@ -46,7 +46,7 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		log.info("doGet method started--------------------------------------------------------------------------------------------------");
+		log.debug("doGet method started--------------------------------------------------------------------------------------------------");
 		processRequest(request, response);
 	}
 
@@ -56,7 +56,7 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		log.info("doPost method started -------------------------------------------------------------------------");
+		log.debug("doPost method started DEBUG -------------------------------------------------------------------------");
 		processRequest(request, response);
 	}
 

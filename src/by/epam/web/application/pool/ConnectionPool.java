@@ -23,8 +23,8 @@ public class ConnectionPool {
 	private void createPool() {// создаем пул и заполняем соединениями
 		pool = new ArrayBlockingQueue<Connection>(POOL_SIZE);
 
+		DBConnector dbConnector = new DBConnector();
 		for (int i = 0; i < POOL_SIZE; i++) {
-			DBConnector dbConnector = new DBConnector();
 			Connection connection = dbConnector.getConnection();
 			try {
 				pool.put(connection);
@@ -33,7 +33,7 @@ public class ConnectionPool {
 			}
 
 		}
-		System.out.println("pool size = " + pool.size());
+		log.debug("pool size = " + pool.size());
 	}
 
 	public static ConnectionPool getSinglePool() {// метод для получения пула,
@@ -62,7 +62,7 @@ public class ConnectionPool {
 		} catch (InterruptedException e) {
 			log.error("Technical Exception", e);
 		}
-		System.out.println("pool size = " + pool.size());
+		log.debug("pool size = " + pool.size());
 		return connection;
 	}
 
@@ -75,7 +75,7 @@ public class ConnectionPool {
 				log.error("TechnicalException", e);
 			}
 		}
-		System.out.println("pool size = " + pool.size());
+		log.debug("pool size = " + pool.size());
 	}
 
 	public void cleanUpPool() {

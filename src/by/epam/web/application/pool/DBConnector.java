@@ -9,13 +9,13 @@ import org.apache.log4j.Logger;
 
 import by.epam.web.application.resource.ConfigurationManager;
 
-public class DBConnector {
+class DBConnector {
 	public static Logger log = Logger.getLogger(DBConnector.class);
 	Properties properties = new Properties();
 
 	// метод, возвращает необходимые данные для создания соединения. Нужен,
 	// чтобы при создании пула, обращаться к внешним ресурсам только один раз.
-	public String createConnection() {
+	private String createConnection() {
 		String url = ConfigurationManager.getProperty("db.url");// берем из
 																// проперти
 																// файла url
