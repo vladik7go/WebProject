@@ -28,7 +28,7 @@ public class DaoPerson extends Dao {
 
 	// метод, возвращает роль пользователя, если совпал логин и пароль. Иначе
 	// возвращает ноль.
-	public int checkLogin(String name, String password) throws TechnicalException {
+	public int checkLogin(String name, String password) {
 
 		Connection cn = null;
 		PreparedStatement st = null;
@@ -47,8 +47,8 @@ public class DaoPerson extends Dao {
 
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);
-			throw new TechnicalException();
-//			return 0;
+
+			return 0;
 		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
@@ -103,7 +103,7 @@ public class DaoPerson extends Dao {
 			st.setInt(1, id);
 			ResultSet result = st.executeQuery();
 			result.next();
-			
+
 			person.setRoleType(result.getInt("role_type"));
 			person.setFirstName(result.getString("first_name"));
 			person.setSecondName(result.getString("second_name"));
