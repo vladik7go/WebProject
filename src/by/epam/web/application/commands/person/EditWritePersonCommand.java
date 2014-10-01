@@ -51,11 +51,11 @@ public class EditWritePersonCommand implements ActionCommand {
 				if (result) {
 					page = ConfigurationManager
 							.getProperty("path.page.main_root");
-					request.setAttribute("successfullyEditedPerson", "1");
+					request.setAttribute("successfullyPerformedAction", "1");
 				}else{
 					page = ConfigurationManager
 							.getProperty("path.page.main_root");
-					request.setAttribute("successfullyEditedPerson", "0");
+					request.setAttribute("successfullyPerformedAction", "0");
 				}
 
 			}

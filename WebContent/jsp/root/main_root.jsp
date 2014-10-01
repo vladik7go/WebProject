@@ -54,6 +54,16 @@
 </form>
 
 </td>
+<td>
+
+<form name="delete_person_form" method="POST" action="controller">
+<input type="hidden" name="command" value="deletePerson" />
+<input type="hidden" name="personId" value="${ elem.id }" />
+
+<input type="submit" value="<fmt:message key="root.button.delete" />"/>
+</form>
+
+</td>
 </tr>
 
 </c:forEach>
@@ -61,11 +71,12 @@
 
 </c:if>
 
-<c:if test="${successfullyEditedPerson != null and successfullyEditedPerson eq '1' }"><fmt:message key="edit.label.successfullyEditedUser"/></c:if>
+<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 <c:if test="${personsList == null }"> 
 <div><img align="middle" src="images/1234.jpeg" alt="picture about sysadmins"></div>
-</c:if>
 main root page Картинка про админа
+</c:if>
+
 </div>
 
 </body>

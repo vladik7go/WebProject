@@ -22,6 +22,7 @@ public class DaoPerson extends Dao {
 	private static final String SQL_EDIT_PERSON = "update person SET role_type=?, first_name=?, second_name=?, login=?, password=? where id=?";
 	private static final String SQL_SHOW_PERSONS = "SELECT * FROM person";
 	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
+	private static final String SQL_DELETE_PERSON_BY_ID = "DELETE from person where id= ?";
 
 	public DaoPerson() {
 
@@ -160,12 +161,28 @@ public class DaoPerson extends Dao {
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);
 			return false;
-		}finally {
+		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
 		return true;
+	}
+
+	public boolean deletePerson(int id) {
+		Connection cn = null;
+		PreparedStatement st = null;
+		cn = ConnectionPool.getSinglePool().getConnection();
+		try {
+			st = cn.prepareStatement(SQL_DELETE_PERSON_BY_ID);
+			st.setInt(1, id);
+			st.executeUpdate();
+			return true;
+		} catch (SQLException e) {
+			log.error(e);
+			return false;
+		}
+
 	}
 
 }
