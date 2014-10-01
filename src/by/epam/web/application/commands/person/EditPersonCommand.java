@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.entity.Person;
+import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.resource.ConfigurationManager;
 
 public class EditPersonCommand implements ActionCommand {
@@ -19,11 +20,17 @@ public class EditPersonCommand implements ActionCommand {
 		String page = null;
 		// извлечение из запроса параметров
 
+		try {
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		DaoPerson dao = new DaoPerson();
-		person = dao.showPerson(personId);
-		page = ConfigurationManager.getProperty("path.page.edit_user");
-		request.setAttribute("person", person);
+			person = dao.showPerson(personId);
+			page = ConfigurationManager.getProperty("path.page.edit_user");
+			request.setAttribute("person", person);
+		} catch (TechnicalException | NumberFormatException e) {
+			log.error(e);
+			page = ConfigurationManager.getProperty("path.page.login");
+		}
+		
 
 		return page;
 	}

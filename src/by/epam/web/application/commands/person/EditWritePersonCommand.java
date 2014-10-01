@@ -11,7 +11,7 @@ import by.epam.web.application.resource.ConfigurationManager;
 
 public class EditWritePersonCommand implements ActionCommand {
 	public static Logger log = Logger.getLogger(EditWritePersonCommand.class);
-	
+
 	private static final String PARAM_NAME_LOGIN = "login";
 	private static final String PARAM_NAME_PASSWORD = "password";
 	private static final String PARAM_NAME_FIRST_NAME = "firstName";
@@ -20,7 +20,7 @@ public class EditWritePersonCommand implements ActionCommand {
 	private static final String PARAM_NAME_ID = "id";
 
 	@Override
-	public String execute(HttpServletRequest request)  {
+	public String execute(HttpServletRequest request) {
 		String page = null;
 		// извлечение из запроса параметров
 		String login = request.getParameter(PARAM_NAME_LOGIN);
@@ -30,35 +30,42 @@ public class EditWritePersonCommand implements ActionCommand {
 		int id = Integer.parseInt(request.getParameter(PARAM_NAME_ID).trim());
 		log.debug("String role = " + request.getParameter(PARAM_NAME_ROLE));
 		try {
-			int role = Integer.parseInt(request.getParameter(PARAM_NAME_ROLE).trim());
+			int role = Integer.parseInt(request.getParameter(PARAM_NAME_ROLE)
+					.trim());
 			log.debug("int role = " + role);
-			if ( role < 1 && role > 3){
+			if (role < 1 && role > 3) {
 				log.debug("роль не равно 123");
 				throw new LogicException();
-			}if (firstName.length() * secondName.length() * login.length()
-					* pass.length()  == 0){
+			}
+			if (firstName.length() * secondName.length() * login.length()
+					* pass.length() == 0) {
 
 				request.setAttribute("errorEmptyFieldMessage", "true");
 				page = ConfigurationManager.getProperty("path.page.edit_user");
-			}else{
+			} else {
 				DaoPerson dao = new DaoPerson();
-				dao.editPerson(id, role, firstName, secondName, login, pass);
+				boolean result = dao.editPerson(id, role, firstName,
+						secondName, login, pass);
+
 				// возвращаем строку с адресом логин страницы
-				page = ConfigurationManager.getProperty("path.page.login");
+				if (result) {
+					page = ConfigurationManager
+							.getProperty("path.page.main_root");
+					request.setAttribute("successfullyEditedPerson", "1");
+				}else{
+					page = ConfigurationManager
+							.getProperty("path.page.main_root");
+					request.setAttribute("successfullyEditedPerson", "0");
+				}
+
 			}
-			
-			
-			
-			
+
 		} catch (NumberFormatException | LogicException e) {
 			log.error(e);
 			request.setAttribute("errorNonNumberMessage", "true");
 			page = ConfigurationManager.getProperty("path.page.edit_user");
 		}
 
-		
-		
-		
 		return page;
 	}
 

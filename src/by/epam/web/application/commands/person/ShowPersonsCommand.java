@@ -25,12 +25,14 @@ public class ShowPersonsCommand implements ActionCommand {
 		try {
 			
 			persons = dao.showPersons();
+			page = ConfigurationManager.getProperty("path.page.main_root");
+			request.setAttribute("personsList", persons);
 		} catch (TechnicalException e) {
 			log.error(e);
+			page = ConfigurationManager.getProperty("path.page.login");
 		}
 		
-		page = ConfigurationManager.getProperty("path.page.main_root");
-		request.setAttribute("personsList", persons);
+		
 		
 		return page;
 	}

@@ -15,11 +15,10 @@
 
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
-               	<option selected disabled><fmt:message key="login.lang.select" /></option>
-               	<option value="showPersons" >Показать всех пользователей</option>
-               	
-                <option value="en" ${language == 'en' ? 'selected' : ''}>Редактировать тест</option>
-                <option value="ru" ${language == 'ru' ? 'selected' : ''}>Удалить тест</option>
+               	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
+               	<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
+                <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
         </form>
         
@@ -31,9 +30,13 @@
 <c:forEach var="elem" items="${personsList}" >
 
 <tr>
-
 <td><c:out value="${ elem.id }" /></td>
-<td><c:out value="${ elem.roleType }" /></td>
+<td> 
+<c:if test="${elem.roleType != null and elem.roleType eq '1' }"><fmt:message key="edit.label.root"/></c:if>
+<c:if test="${elem.roleType != null and elem.roleType eq '2' }"><fmt:message key="edit.label.tutor"/></c:if>
+<c:if test="${elem.roleType != null and elem.roleType eq '3' }"><fmt:message key="edit.label.student"/></c:if>
+</td>
+<!-- td><c:out value="${ elem.roleType }" /></td-->
 <td><c:out value="${ elem.firstName }" /></td>
 <td><c:out value="${ elem.secondName }" /></td>
 <td><c:out value="${ elem.login }" /></td>
@@ -54,6 +57,8 @@
 </table>
 
 </c:if>
+
+<c:if test="${successfullyEditedPerson != null and successfullyEditedPerson eq '1' }"><fmt:message key="edit.label.successfullyEditedUser"/></c:if>
 
 main root page
 </body>

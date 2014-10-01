@@ -26,10 +26,15 @@ ${person.firstName }
 					<fieldset>
 						
 						<p>
-							<fmt:message key="login.label.role" />(1-root, 2-tutor, 3-student):<input type="text" name="role" value="${person.roleType } " /> <br>
+							<fmt:message key="login.label.role" />:			<!-- input type="text" name="role" value="${person.roleType } " /--> 
+								<select id="choose_role" name="role" >
+               						<option <c:if test="${person.roleType != null and person.roleType eq '1' }">selected</c:if> value="1" ><fmt:message key="edit.label.root"/></option>
+               						<option <c:if test="${person.roleType != null and person.roleType eq '2' }">selected</c:if> value="2" ><fmt:message key="edit.label.tutor"/></option>
+               						<option <c:if test="${person.roleType != null and person.roleType eq '3' }">selected</c:if> value="3" ><fmt:message key="edit.label.student"/></option>
+								</select><br>
+							
 							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" value="${person.firstName }" /><br>
 							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" value="${person.secondName }" /><br>
-							
 							<fmt:message key="login.label.login" />:<input type="text" name="login" value="${person.login }" /><br>
 							<fmt:message key="login.label.password" />: <input type="text" name="password" value="${person.password }" /><br> 
 							<input type="submit" value="<fmt:message key="login.button.submit" />" />

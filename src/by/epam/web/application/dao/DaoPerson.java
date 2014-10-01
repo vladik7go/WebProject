@@ -91,7 +91,7 @@ public class DaoPerson extends Dao {
 
 	}
 
-	public Person showPerson(int id) {
+	public Person showPerson(int id) throws TechnicalException {
 		Connection cn = null;
 		PreparedStatement st = null;
 		Person person = new Person();
@@ -110,7 +110,7 @@ public class DaoPerson extends Dao {
 			person.setLogin(result.getString("login"));
 			person.setPassword(result.getString("password"));
 		} catch (SQLException e) {
-			log.error("Technical Exception", e);
+			throw new TechnicalException(e);
 		}
 
 		return person;
