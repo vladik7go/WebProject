@@ -8,8 +8,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>page edit_user.jsp</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>
 <body>
+<div class="login-card">
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 
@@ -51,6 +53,6 @@ ${person.firstName }
 <c:if test="${errorNonNumberMessage !=null }"><fmt:message key="edit.label.nonnumbererror"/></c:if>
 
 
-
+</div>
 </body>
 </html>

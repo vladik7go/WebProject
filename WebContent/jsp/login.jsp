@@ -6,9 +6,13 @@
 
 
 
-<html><head><title><fmt:message key="login.lang.select" /></title></head>
+<html>
+<head>
+<title><fmt:message key="login.lang.select" /></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
 <body>
-
+<div class="login-card">
 <c:set var="language" value="${param.language }" scope="session" />
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
@@ -52,4 +56,5 @@
 <input type="submit" value="<fmt:message key="login.button.newuser" />"/>
 </form>
 <hr/>
+</div>
 </body></html>

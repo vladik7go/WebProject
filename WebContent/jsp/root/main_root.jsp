@@ -7,8 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>main root page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>
 <body>
+
+<div class="login-card">
 
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
@@ -59,7 +62,11 @@
 </c:if>
 
 <c:if test="${successfullyEditedPerson != null and successfullyEditedPerson eq '1' }"><fmt:message key="edit.label.successfullyEditedUser"/></c:if>
+<c:if test="${personsList == null }"> 
+<div><img align="middle" src="images/1234.jpeg" alt="picture about sysadmins"></div>
+</c:if>
+main root page Картинка про админа
+</div>
 
-main root page
 </body>
 </html>
