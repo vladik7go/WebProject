@@ -7,10 +7,12 @@ import by.epam.web.application.logic.LoginLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 import by.epam.web.application.resource.MessageManager;
 
-//Команда: извлекает логин и пароль из запроса. 
-//Пытается извлечь ID пользователя с этими данными из таблицы person. 
-//Возвращает адрес страницы перенаправления, соответствующей ID пользователя. 
-//Если таких логина и пароля в таблице не было - возвращает ссылку на страницу логина снова.
+/*
+ * This command: extracting login and password from request.
+ * Trying to extract ID of the user with this login and password from the table "person".
+ * This command return address of the page(to which request should be redirected ) according to ID of the user.
+ * In case, if respective login and password doesn't exist in the table - return link to the login page again.
+ */
 public class LoginCommand implements ActionCommand {
 
 	private static final String PARAM_NAME_LOGIN = "login";
@@ -19,10 +21,12 @@ public class LoginCommand implements ActionCommand {
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		// извлечение из запроса логина и пароля
+
+		// Extracting from the request login and password
 		String login = request.getParameter(PARAM_NAME_LOGIN);
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
-		// проверка логина и пароля
+		
+		// check the login and the password
 		LoginLogic logic = new LoginLogic();
 
 		switch (logic.checkLogin(login, pass)) {
@@ -39,11 +43,13 @@ public class LoginCommand implements ActionCommand {
 			request.setAttribute("user", login);
 			break;
 		default:
-			// добавляем к запросу аттрибут с именем "language" и значением
-			// пришедшим в запросе во втором скрытом параметре "language".
-			// Переменная
-			// была задана формой выбора
-			// языка в login.jsp с областью видимости - сессия.
+
+			/*
+			 * adding to the request: adding the attribute with name "language"
+			 * and value taken from request from second hidden parameter
+			 * "language". Variable was defined by the form of choose language
+			 * in login.jsp with area of visibility - session.
+			 */
 
 			request.setAttribute("language", request.getParameter("language"));
 
@@ -51,24 +57,7 @@ public class LoginCommand implements ActionCommand {
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
 
-		// if (logic.checkLogin(login, pass) !=0) {
-		//
-		// request.setAttribute("user", login);
-		// // определение пути к main.jsp
-		//
-		// page = ConfigurationManager.getProperty("path.page.main_student");
-		// } else {
-		// // добавляем к запросу аттрибут с именем "language" и значением
-		// // пришедшим в запросе во втором скрытом параметре "language".
-		// // Переменная
-		// // была задана формой выбора
-		// // языка в login.jsp с областью видимости - сессия.
-		//
-		// request.setAttribute("language", request.getParameter("language"));
-		//
-		// request.setAttribute("errorLoginPassMessage", "true");
-		// page = ConfigurationManager.getProperty("path.page.login");
-		// }
+		
 		return page;
 	}
 }

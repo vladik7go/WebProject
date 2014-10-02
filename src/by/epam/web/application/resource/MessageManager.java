@@ -2,12 +2,14 @@ package by.epam.web.application.resource;
 
 import java.util.ResourceBundle;
 
+/*
+ * This class extracts data from messages.properties file.
+ */
 public class MessageManager {
 
 	private final static ResourceBundle resourceBundle = ResourceBundle
 			.getBundle("resources.messages_bundle");
 
-	// класс извлекает информацию из файла messages.properties
 	private MessageManager() {
 	}
 

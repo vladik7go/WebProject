@@ -17,7 +17,7 @@ public class DeletePerson implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
-		// извлечение из запроса параметров
+		// Extracting parameters from the request
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		DaoPerson dao = new DaoPerson();
 		boolean result = dao.deletePerson(personId);

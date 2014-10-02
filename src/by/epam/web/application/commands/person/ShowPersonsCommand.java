@@ -18,7 +18,7 @@ public class ShowPersonsCommand implements ActionCommand {
 	
 	@Override
 	public String execute(HttpServletRequest request) {
-//		System.out.println("showPersonsCommand execute method");
+
 		List<Person> persons = null;
 		String page = null;
 		DaoPerson dao = new DaoPerson();

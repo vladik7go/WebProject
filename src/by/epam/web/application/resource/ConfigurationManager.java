@@ -2,12 +2,15 @@ package by.epam.web.application.resource;
 
 import java.util.ResourceBundle;
 
+/*
+ * This class extracts data from config.properties file.
+ */
 public class ConfigurationManager {
 
 	private final static ResourceBundle resourceBundle = ResourceBundle
 			.getBundle("resources.config");
 
-	// класс извлекает информацию из файла config.properties
+	
 	private ConfigurationManager() {
 	}
 

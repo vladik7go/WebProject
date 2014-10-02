@@ -62,26 +62,27 @@ public class Controller extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// заглушка, пока не сделал фильтры
+		// substitution, unless create filters
 		// request.setCharacterEncoding("UTF-8");
 		String page = null;
-		// определение команды, пришедшей из JSP
+		// Define the command received from JSP
 		ActionFactory client = new ActionFactory();
 		ActionCommand command = client.defineCommand(request);
 		/*
-		 * вызов реализованного метода execute() и передача параметров
-		 * классу-обработчику конкретной команды
+		 * 
+		 * Call embodied method execute() and send parameters to the
+		 * class-handler of concrete command
 		 */
 		page = command.execute(request);
-		// метод возвращает страницу ответа
-		// page = null; // поэксперементировать!
+		// this method return the page due to the sent command 
+		
 		if (page != null) {
 			RequestDispatcher dispatcher = getServletContext()
 					.getRequestDispatcher(page);
-			// вызов страницы ответа на запрос
+			// Call the page of the answer, according to the request 
 			dispatcher.forward(request, response);
 		} else {
-			// установка страницы c cообщением об ошибке
+			// Call the index page and set the attribute - "doesn't exist page" 
 			page = ConfigurationManager.getProperty("path.page.index");
 			request.getSession().setAttribute("nullPage",
 					MessageManager.getProperty("message.nullpage"));

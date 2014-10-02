@@ -21,7 +21,7 @@ public enum CommandEnum {
 	SHOWPERSONS(new ShowPersonsCommand()),
 	LOGOUT(	new LogoutCommand());
 
-	private final ActionCommand command;// ссылка на переменную типа интерфейс
+	private final ActionCommand command;// Reference on the variable with type - interface 
 
 	private CommandEnum(ActionCommand command) {
 		this.command = command;
@@ -29,12 +29,12 @@ public enum CommandEnum {
 
 	// LOGIN {
 	// {
-	// this.command = new LoginCommand();// —сылка на конкретный объект со
-	// // своим методом execute();
+	// this.command = new LoginCommand();// Reference to the concrete object 
+	// // with his own method execute();
 	// }
 	// },
 	// CHOOSE {
-	// {//јнонимный класс с логическим блоком
+	// {// Anonymous class with logical block included  
 	// this.command = new ChooseCommand();
 	// }
 	// },
@@ -44,7 +44,7 @@ public enum CommandEnum {
 	// }
 	// };
 	//
-	// ActionCommand command; // ссылка на переменную типа интерфейс
+	// ActionCommand command; // Reference on the variable with type - interface 
 
 	public ActionCommand getCurrentCommand() {
 		return command;

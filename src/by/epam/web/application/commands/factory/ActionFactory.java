@@ -15,16 +15,20 @@ public class ActionFactory {
 
 	public ActionCommand defineCommand(HttpServletRequest request) {
 		ActionCommand current = new EmptyCommand();
-		// извлечение имени команды из запроса
+		
+		//Extracting the name of the command from request
+		
 		String action = request.getParameter("command");
 		
 		if (action == null || action.isEmpty()) {
-			// если команда не задана в текущем запросе
+			
+			//if command do not defined in current request
 			return current;
 		}
-		// получение объекта, соответствующего команде
+		
+		// gaining the object, according to the command
 		try {
-			//заглушка. для дебага. не забыть убрать -----------------------------------------
+			
 			log.debug("Command ---- " + action + " ---- had been performed");
 			CommandEnum currentEnum = CommandEnum.valueOf(action.toUpperCase());
 

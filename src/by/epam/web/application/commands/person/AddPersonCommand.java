@@ -24,7 +24,7 @@ public class AddPersonCommand implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
-		// извлечение из запроса параметров
+		// Extracting parameters from the request 
 		String login = request.getParameter(PARAM_NAME_LOGIN);
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
 		String firstName = request.getParameter(PARAM_NAME_FIRST_NAME);
@@ -40,7 +40,7 @@ public class AddPersonCommand implements ActionCommand {
 			DaoPerson dao = new DaoPerson();
 
 			dao.addPerson(firstName, secondName, login, pass, role);
-			// возвращаем строку с адресом логин страницы
+			// Return string with the address of the login page 
 			page = ConfigurationManager.getProperty("path.page.login");
 
 		}

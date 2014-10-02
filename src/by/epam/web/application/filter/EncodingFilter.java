@@ -24,7 +24,8 @@ public class EncodingFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		String codeRequest = request.getCharacterEncoding();
-		// установка кодировки из параметров фильтра, если не установлена
+		
+		// set  encoding from the parameters of the filter, in case if encoding didn't defined beforehand.
 		if (code != null && !code.equalsIgnoreCase(codeRequest)) {
 			request.setCharacterEncoding(code);
 			response.setCharacterEncoding(code);

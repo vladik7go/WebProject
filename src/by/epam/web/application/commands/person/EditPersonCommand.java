@@ -18,7 +18,7 @@ public class EditPersonCommand implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 		Person person = null;
 		String page = null;
-		// извлечение из запроса параметров
+		// Extracting parameters from the request
 
 		try {
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));

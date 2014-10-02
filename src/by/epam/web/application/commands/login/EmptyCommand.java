@@ -10,15 +10,18 @@ public class EmptyCommand implements ActionCommand {
 	@Override
 	public String execute(HttpServletRequest request) {
 		/*
-		 * в случае ошибки или прямого обращения к контроллеру переадресация на
-		 * страницу ввода логина
+		 * 
+		 * In case of error or direct request to the controller - readdressing
+		 * on the login page
 		 */
 		String page = ConfigurationManager.getProperty("path.page.login");
-		// добавляем к запросу аттрибут с именем "language" и значением
-		// пришедшим в запросе во втором скрытом параметре "language".
-		// Переменная
-		// была задана формой выбора
-		// языка в login.jsp с областью видимости - сессия.
+
+		/*
+		 * adding to the request: adding the attribute with name "language" and
+		 * value taken from request from second hidden parameter "language".
+		 * Variable was defined by the form of choose language in login.jsp
+		 * with area of visibility - session.
+		 */
 
 		request.setAttribute("language", request.getParameter("language"));
 		return page;

@@ -28,8 +28,11 @@ public class DaoPerson extends Dao {
 
 	}
 
-	// метод, возвращает роль пользователя, если совпал логин и пароль. Иначе
-	// возвращает ноль.
+	
+	/*
+	 * This method return the role of the user in case, if proper login and password was entered.
+	 * Otherwise - return zero.
+	 */
 	public int checkLogin(String name, String password) {
 
 		Connection cn = null;

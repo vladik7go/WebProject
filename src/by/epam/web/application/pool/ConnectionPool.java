@@ -12,15 +12,15 @@ import static by.epam.web.application.controller.Controller.log;
 public class ConnectionPool {
 	private static Lock lock = new ReentrantLock();
 	private final static int POOL_SIZE = 10;
-	private static ConnectionPool instance;// статическая переменная для
-											// реализации синглтона
+	// static variable, in order to singleton fulfill
+	private static ConnectionPool instance;
 	private BlockingQueue<Connection> pool;
 
 	private ConnectionPool() {// constructor
 		createPool();
 	}
 
-	private void createPool() {// создаем пул и заполняем соединениями
+	private void createPool() {// create pool and fill with connections
 		pool = new ArrayBlockingQueue<Connection>(POOL_SIZE);
 
 		DBConnector dbConnector = new DBConnector();
@@ -36,26 +36,25 @@ public class ConnectionPool {
 		log.debug("pool size = " + pool.size());
 	}
 
-	public static ConnectionPool getSinglePool() {// метод для получения пула,
-													// паттерн синглтон.
+	// This method realize pool. Pattern singleton used
+	public static ConnectionPool getSinglePool() {
 		if (instance == null) {
 
 			try {
-				lock.lock();// получаем блокировку экземпляра
+				lock.lock();// gain blocking of the instance
 				if (instance == null) {
 					instance = new ConnectionPool();
 				}
 
 			} finally {
-				lock.unlock();// освобождаем блокировку экземпляра
+				lock.unlock();// release blocking of the instance
 			}
 		}
 		return instance;
 	}
 
-	public Connection getConnection() {// получаем одно соединение из пула,
-										// очередь
-										// уменьшается
+	// Gain a connection from the pool, queue is decreasing by one.
+	public Connection getConnection() {
 		Connection connection = null;
 		try {
 			connection = pool.take();
@@ -66,8 +65,8 @@ public class ConnectionPool {
 		return connection;
 	}
 
-	public void returnConnection(Connection connection) {// возвращаем
-															// соединение в пул
+	// Return the connection to the pool
+	public void returnConnection(Connection connection) {
 		if (connection != null) {
 			try {
 				pool.put(connection);
