@@ -112,6 +112,9 @@ public class DaoPerson extends Dao {
 			person.setPassword(result.getString("password"));
 		} catch (SQLException e) {
 			throw new TechnicalException(e);
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
 		return person;
@@ -181,6 +184,9 @@ public class DaoPerson extends Dao {
 		} catch (SQLException e) {
 			log.error(e);
 			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
 	}

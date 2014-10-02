@@ -34,8 +34,8 @@ public class EditWritePersonCommand implements ActionCommand {
 					.trim());
 			log.debug("int role = " + role);
 			if (role < 1 && role > 3) {
-				log.debug("роль не равно 123");
-				throw new LogicException();
+				log.debug("Role does not equal 1,2 or 3");
+				throw new LogicException("Role does not equal 1,2 or 3");
 			}
 			if (firstName.length() * secondName.length() * login.length()
 					* pass.length() == 0) {
