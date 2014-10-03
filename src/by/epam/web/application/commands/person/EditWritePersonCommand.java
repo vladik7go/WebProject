@@ -57,7 +57,8 @@ public class EditWritePersonCommand implements ActionCommand {
 							.getProperty("path.page.main_root");
 					request.setAttribute("successfullyPerformedAction", "0");
 				}
-
+				log.debug("command editWrite performed. Result = " + result);
+				log.debug(request.getAttribute("successfullyPerformedAction"));
 			}
 
 		} catch (NumberFormatException | LogicException e) {
@@ -65,7 +66,7 @@ public class EditWritePersonCommand implements ActionCommand {
 			request.setAttribute("errorNonNumberMessage", "true");
 			page = ConfigurationManager.getProperty("path.page.edit_user");
 		}
-
+		
 		return page;
 	}
 

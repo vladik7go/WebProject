@@ -26,6 +26,7 @@ public class EditPersonCommand implements ActionCommand {
 			person = dao.showPerson(personId);
 			page = ConfigurationManager.getProperty("path.page.edit_user");
 			request.setAttribute("person", person);
+			
 		} catch (TechnicalException | NumberFormatException e) {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");

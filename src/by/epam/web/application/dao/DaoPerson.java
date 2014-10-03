@@ -24,9 +24,7 @@ public class DaoPerson extends Dao {
 	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
 	private static final String SQL_DELETE_PERSON_BY_ID = "DELETE from person where id= ?";
 
-	public DaoPerson() {
-
-	}
+	
 
 	
 	/*

@@ -14,8 +14,7 @@ import by.epam.web.application.resource.ConfigurationManager;
 
 public class ShowPersonsCommand implements ActionCommand {
 	public static Logger log = Logger.getLogger(ShowPersonsCommand.class);
-	
-	
+
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -23,17 +22,17 @@ public class ShowPersonsCommand implements ActionCommand {
 		String page = null;
 		DaoPerson dao = new DaoPerson();
 		try {
-			
+
 			persons = dao.showPersons();
 			page = ConfigurationManager.getProperty("path.page.main_root");
 			request.setAttribute("personsList", persons);
+			request.setAttribute("successfullyPerformedAction",
+					request.getParameter("successfullyPerformedAction"));
 		} catch (TechnicalException e) {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
-		
-		
-		
+
 		return page;
 	}
 

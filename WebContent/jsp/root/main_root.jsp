@@ -19,7 +19,7 @@
 <c:if test="${personsList == null }">
 <c:redirect url="controller">
 <c:param name="command" value="showPersons"/>
-
+<c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
 </c:redirect>
 </c:if>
 
@@ -79,6 +79,7 @@
 </c:if>
 
 <c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
+
 <c:if test="${personsList == null }"> 
 <div><img align="middle" src="images/1234.jpeg" alt="picture about sysadmins"></div>
 main root page Картинка про админа
