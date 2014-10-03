@@ -16,6 +16,13 @@
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 
+<c:if test="${personsList == null }">
+<c:redirect url="controller">
+<c:param name="command" value="showPersons"/>
+
+</c:redirect>
+</c:if>
+
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
