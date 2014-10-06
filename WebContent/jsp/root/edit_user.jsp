@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>page edit_user.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>

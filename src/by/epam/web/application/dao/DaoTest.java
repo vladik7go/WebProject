@@ -28,6 +28,7 @@ public class DaoTest extends Dao {
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
+	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 
 	/*
 	 * This method return an object Test, which aggregate Set of objects
@@ -104,7 +105,7 @@ public class DaoTest extends Dao {
 			Dao.closeStatement(statementForAnswers);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
-
+		log.debug("DAO method 'showTest' performed and return = " + test);
 		return test;
 	}
 
@@ -132,6 +133,28 @@ public class DaoTest extends Dao {
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
-		return null;
+		return tests;
+	}
+
+	public boolean editTest(int id, String title, String description) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_EDIT_TEST);
+			st.setString(1, title);
+			st.setString(2, description);
+			st.setInt(3, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
 	}
 }

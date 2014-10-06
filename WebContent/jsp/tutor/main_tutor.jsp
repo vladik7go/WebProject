@@ -16,45 +16,33 @@
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 
-<c:if test="${testList == null }">
-<c:redirect url="controller">
-<c:param name="command" value="showTests"/>
-</c:redirect>
-</c:if>
-
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="addTest" ><fmt:message key="test.label.addTest" /></option>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
         </form>
         
-      
- <c:if test="${testList != null }">     
-      
+    
+ <c:if test="${testsList != null }">     
+      gggggggggggggggggggggggggggg
  <table border="1">
-<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th>
-<c:forEach var="elem" items="${personsList}" >
+<th> ID </th><th> Title </th><th> Description </th>
+<c:forEach var="elem" items="${testsList}" >
 
 <tr>
 <td><c:out value="${ elem.id }" /></td>
-<td> 
-<c:if test="${elem.roleType != null and elem.roleType eq '1' }"><fmt:message key="edit.label.root"/></c:if>
-<c:if test="${elem.roleType != null and elem.roleType eq '2' }"><fmt:message key="edit.label.tutor"/></c:if>
-<c:if test="${elem.roleType != null and elem.roleType eq '3' }"><fmt:message key="edit.label.student"/></c:if>
-</td>
-<!-- td><c:out value="${ elem.roleType }" /></td-->
-<td><c:out value="${ elem.firstName }" /></td>
-<td><c:out value="${ elem.secondName }" /></td>
-<td><c:out value="${ elem.login }" /></td>
-<td><c:out value="${ elem.password }" /></td>
+<td><c:out value="${ elem.title }" /></td>
+<td><c:out value="${ elem.description }" /></td>
+
 <td>
 
 <form name="edit_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="editPerson" />
-<input type="hidden" name="personId" value="${ elem.id }" />
+<input type="hidden" name="command" value="editTest" />
+<input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
 </form>
@@ -76,6 +64,7 @@
 </table>
 
 </c:if>
+ 
 
 <c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 

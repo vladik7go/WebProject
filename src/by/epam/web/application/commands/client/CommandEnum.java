@@ -5,20 +5,25 @@ import by.epam.web.application.commands.login.LoginCommand;
 import by.epam.web.application.commands.login.LogoutCommand;
 import by.epam.web.application.commands.login.RegistrationCommand;
 import by.epam.web.application.commands.person.AddPersonCommand;
+import by.epam.web.application.commands.person.DeletePersonCommand;
 import by.epam.web.application.commands.person.ShowPersonsCommand;
 import by.epam.web.application.commands.person.EditPersonCommand;
 import by.epam.web.application.commands.person.EditWritePersonCommand;
-import by.epam.web.application.commands.person.DeletePerson;
+import by.epam.web.application.commands.test.EditTestCommand;
+import by.epam.web.application.commands.test.ShowTestsCommand;
+
 
 public enum CommandEnum {
 
 	LOGIN(new LoginCommand()),
 	REGISTRATION(new RegistrationCommand()), 
 	ADDPERSON(new AddPersonCommand()), 
-	DELETEPERSON(new DeletePerson()),
+	DELETEPERSON(new DeletePersonCommand()),
 	EDITPERSON(new EditPersonCommand()),
 	EDITWRITEPERSON(new EditWritePersonCommand()),
 	SHOWPERSONS(new ShowPersonsCommand()),
+	SHOWTESTS(new ShowTestsCommand()),
+	EDITTEST(new EditTestCommand()),
 	LOGOUT(	new LogoutCommand());
 
 	private final ActionCommand command;// Reference on the variable with type - interface 

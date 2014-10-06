@@ -37,16 +37,16 @@
 <input type="password" name="password" value=""/>
 <br/>
 
-<c:if test="${errorLoginPassMessage != null }"><fmt:message key="login.message.loginerror"/></c:if>
+<c:if test="${errorLoginPassMessage != null }"><fmt:message key="message.loginerror"/></c:if>
 <br/>
 <!-- ${errorLoginPassMessage} -->
 <br/>
 
-<c:if test="${wrongAction != null }"><fmt:message key="login.label.wrongaction"/></c:if>
+<c:if test="${wrongAction != null }"><fmt:message key="message.wrongaction"/></c:if>
 
 <br/>
 
-<c:if test="${nullPage != null }"><fmt:message key="login.label.nullpage"/></c:if>
+<c:if test="${nullPage != null }"><fmt:message key="message.nullpage"/></c:if>
 <br/>
 <input type="submit" value="<fmt:message key="login.button.submit" />"/>
 </form>

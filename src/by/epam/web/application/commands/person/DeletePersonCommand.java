@@ -9,8 +9,8 @@ import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.entity.Person;
 import by.epam.web.application.resource.ConfigurationManager;
 
-public class DeletePerson implements ActionCommand {
-	public static Logger log = Logger.getLogger(DeletePerson.class);
+public class DeletePersonCommand implements ActionCommand {
+	public static Logger log = Logger.getLogger(DeletePersonCommand.class);
 	private static final String PARAM_NAME_ID = "personId";
 
 	@Override
