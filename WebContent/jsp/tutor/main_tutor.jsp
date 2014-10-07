@@ -28,7 +28,7 @@
         
     
  <c:if test="${testsList != null }">     
-      gggggggggggggggggggggggggggg
+      
  <table border="1">
 <th> ID </th><th> Title </th><th> Description </th>
 <c:forEach var="elem" items="${testsList}" >

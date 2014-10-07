@@ -9,7 +9,11 @@ import by.epam.web.application.commands.person.DeletePersonCommand;
 import by.epam.web.application.commands.person.ShowPersonsCommand;
 import by.epam.web.application.commands.person.EditPersonCommand;
 import by.epam.web.application.commands.person.EditWritePersonCommand;
+import by.epam.web.application.commands.test.DeleteAnswerCommand;
+import by.epam.web.application.commands.test.EditAnswerQuestionCommand;
+import by.epam.web.application.commands.test.EditQuestionsCommand;
 import by.epam.web.application.commands.test.EditTestCommand;
+import by.epam.web.application.commands.test.EditWriteTestCommand;
 import by.epam.web.application.commands.test.ShowTestsCommand;
 
 
@@ -24,6 +28,10 @@ public enum CommandEnum {
 	SHOWPERSONS(new ShowPersonsCommand()),
 	SHOWTESTS(new ShowTestsCommand()),
 	EDITTEST(new EditTestCommand()),
+	EDITWRITETEST(new EditWriteTestCommand()),
+	EDITQUESTIONS(new EditQuestionsCommand()),
+	EDITQUESTION(new EditAnswerQuestionCommand()),
+	DELETEANSWER(new DeleteAnswerCommand()),
 	LOGOUT(	new LogoutCommand());
 
 	private final ActionCommand command;// Reference on the variable with type - interface 

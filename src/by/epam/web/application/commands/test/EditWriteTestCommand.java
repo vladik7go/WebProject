@@ -24,12 +24,11 @@ public class EditWriteTestCommand implements ActionCommand {
 		String description = request.getParameter(PARAM_NAME_DESCRIPTION);
 		
 		
-		//Do not forget to create check
-		if (firstName.length() * secondName.length() * login.length()
-				* pass.length() == 0) {
+		//Checking for empty fields
+		if (title.length() * description.length() * id != 0) {
 			
-		}
-		//-----
+		
+		
 		DaoTest dao = new DaoTest();
 		boolean result = dao.editTest(id, title, description);
 		if (result){
@@ -42,7 +41,10 @@ public class EditWriteTestCommand implements ActionCommand {
 			request.setAttribute("successfullyPerformedAction", "0");
 		}
 	
-		
+	}else{
+		request.setAttribute("errorEmptyFieldMessage", "true");
+		page = ConfigurationManager.getProperty("path.page.edit_test");
+	}
 
 		
 		

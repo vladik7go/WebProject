@@ -25,10 +25,13 @@ public class DaoTest extends Dao {
 	public static Logger log = Logger.getLogger(DaoTest.class);
 
 	private static final String SQL_SHOW_TEST_BY_ID = "SELECT * FROM test where id=? ";
+	private static final String SQL_SHOW_QUESTION_BY_ID = "SELECT * FROM question where id=? ";
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
+	private static final String SQL_EDIT_QUESTION = "update question SET test_type=?, content=? where id=?";
+	private static final String SQL_DELETE_ANSWER_BY_ID = "DELETE from answer where id= ?";
 
 	/*
 	 * This method return an object Test, which aggregate Set of objects
@@ -156,5 +159,91 @@ public class DaoTest extends Dao {
 		}
 
 		return true;
+	}
+
+	public Question showQuestion(int id) throws TechnicalException {
+		Connection cn = null;
+		PreparedStatement st = null;
+		PreparedStatement statementForAnswers = null;
+		Question question = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_SHOW_QUESTION_BY_ID);
+			st.setInt(1, id);
+			ResultSet result = st.executeQuery();
+			result.next();
+			int typeOfQuestion = result.getInt("id");
+			List<Answer> answersList = new ArrayList<>();
+			statementForAnswers = cn
+					.prepareStatement(SQL_SHOW_ANSWERS_BY_QUESTION_TYPE);
+			statementForAnswers.setInt(1, typeOfQuestion);
+			ResultSet resultAnswers = statementForAnswers.executeQuery();
+			while (resultAnswers.next()) {
+				Answer answer = new Answer();
+				answer.setId(resultAnswers.getInt("id"));
+				answer.setQuestionType(resultAnswers.getInt("question_type"));
+				answer.setAnswer(resultAnswers.getString("answer"));
+				answer.setValue(resultAnswers.getInt("value"));
+				// Save already filled object "answer" in the List.
+				answersList.add(answer);
+			}
+			question = new Question();
+			question.setId(result.getInt("id"));
+			question.setTestType(typeOfQuestion);
+			question.setContent(result.getString("content"));
+			question.setAnswers(answersList);
+
+		} catch (SQLException e) {
+			throw new TechnicalException(e);
+		} finally {
+			Dao.closeStatement(st);
+			Dao.closeStatement(statementForAnswers);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return question;
+	}
+
+	public boolean editQuestion(int id, int testType, String content) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_EDIT_QUESTION);
+			st.setInt(1, testType);
+			st.setString(2, content);
+			st.setInt(3, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+
+	}
+
+	public boolean deleteAnswer(int id) {
+		Connection cn = null;
+		PreparedStatement st = null;
+		cn = ConnectionPool.getSinglePool().getConnection();
+
+		try {
+			st = cn.prepareStatement(SQL_DELETE_ANSWER_BY_ID);
+			st.setInt(1, id);
+			st.executeUpdate();
+			return true;
+		} catch (SQLException e) {
+			log.error(e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
 	}
 }

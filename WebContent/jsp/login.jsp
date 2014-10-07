@@ -8,7 +8,7 @@
 
 <html>
 <head>
-<title><fmt:message key="login.lang.select" /></title>
+<title>login.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>
 <body>

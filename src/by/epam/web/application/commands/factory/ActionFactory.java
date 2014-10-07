@@ -29,10 +29,10 @@ public class ActionFactory {
 		// gaining the object, according to the command
 		try {
 			
-			log.debug("Command ---- " + action + " ---- had been performed");
 			CommandEnum currentEnum = CommandEnum.valueOf(action.toUpperCase());
 
 			current = currentEnum.getCurrentCommand();
+			log.debug("Command ---- " + action + " ---- had been performed");
 		} catch (IllegalArgumentException e) {
 			request.setAttribute("wrongAction", "true");
 		}
