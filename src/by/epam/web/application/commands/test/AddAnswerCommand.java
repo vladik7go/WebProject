@@ -28,7 +28,7 @@ public class AddAnswerCommand implements ActionCommand {
 		answerValue = Integer.parseInt(request.getParameter(
 				PARAM_NAME_ANSWER_VALUE).trim());
 
-		String answerContent = request.getParameter(PARAM_NAME_ANSWER_CONTENT);
+		String answerContent = request.getParameter(PARAM_NAME_ANSWER_CONTENT).trim();
 		// Checking for empty fields
 		DaoTest dao = new DaoTest();
 		if (answerContent.length() * questionId != 0) {
@@ -53,6 +53,7 @@ public class AddAnswerCommand implements ActionCommand {
 		} else {
 			request.setAttribute("errorEmptyFieldMessage", "true");
 			try {
+				request.setAttribute("testId", testId);
 				request.setAttribute("question", dao.showQuestion(questionId));
 			} catch (TechnicalException e) {
 				log.error(e);

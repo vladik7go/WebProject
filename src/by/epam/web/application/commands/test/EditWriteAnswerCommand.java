@@ -21,7 +21,7 @@ public class EditWriteAnswerCommand implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 		String page = null;
 
-		String answerContent = request.getParameter(PARAM_NAME_ANSWER_CONTENT);
+		String answerContent = request.getParameter(PARAM_NAME_ANSWER_CONTENT).trim();
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 
 		int answerId = Integer.parseInt(request.getParameter(
@@ -56,6 +56,7 @@ public class EditWriteAnswerCommand implements ActionCommand {
 		} else {
 			request.setAttribute("errorEmptyFieldMessage", "true");
 			try {
+				request.setAttribute("testId", testId);
 				request.setAttribute("question", dao.showQuestion(questionId));
 			} catch (TechnicalException e) {
 				log.error(e);

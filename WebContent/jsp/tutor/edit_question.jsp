@@ -40,7 +40,8 @@
 <table border="1">
 				<th> <fmt:message key="edit.label.editing.question" />  </th><th> Command </th>
 					<tr>
-						<td><input type="text" name="questionContent" value="${question.content }" /></td>
+						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
+						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
 						<td><input type="submit" value="<fmt:message key="edit.button.save" />" />	</td>
 				
 					<tr/>
