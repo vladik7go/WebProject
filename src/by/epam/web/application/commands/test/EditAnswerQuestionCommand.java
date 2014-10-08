@@ -14,7 +14,7 @@ public class EditAnswerQuestionCommand implements ActionCommand {
 	public static Logger log = Logger.getLogger(EditAnswerQuestionCommand.class);
 	private static final String PARAM_NAME_ID = "questionId";
 	// -- not needed
-	private static final String PARAM_NAME_QUESTION_CONTENT = "question"
+	private static final String PARAM_NAME_QUESTION_CONTENT = "question";
 	
 
 	// --------
