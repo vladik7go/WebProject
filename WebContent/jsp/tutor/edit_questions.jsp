@@ -57,6 +57,10 @@ Test title: ${test.title }
 <form name="delete_person_form" method="POST" action="controller">
 <input type="hidden" name="command" value="deleteQuestion" />
 <input type="hidden" name="questionId" value="${ elem.id }" />
+<input type="hidden" name="testId" value="${ test.id }" />
+
+
+
 
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
 </form>

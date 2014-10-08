@@ -34,6 +34,7 @@ public class DaoTest extends Dao {
 	private static final String SQL_EDIT_QUESTION = "update question SET content=? where id=?";
 	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
 	private static final String SQL_DELETE_ANSWER_BY_ID = "DELETE from answer where id= ?";
+	private static final String SQL_DELETE_QUESTION_BY_ID = "DELETE from question where id= ?";
 
 	/*
 	 * This method return an object Test, which aggregate Set of objects
@@ -293,4 +294,27 @@ public class DaoTest extends Dao {
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 	}
+
+	public boolean deleteQuestion(int id) {
+
+		Connection cn = null;
+		PreparedStatement st = null;
+		cn = ConnectionPool.getSinglePool().getConnection();
+
+		try {
+			st = cn.prepareStatement(SQL_DELETE_QUESTION_BY_ID);
+			st.setInt(1, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error(e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+
+	}
+
 }
