@@ -43,9 +43,10 @@ Test title: ${test.title }
 
 <td>
 
-<form name="edit_person_form" method="POST" action="controller">
+<form name="edit_question_form" method="POST" action="controller">
 <input type="hidden" name="command" value="editQuestion" />
 <input type="hidden" name="questionId" value="${ elem.id }" />
+<input type="hidden" name="testId" value="${ test.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
 </form>

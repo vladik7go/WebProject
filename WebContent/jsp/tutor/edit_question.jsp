@@ -21,31 +21,43 @@
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="addAnswer" ><fmt:message key="test.label.addAnswer" /></option>
+               	<option value="editQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
+           <input name="testId" type="hidden" value="${testId }" />
+           <input type="hidden" name="questionId" value="${ question.id }" />
            
         </form>
-<br/>
-<br/>
+
+
 
 <form action="controller" method="post">
 					<input name="command" type="hidden" value="editWriteQuestion" />
-					<input type="hidden" name="questionId" value="${ question.id }" />
-					<fmt:message key="edit.label.editing.question" /> :
- 					<input type="text" name="questionContent" value="${question.content }" />  
- 					<input type="submit" value="<fmt:message key="edit.button.save" />" />					
+					<input name="testId" type="hidden" value="${testId }" />
+          			 <input type="hidden" name="questionId" value="${ question.id }" />
+<table border="1">
+				<th> <fmt:message key="edit.label.editing.question" />  </th><th> Command </th>
+					<tr>
+						<td><input type="text" name="questionContent" value="${question.content }" /></td>
+						<td><input type="submit" value="<fmt:message key="edit.button.save" />" />	</td>
+				
+					<tr/>
 </form>
+</table>
 
+<br/>
+<br/>
 
 					
-				<table border="1">
+	<table border="1">
 
-					<th> ID </th><th> Variant of answer </th><th> True of False </th>
+					<th> ID </th><th> Variant of answer </th><th> True of False </th><th colspan = "2"> Command </th>
 				<c:forEach var="elem" items="${question.answers}" >
 				
 				<form name="edit_answer_form" method="POST" action="controller">
+				<input name="testId" type="hidden" value="${testId }" />
 					<input type="hidden" name="command" value="editWriteAnswer" />
 					<input type="hidden" name="questionId" value="${ question.id }" />
 					<tr>
@@ -79,6 +91,32 @@
 					</tr>
 					
 	</c:forEach>
+	
+	<form name="add_answer_form" method="POST" action="controller">
+	<input type="hidden" name="command" value="addAnswer" />
+	<input name="testId" type="hidden" value="${testId }" />
+	<input type="hidden" name="questionId" value="${ question.id }" />
+	
+					<td>
+					=>
+					</td>
+					
+					<td>
+					<input type="text" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" />
+					</td>
+					
+					<td>
+					<select id="choose_value" name="answerValue" >
+               						<option selected disabled value="0"  ><fmt:message key="edit.button.select"/></option>
+               						<option <c:if test="${elem.value != null and elem.value eq '1' }">selected</c:if> value="1" ><fmt:message key="edit.label.true"/></option>
+               						<option <c:if test="${elem.value != null and elem.value eq '0' }">selected</c:if> value="0" ><fmt:message key="edit.label.false"/></option>
+               				</select>
+					</td>
+					
+					<td  colspan = "2">
+					<input type="submit" value="<fmt:message key="edit.button.add" />"/>
+					</td>
+					
 					
 </table>
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
