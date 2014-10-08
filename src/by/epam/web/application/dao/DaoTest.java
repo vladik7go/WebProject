@@ -31,6 +31,7 @@ public class DaoTest extends Dao {
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 	private static final String SQL_EDIT_QUESTION = "update question SET test_type=?, content=? where id=?";
+	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
 	private static final String SQL_DELETE_ANSWER_BY_ID = "DELETE from answer where id= ?";
 
 	/*
@@ -226,6 +227,29 @@ public class DaoTest extends Dao {
 
 		return true;
 
+	}
+
+	public boolean editAnswer(int answerId, int answerValue,
+			String answerContent) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_EDIT_ANSWER);
+			st.setString(1, answerContent);
+			st.setInt(2, answerValue);
+			st.setInt(3, answerId);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
 	}
 
 	public boolean deleteAnswer(int id) {

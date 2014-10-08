@@ -10,8 +10,8 @@ import by.epam.web.application.entity.test.Question;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.resource.ConfigurationManager;
 
-public class EditAnswerQuestionCommand implements ActionCommand {
-	public static Logger log = Logger.getLogger(EditAnswerQuestionCommand.class);
+public class ShowQuestionCommand implements ActionCommand {
+	public static Logger log = Logger.getLogger(ShowQuestionCommand.class);
 	private static final String PARAM_NAME_ID = "questionId";
 	// -- not needed
 	private static final String PARAM_NAME_QUESTION_CONTENT = "question";
