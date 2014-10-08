@@ -12,6 +12,7 @@ import by.epam.web.application.resource.ConfigurationManager;
 
 public class DeleteAnswerCommand implements ActionCommand {
 	public static Logger log = Logger.getLogger(DeleteAnswerCommand.class);
+	private static final String PARAM_TEST_ID = "testId";
 	private static final String PARAM_NAME_ID = "answerId";
 	private static final String PARAM_NAME_QUESTION_ID = "questionId";
 
@@ -20,6 +21,7 @@ public class DeleteAnswerCommand implements ActionCommand {
 		log.debug("in attribute question lies = "
 				+ request.getAttribute("question"));
 		String page = null;
+		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 		int answerId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		int questionId = Integer.parseInt(request
 				.getParameter(PARAM_NAME_QUESTION_ID));
@@ -29,6 +31,7 @@ public class DeleteAnswerCommand implements ActionCommand {
 		if (result) {
 			page = ConfigurationManager.getProperty("path.page.edit_question");
 			request.setAttribute("successfullyPerformedAction", "1");
+			request.setAttribute("testId", testId);
 			try {
 				request.setAttribute("question", dao.showQuestion(questionId));
 			} catch (TechnicalException e) {

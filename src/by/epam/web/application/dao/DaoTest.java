@@ -29,6 +29,7 @@ public class DaoTest extends Dao {
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
+	private static final String SQL_ADD_ANSWER = "insert into answer (question_type, answer, value) values (?, ?, ?)";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 	private static final String SQL_EDIT_QUESTION = "update question SET content=? where id=?";
 	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
@@ -140,28 +141,6 @@ public class DaoTest extends Dao {
 		return tests;
 	}
 
-	public boolean editTest(int id, String title, String description) {
-		Connection cn = null;
-		PreparedStatement st = null;
-
-		try {
-			cn = ConnectionPool.getSinglePool().getConnection();
-			st = cn.prepareStatement(SQL_EDIT_TEST);
-			st.setString(1, title);
-			st.setString(2, description);
-			st.setInt(3, id);
-			st.executeUpdate();
-		} catch (SQLException e) {
-			log.error("Technical Exception", e);
-			return false;
-		} finally {
-			Dao.closeStatement(st);
-			ConnectionPool.getSinglePool().returnConnection(cn);
-		}
-
-		return true;
-	}
-
 	public Question showQuestion(int id) throws TechnicalException {
 		Connection cn = null;
 		PreparedStatement st = null;
@@ -206,6 +185,28 @@ public class DaoTest extends Dao {
 		return question;
 	}
 
+	public boolean editTest(int id, String title, String description) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_EDIT_TEST);
+			st.setString(1, title);
+			st.setString(2, description);
+			st.setInt(3, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+	}
+
 	public boolean editQuestion(int id, String content) {
 		Connection cn = null;
 		PreparedStatement st = null;
@@ -226,6 +227,29 @@ public class DaoTest extends Dao {
 
 		return true;
 
+	}
+
+	public boolean addAnswer(int questionId, String answerContent,
+			int answerValue) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_ADD_ANSWER);
+			st.setInt(1, questionId);
+			st.setString(2, answerContent);
+			st.setInt(3, answerValue);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
 	}
 
 	public boolean editAnswer(int answerId, int answerValue,

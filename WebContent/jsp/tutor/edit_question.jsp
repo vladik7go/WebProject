@@ -65,7 +65,8 @@
 					<td>
 					
 					<input type="hidden" name="answerId" value="${ elem.id }" />
-					 <input type="text" name="answerContent" value="${ elem.answer }" /> 
+					<textarea rows="2" cols="35" name="answerContent" > ${ elem.answer } </textarea>
+					 <!--  input type="text" name="answerContent" value="${ elem.answer }" /--> 
 					</td>
 					
 					<td> <!-- input type="text" name="value" value="${ elem.value }" /--> 
@@ -85,6 +86,7 @@
 					<input type="hidden" name="command" value="deleteAnswer" />
 					<input type="hidden" name="answerId" value="${ elem.id }" />
 					<input type="hidden" name="questionId" value="${ question.id }" />
+					<input name="testId" type="hidden" value="${testId }" />
 					<input type="submit" value="<fmt:message key="root.button.delete" />"/>
 			</form>
 					</td>
@@ -102,14 +104,15 @@
 					</td>
 					
 					<td>
-					<input type="text" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" />
+					<textarea rows="4" cols="35" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" ></textarea>
+					<!-- input type="text" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" /-->
 					</td>
 					
 					<td>
 					<select id="choose_value" name="answerValue" >
-               						<option selected disabled value="0"  ><fmt:message key="edit.button.select"/></option>
-               						<option <c:if test="${elem.value != null and elem.value eq '1' }">selected</c:if> value="1" ><fmt:message key="edit.label.true"/></option>
+               						<!-- option selected disabled value="0"  ><fmt:message key="edit.button.select"/></option-->
                						<option <c:if test="${elem.value != null and elem.value eq '0' }">selected</c:if> value="0" ><fmt:message key="edit.label.false"/></option>
+               						<option <c:if test="${elem.value != null and elem.value eq '1' }">selected</c:if> value="1" ><fmt:message key="edit.label.true"/></option>
                				</select>
 					</td>
 					
