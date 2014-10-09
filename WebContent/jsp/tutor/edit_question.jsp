@@ -54,6 +54,7 @@
 	<table border="1">
 
 					<th> ID </th><th> Variant of answer </th><th> True of False </th><th colspan = "2"> Command </th>
+					<tr></tr>
 				<c:forEach var="elem" items="${question.answers}" >
 				
 				<form name="edit_answer_form" method="POST" action="controller">
@@ -65,7 +66,7 @@
 					<td>
 					
 					<input type="hidden" name="answerId" value="${ elem.id }" />
-					<textarea rows="2" cols="35" name="answerContent" > ${ elem.answer } </textarea>
+					<textarea rows="2" cols="35" name="answerContent" >${ elem.answer } </textarea>
 					 <!--  input type="text" name="answerContent" value="${ elem.answer }" /--> 
 					</td>
 					
