@@ -36,7 +36,7 @@
 					<input name="command" type="hidden" value="editWriteQuestion" />
 					<input name="testId" type="hidden" value="${testId }" />
           			 <input type="hidden" name="questionId" value="${ question.id }" />
-<table border="1">
+<table border="3">
 				<th> <fmt:message key="edit.label.editing.question" />  </th><th> Command </th>
 					<tr>
 						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
@@ -51,7 +51,7 @@
 <br/>
 
 					
-	<table border="1">
+	<table border="3">
 
 					<th> ID </th><th> Variant of answer </th><th> True of False </th><th colspan = "2"> Command </th>
 					<tr></tr>

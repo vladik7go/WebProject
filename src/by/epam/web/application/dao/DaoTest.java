@@ -31,11 +31,13 @@ public class DaoTest extends Dao {
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
 	private static final String SQL_ADD_ANSWER = "insert into answer (question_type, answer, value) values (?, ?, ?)";
 	private static final String SQL_ADD_QUESTION = "insert into question (test_type, content) values (?, ?)";
+	private static final String SQL_ADD_TEST = "insert into test (title, description) values (?, ?)";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 	private static final String SQL_EDIT_QUESTION = "update question SET content=? where id=?";
 	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
 	private static final String SQL_DELETE_ANSWER_BY_ID = "DELETE from answer where id= ?";
 	private static final String SQL_DELETE_QUESTION_BY_ID = "DELETE from question where id= ?";
+	private static final String SQL_DELETE_TEST_BY_ID = "DELETE from test where id= ?";
 
 	/*
 	 * This method return an object Test, which aggregate Set of objects
@@ -275,6 +277,27 @@ public class DaoTest extends Dao {
 		return true;
 	}
 
+	public boolean addTest(String testTitle, String testDescription) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_ADD_TEST);
+			st.setString(1, testTitle);
+			st.setString(2, testDescription);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+	}
+
 	public boolean editAnswer(int answerId, int answerValue,
 			String answerContent) {
 		Connection cn = null;
@@ -335,6 +358,27 @@ public class DaoTest extends Dao {
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
+		return true;
+
+	}
+
+	public boolean deleteTest(int id) {
+
+		Connection cn = null;
+		PreparedStatement st = null;
+		cn = ConnectionPool.getSinglePool().getConnection();
+
+		try {
+			st = cn.prepareStatement(SQL_DELETE_TEST_BY_ID);
+			st.setInt(1, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error(e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
 		return true;
 
 	}

@@ -22,7 +22,6 @@ Page: edit questions.
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="addQuestion" ><fmt:message key="test.label.addQuestion" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
@@ -31,10 +30,22 @@ Page: edit questions.
            
         </form>
 
-Number of questions: ${fn:length(test.questions)}
+
+<table border="3">
+<td colspan = "4">
 Test title: ${test.title }
-<table border="1">
-<th> ID </th><th> Questions </th>
+</td>
+<tr/>
+
+<td colspan = "4">
+Number of questions: ${fn:length(test.questions)}
+</td>
+
+<tr/>
+<tr/>
+
+
+<th> ID </th><th> Questions </th><th colspan = "2"> Command </th>
 
 <c:forEach var="elem" items="${test.questions}" >
 

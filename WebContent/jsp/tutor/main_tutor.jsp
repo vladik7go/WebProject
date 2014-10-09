@@ -29,8 +29,8 @@
     
  <c:if test="${testsList != null }">     
       
- <table border="1">
-<th> ID </th><th> Title </th><th> Description </th>
+ <table border="3">
+<th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>
@@ -40,7 +40,7 @@
 
 <td>
 
-<form name="edit_person_form" method="POST" action="controller">
+<form name="edit_test_form" method="POST" action="controller">
 <input type="hidden" name="command" value="editTest" />
 <input type="hidden" name="testId" value="${ elem.id }" />
 
@@ -50,9 +50,9 @@
 </td>
 <td>
 
-<form name="delete_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="deletePerson" />
-<input type="hidden" name="personId" value="${ elem.id }" />
+<form name="delete_test_form" method="POST" action="controller">
+<input type="hidden" name="command" value="deleteTest" />
+<input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
 </form>
@@ -61,11 +61,34 @@
 </tr>
 
 </c:forEach>
+
+<form name="add_test_form" method="POST" action="controller">
+	<input type="hidden" name="command" value="addTest" />
+	<input name="testId" type="hidden" value="${test.id }" />
+	
+	
+					<td>
+					=>
+					</td>
+					
+					<td>
+					<textarea rows="4" cols="25" name="testTitle" placeholder="<fmt:message key="test.label.addTestTitle" />" ></textarea>
+					</td>
+					
+					<td>
+					<textarea rows="4" cols="25" name="testDescription" placeholder="<fmt:message key="test.label.addTestDescription" />" ></textarea>
+					</td>
+										
+					<td  colspan = "2">
+					<input type="submit" value="<fmt:message key="edit.button.add" />"/>
+					</td>
+	</form>	
+
 </table>
 
 </c:if>
  
-
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
 <c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 
 
