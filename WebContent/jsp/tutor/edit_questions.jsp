@@ -27,6 +27,7 @@ Page: edit questions.
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
+           <input name="testId" type="hidden" value="${test.id }" />
            
         </form>
 
@@ -58,10 +59,6 @@ Test title: ${test.title }
 <input type="hidden" name="command" value="deleteQuestion" />
 <input type="hidden" name="questionId" value="${ elem.id }" />
 <input type="hidden" name="testId" value="${ test.id }" />
-
-
-
-
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
 </form>
 
@@ -69,8 +66,28 @@ Test title: ${test.title }
 </tr>
 
 </c:forEach>
-</table>
 
+<form name="add_question_form" method="POST" action="controller">
+	<input type="hidden" name="command" value="addQuestion" />
+	<input name="testId" type="hidden" value="${test.id }" />
+	
+	
+					<td>
+					=>
+					</td>
+					
+					<td>
+					<textarea rows="4" cols="35" name="questionContent" placeholder="<fmt:message key="test.label.addQuestion" />" ></textarea>
+					</td>
+										
+					<td  colspan = "2">
+					<input type="submit" value="<fmt:message key="edit.button.add" />"/>
+					</td>
+	</form>	
+
+</table>
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
+<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 </div>
 </body>
 </html>

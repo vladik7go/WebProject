@@ -30,6 +30,7 @@ public class DaoTest extends Dao {
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
 	private static final String SQL_SHOW_TESTS_ID = "SELECT id FROM test";
 	private static final String SQL_ADD_ANSWER = "insert into answer (question_type, answer, value) values (?, ?, ?)";
+	private static final String SQL_ADD_QUESTION = "insert into question (test_type, content) values (?, ?)";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 	private static final String SQL_EDIT_QUESTION = "update question SET content=? where id=?";
 	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
@@ -241,6 +242,27 @@ public class DaoTest extends Dao {
 			st.setInt(1, questionId);
 			st.setString(2, answerContent);
 			st.setInt(3, answerValue);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			log.error("Technical Exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+	}
+
+	public boolean addQuestion(int testId, String questionContent) {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_ADD_QUESTION);
+			st.setInt(1, testId);
+			st.setString(2, questionContent);
 			st.executeUpdate();
 		} catch (SQLException e) {
 			log.error("Technical Exception", e);

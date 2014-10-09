@@ -120,7 +120,7 @@
 					<td  colspan = "2">
 					<input type="submit" value="<fmt:message key="edit.button.add" />"/>
 					</td>
-					
+	</form>		
 					
 </table>
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
