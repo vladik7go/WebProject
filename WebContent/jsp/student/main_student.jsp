@@ -29,24 +29,26 @@
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="showResult" ><fmt:message key="test.label.showResult" /></option>
                		<c:if test="${role == 'root' }">
                		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
                	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
+             <input name="personId" type="hidden" value="${person.id }" />
         </form>
 
 ${role }   
 <table border="3">
 
 <td colspan = "4">
-Student name: ${person.firstName }  
+Student name: ${person.firstName }  ${person.secondName }
 </td>
 <tr/>
 
 <td colspan = "4">
-Number of questions: ${fn:length(test.questions)}
+Number of tests: ${fn:length(testsList)}
 </td>
 
 <tr/>

@@ -6,8 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -25,6 +27,7 @@ public class DaoTest extends Dao {
 	public static Logger log = Logger.getLogger(DaoTest.class);
 
 	private static final String SQL_SHOW_TEST_BY_ID = "SELECT * FROM test where id=? ";
+	private static final String SQL_SHOW_RESULT_BY_PERSON = "SELECT * FROM result where person_type=? ";
 	private static final String SQL_SHOW_QUESTION_BY_ID = "SELECT * FROM question where id=? ";
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
@@ -187,6 +190,31 @@ public class DaoTest extends Dao {
 		}
 
 		return question;
+	}
+
+	public Map<Integer, Integer> showResult(int personId) {
+		Map<Integer, Integer> resultMap = new HashMap<Integer, Integer>();
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_SHOW_RESULT_BY_PERSON);
+			st.setInt(1, personId);
+			ResultSet result = st.executeQuery();
+			while (result.next()) {
+				Integer key = result.getInt("test_type");
+				Integer value = result.getInt("mark");
+				resultMap.put(key, value);
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return resultMap;
+
 	}
 
 	public boolean editTest(int id, String title, String description) {
