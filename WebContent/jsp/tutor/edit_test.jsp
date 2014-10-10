@@ -21,6 +21,9 @@
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="editQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               		<c:if test="${role == 'root' }">
+               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		</c:if>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>

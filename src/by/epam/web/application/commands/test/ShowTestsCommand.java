@@ -33,7 +33,18 @@ public class ShowTestsCommand implements ActionCommand {
 			request.setAttribute("testsList", tests);
 			request.setAttribute("successfullyPerformedAction",
 					request.getParameter("successfullyPerformedAction"));
-			page = ConfigurationManager.getProperty("path.page.main_tutor");
+			String role =(String)request.getSession().getAttribute("role");
+			switch (role){
+			case "student":
+				page = ConfigurationManager.getProperty("path.page.main_student");
+				break;
+			case "tutor":
+				page = ConfigurationManager.getProperty("path.page.main_tutor");
+				break;
+			case "root":
+				page = ConfigurationManager.getProperty("path.page.main_tutor");
+				break;
+			}
 		} catch (TechnicalException e) {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");

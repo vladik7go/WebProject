@@ -17,6 +17,7 @@ import by.epam.web.application.commands.test.DeleteQuestionCommand;
 import by.epam.web.application.commands.test.DeleteTestCommand;
 import by.epam.web.application.commands.test.EditWriteAnswerCommand;
 import by.epam.web.application.commands.test.EditWriteQuestionCommand;
+import by.epam.web.application.commands.test.PerformTestCommand;
 import by.epam.web.application.commands.test.ShowQuestionCommand;
 import by.epam.web.application.commands.test.EditQuestionsCommand;
 import by.epam.web.application.commands.test.EditTestCommand;
@@ -33,6 +34,7 @@ public enum CommandEnum {
 	EDITPERSON(new EditPersonCommand()),
 	EDITWRITEPERSON(new EditWritePersonCommand()),
 	SHOWPERSONS(new ShowPersonsCommand()),
+	PERFORMTEST(new PerformTestCommand()),
 	ADDTEST(new AddTestCommand()),
 	SHOWTESTS(new ShowTestsCommand()),
 	EDITTEST(new EditTestCommand()),

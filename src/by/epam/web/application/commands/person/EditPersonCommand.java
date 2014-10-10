@@ -24,7 +24,19 @@ public class EditPersonCommand implements ActionCommand {
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		DaoPerson dao = new DaoPerson();
 			person = dao.showPerson(personId);
-			page = ConfigurationManager.getProperty("path.page.edit_user");
+			String role =(String)request.getSession().getAttribute("role");
+			switch (role){
+			case "student":
+				page = ConfigurationManager.getProperty("path.page.main_student");
+				break;
+			case "tutor":
+				page = ConfigurationManager.getProperty("path.page.main_tutor");
+				break;
+			case "root":
+				page = ConfigurationManager.getProperty("path.page.edit_user");
+				break;
+			}
+			
 			request.setAttribute("person", person);
 			
 		} catch (TechnicalException | NumberFormatException e) {
