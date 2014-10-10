@@ -20,8 +20,7 @@
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
-               	<option value="addTest" ><fmt:message key="test.label.addTest" /></option>
-				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
+               	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
         </form>
