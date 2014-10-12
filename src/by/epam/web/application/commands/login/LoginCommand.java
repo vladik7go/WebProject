@@ -76,13 +76,7 @@ public class LoginCommand implements ActionCommand {
 		try {
 			request.getSession().setAttribute("person",
 					dao.showPerson(login, pass));
-			int personId = dao.showPerson(login, pass).getId();
-			System.out.println("ssssssssssssssssss "+personId);
-			DaoTest daoTest = new DaoTest();
-			Map<Integer, Integer> resultMap = daoTest.showResult(personId);
-			
-			request.setAttribute("resultMap", resultMap);
-			log.debug("debug" + resultMap.toString());
+
 		} catch (TechnicalException e) {
 			log.error(e);
 		}

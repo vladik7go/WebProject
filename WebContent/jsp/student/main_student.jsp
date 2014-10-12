@@ -16,10 +16,6 @@
 <div class="login-card">
 ${resultMap }
 
-
-
-
-
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
@@ -33,8 +29,8 @@ ${resultMap }
             </select>
              <input name="personId" type="hidden" value="${person.id }" />
         </form>
-${resultMap } 
-${role }   ${resultMap } 
+
+${role }   
 <table border="3">
 
 <td colspan = "4">
