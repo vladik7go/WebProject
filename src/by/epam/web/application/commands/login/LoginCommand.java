@@ -1,5 +1,7 @@
 package by.epam.web.application.commands.login;
 
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.catalina.Session;
@@ -7,7 +9,9 @@ import org.apache.log4j.Logger;
 
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.test.PerformTestCommand;
+import by.epam.web.application.commands.test.ShowTestsCommand;
 import by.epam.web.application.dao.DaoPerson;
+import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.logic.LoginLogic;
 import by.epam.web.application.resource.ConfigurationManager;
@@ -41,6 +45,8 @@ public class LoginCommand implements ActionCommand {
 		case 3:
 			page = ConfigurationManager.getProperty("path.page.main_student");
 			request.getSession().setAttribute("role", "student");
+			ShowTestsCommand showTestsCommand = new ShowTestsCommand();
+			showTestsCommand.execute(request);
 
 			break;
 		case 2:
@@ -70,6 +76,13 @@ public class LoginCommand implements ActionCommand {
 		try {
 			request.getSession().setAttribute("person",
 					dao.showPerson(login, pass));
+			int personId = dao.showPerson(login, pass).getId();
+			System.out.println("ssssssssssssssssss "+personId);
+			DaoTest daoTest = new DaoTest();
+			Map<Integer, Integer> resultMap = daoTest.showResult(personId);
+			
+			request.setAttribute("resultMap", resultMap);
+			log.debug("debug" + resultMap.toString());
 		} catch (TechnicalException e) {
 			log.error(e);
 		}

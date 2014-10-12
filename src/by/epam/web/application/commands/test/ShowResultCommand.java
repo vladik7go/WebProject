@@ -10,6 +10,7 @@ import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.person.EditPersonCommand;
 import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.entity.test.Question;
+import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.resource.ConfigurationManager;
 
 public class ShowResultCommand implements ActionCommand {
@@ -22,7 +23,12 @@ public class ShowResultCommand implements ActionCommand {
 		Map<Integer, Integer> resultMap = null;
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		DaoTest dao = new DaoTest();
-		resultMap = dao.showResult(personId);
+		try {
+			resultMap = dao.showResult(personId);
+		} catch (TechnicalException e) {
+			log.error(e);
+		}
+		log.debug("debug" + resultMap.toString());
 		page = ConfigurationManager.getProperty("path.page.show_result");
 		request.setAttribute("resultMap", resultMap);
 		return page;

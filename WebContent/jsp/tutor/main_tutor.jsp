@@ -12,7 +12,7 @@
 <body>
 
 <div class="login-card">
-
+${resultMap } 
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 

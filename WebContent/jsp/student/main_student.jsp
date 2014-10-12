@@ -14,13 +14,8 @@
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
+${resultMap }
 
-<c:if test="${testsList == null }">
-<c:redirect url="controller">
-<c:param name="command" value="showTests"/>
-<c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
-</c:redirect>
-</c:if>
 
 
 
@@ -38,8 +33,8 @@
             </select>
              <input name="personId" type="hidden" value="${person.id }" />
         </form>
-
-${role }   
+${resultMap } 
+${role }   ${resultMap } 
 <table border="3">
 
 <td colspan = "4">
@@ -47,13 +42,12 @@ Student name: ${person.firstName }  ${person.secondName }
 </td>
 <tr/>
 
-<td colspan = "4">
+<td colspan = "3">
 Number of tests: ${fn:length(testsList)}
 </td>
 
 <tr/>
 <tr/>
-
 
 <th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
 <c:forEach var="elem" items="${testsList}" >

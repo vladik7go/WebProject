@@ -192,7 +192,8 @@ public class DaoTest extends Dao {
 		return question;
 	}
 
-	public Map<Integer, Integer> showResult(int personId) {
+	public Map<Integer, Integer> showResult(int personId)
+			throws TechnicalException {
 		Map<Integer, Integer> resultMap = new HashMap<Integer, Integer>();
 		Connection cn = null;
 		PreparedStatement st = null;
@@ -209,8 +210,10 @@ public class DaoTest extends Dao {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new TechnicalException(e);
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
 		return resultMap;
