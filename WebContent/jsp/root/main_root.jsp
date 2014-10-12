@@ -37,7 +37,7 @@
  <c:if test="${personsList != null }">     
       
  <table border="3">
-<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th>
+<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th><th colspan="2"> Command </th>
 <c:forEach var="elem" items="${personsList}" >
 
 <tr>

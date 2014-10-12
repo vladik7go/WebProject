@@ -36,6 +36,10 @@ public class ShowTestsCommand implements ActionCommand {
 			String role =(String)request.getSession().getAttribute("role");
 			switch (role){
 			case "student":
+				// In order to place in the request - "result" attribute (HashMap
+				// object)
+				ShowResultCommand showResult = new ShowResultCommand();
+				showResult.execute(request);
 				page = ConfigurationManager.getProperty("path.page.main_student");
 				break;
 			case "tutor":

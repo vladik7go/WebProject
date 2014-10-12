@@ -14,13 +14,11 @@
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
-${resultMap }
-
+${resultMap } ----- 
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
-               	<option value="showResult" ><fmt:message key="test.label.showResult" /></option>
                		<c:if test="${role == 'root' }">
                		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
@@ -33,26 +31,28 @@ ${resultMap }
 ${role }   
 <table border="3">
 
-<td colspan = "4">
+<td colspan = "5">
 Student name: ${person.firstName }  ${person.secondName }
 </td>
 <tr/>
 
-<td colspan = "3">
+<td colspan = "5">
 Number of tests: ${fn:length(testsList)}
 </td>
 
 <tr/>
 <tr/>
 
-<th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
+<th> ID </th><th> Title </th><th> Description </th><th> Mark </th><th > Command </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>
 <td><c:out value="${ elem.id }" /></td>
 <td><c:out value="${ elem.title }" /></td>
 <td><c:out value="${ elem.description }" /></td>
-
+<td><c:out value="${resultMap[elem.id.toString()]}" />
+<c:if test="${empty resultMap[elem.id.toString()]}">not performed yet</c:if>
+</td>
 <td>
 <form name="perform_test_form" method="POST" action="controller">
 <input type="hidden" name="command" value="performTest" />

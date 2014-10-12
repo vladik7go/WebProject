@@ -20,8 +20,8 @@ public class ShowResultCommand implements ActionCommand {
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		Map<Integer, Integer> resultMap = null;
-		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
+		Map<String, Integer> resultMap = null;
+		int personId = Integer.parseInt(((String) request.getSession().getAttribute(PARAM_NAME_ID)).trim());
 		DaoTest dao = new DaoTest();
 		try {
 			resultMap = dao.showResult(personId);

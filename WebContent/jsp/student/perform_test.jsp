@@ -15,7 +15,55 @@
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
 
+
+<table border="3">
+
+<td colspan = "5">
+Student name: ${person.firstName }  ${person.secondName }
+</td>
+<tr/>
+
+<td colspan = "5">
+Number of questions: ${fn:length(test.questions)}
+</td>
+
+<tr/>
+<tr/>
+
+<th> current question number </th><th> Questions </th><th colspan = "2"> Command </th>
+
+<c:forEach var="elem" items="${test.questions}" varStatus="status">
+
+<tr>
+<td><c:out value="${ status.count }" /></td>
+<td><c:out value="${ elem.content }" /></td>
+
+
+
+
+</tr>
+
+</c:forEach>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+объект тест: ${test }
+объект персон: ${person }
+роль: ${role }
+персон Ид: ${personId }
+
 perform_test.jsp
+
 
 
 </div>

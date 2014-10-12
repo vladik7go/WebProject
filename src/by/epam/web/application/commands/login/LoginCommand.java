@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.test.PerformTestCommand;
+import by.epam.web.application.commands.test.ShowResultCommand;
 import by.epam.web.application.commands.test.ShowTestsCommand;
 import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.dao.DaoTest;
@@ -45,8 +46,21 @@ public class LoginCommand implements ActionCommand {
 		case 3:
 			page = ConfigurationManager.getProperty("path.page.main_student");
 			request.getSession().setAttribute("role", "student");
+			try {
+				String personId = String.valueOf(dao.showPerson(login, pass)
+						.getId());
+				request.getSession().setAttribute("personId", personId);
+			} catch (TechnicalException e1) {
+				log.error(e1);
+			}
+			// In order to place in the request - "testsList" attribute
+			// (ArrayList object)
 			ShowTestsCommand showTestsCommand = new ShowTestsCommand();
 			showTestsCommand.execute(request);
+			// In order to place in the request - "result" attribute (HashMap
+			// object)
+			ShowResultCommand showResult = new ShowResultCommand();
+			showResult.execute(request);
 
 			break;
 		case 2:
@@ -74,8 +88,7 @@ public class LoginCommand implements ActionCommand {
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
 		try {
-			request.getSession().setAttribute("person",
-					dao.showPerson(login, pass));
+			request.setAttribute("person", dao.showPerson(login, pass));
 
 		} catch (TechnicalException e) {
 			log.error(e);
