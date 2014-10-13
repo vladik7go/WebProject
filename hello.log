@@ -1,1 +1,0 @@
-11:41:24,713 ERROR MyDao:<init>:72 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
