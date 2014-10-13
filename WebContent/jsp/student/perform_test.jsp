@@ -13,6 +13,7 @@
 <body>
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
+
 <div class="login-card">
 
 <table border="3">
@@ -29,6 +30,7 @@ Number of questions: ${fn:length(test.questions)}
 <tr/>
 </table>
 
+
 <table border="3">
 				<th> <fmt:message key="test.label.answering.question" />  </th><th> Command </th>
 					<tr>
@@ -44,10 +46,13 @@ Number of questions: ${fn:length(test.questions)}
 					<th> ID </th><th> Variant of answer </th><th> Correct </th>
 					<tr></tr>
 				<form name="show_answer_form" method="POST" action="controller">
-				<input name="testId" type="hidden" value="${test.id }" />
+					<input name="testId" type="hidden" value="${test.id }" />
+					<input name="testResult" type="hidden" value="${testResult }" />
 					<input type="hidden" name="command" value="tempCommand" />
-					<input type="hidden" name="questionId" value="${ question.id }" />
-			<c:forEach var="elem" items="${question.answers}" >
+					<input type="hidden" name="questionId" value="${ questionsIdList[0] }" />
+					
+					<c:set var="questionsIdList" value="${questionsIdList }" scope="session" />
+						<c:forEach var="elem" items="${question.answers}" >
 					<tr>
 					<td><c:out value="${ elem.id }" /></td>
 					<td>
@@ -63,16 +68,21 @@ Number of questions: ${fn:length(test.questions)}
 						
 					</tr>
 					
-	</c:forEach>
+						</c:forEach>
 </table>
 	<input type="submit" value="<fmt:message key="edit.button.save" />" />
 </form>		
+
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></br></c:if>
 объект тест: ${test }</br>
 объект персон: ${person }</br>
 роль: ${role }</br>
 персон Ид: ${personId }</br>
 объект вопрос: ${question } </br>
+объект questionsIdList: ${questionsIdList } </br>
+attribute questionId: ${question.id } </br>
+---- ${questionsIdList[0] }</br>
+аттрибут тесеРезалт: ${testResult }</br>
 perform_test.jsp
 
 </div>

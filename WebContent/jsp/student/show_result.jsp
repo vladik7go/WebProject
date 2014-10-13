@@ -16,6 +16,7 @@
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
 ${resultMap }
+${testResultFinal }</br>
 show_result.jsp
 
 

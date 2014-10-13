@@ -71,7 +71,8 @@ public class DaoTest extends Dao {
 			ResultSet resultQuestions = statementForQuestions.executeQuery();
 			while (resultQuestions.next()) {
 
-				int typeOfQuestion = resultQuestions.getInt("test_type");
+				int typeOfQuestion = resultQuestions.getInt("id");
+				
 
 				// ---Extracting from table "answer" all answers according to
 				// type of the question, and save them in object "answer".
@@ -89,6 +90,7 @@ public class DaoTest extends Dao {
 					answer.setValue(resultAnswers.getInt("value"));
 					// Save already filled object "answer" in the List.
 					answersList.add(answer);
+					log.debug("in ShowTest, answer = " + answer);
 				}
 				// ---Extracting from table "question" all questions according
 				// to type of the test, and save them in object "question"
@@ -97,6 +99,7 @@ public class DaoTest extends Dao {
 				question.setId(resultQuestions.getInt("id"));
 				question.setTestType(typeOfQuestion);
 				question.setContent(resultQuestions.getString("content"));
+				log.debug("in ShowTest, answersList = " + answersList);
 				question.setAnswers(answersList);
 				// Save already filled object "question" in the Set.
 				questionsSet.add(question);

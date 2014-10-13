@@ -49,11 +49,11 @@ public class TestLogic {
 		return question;
 	}
 
-	public boolean checkQuestion(int questionId, String[] answerValues) {
+	public int checkQuestion(int questionId, String[] answerValues) {
 		int tmpResult = 0;
 		int counterForTrue = 0;
 		List<Answer> answersList = new ArrayList<>();
-		
+
 		DaoTest dao = new DaoTest();
 		try {
 			answersList = dao.showQuestion(questionId).getAnswers();
@@ -78,9 +78,43 @@ public class TestLogic {
 			}
 		}
 		if (counterForTrue == tmpResult) {
-			return true;
+			return tmpResult;
 
+		} else {
+			return tmpResult;
 		}
-		return false;
+	}
+
+	public int calculateResult(int testResult, int testId) {
+
+		int counter = 0;
+
+		int finalResult = 0;
+		DaoTest dao = new DaoTest();
+		try {
+			Test test = dao.showTest(testId);
+
+			Set<Question> questions = test.getQuestions();
+
+			for (Question question : questions) {
+
+				List<Answer> answers = question.getAnswers();
+
+				for (Answer answer : answers) {
+					log.debug("answers from logic= " + answer.getValue());
+					counter += answer.getValue();
+
+				}
+			}
+		} catch (TechnicalException e) {
+			log.error(e);
+		}
+
+		System.out.println(testResult);
+		System.out.println(counter);
+		finalResult = (int) (((double) testResult / counter) * 5);
+
+		return finalResult;
+
 	}
 }
