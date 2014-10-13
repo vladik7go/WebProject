@@ -12,25 +12,34 @@
 <body>
 
 <div class="login-card">
-
+${resultMap } 
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
+
+ <c:if test="${testsList == null }">
+<c:redirect url="controller">
+<c:param name="command" value="showTests"/>
+<c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
+</c:redirect>
+</c:if>
 
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
-               	<option value="addTest" ><fmt:message key="test.label.addTest" /></option>
-				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
+               		<c:if test="${role == 'root' }">
+               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		</c:if>
+               	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
         </form>
         
-    
+ ${role }   
  <c:if test="${testsList != null }">     
-      gggggggggggggggggggggggggggg
- <table border="1">
-<th> ID </th><th> Title </th><th> Description </th>
+      
+ <table border="3">
+<th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>
@@ -38,9 +47,10 @@
 <td><c:out value="${ elem.title }" /></td>
 <td><c:out value="${ elem.description }" /></td>
 
+<c:if test="${role == 'tutor' or role == 'root' }">
 <td>
 
-<form name="edit_person_form" method="POST" action="controller">
+<form name="edit_test_form" method="POST" action="controller">
 <input type="hidden" name="command" value="editTest" />
 <input type="hidden" name="testId" value="${ elem.id }" />
 
@@ -50,22 +60,61 @@
 </td>
 <td>
 
-<form name="delete_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="deletePerson" />
-<input type="hidden" name="personId" value="${ elem.id }" />
+<form name="delete_test_form" method="POST" action="controller">
+<input type="hidden" name="command" value="deleteTest" />
+<input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
 </form>
 
 </td>
+
+</c:if>
+
+<c:if test="${role == 'student' }">
+<td>
+
+<form name="perform_test_form" method="POST" action="controller">
+<input type="hidden" name="command" value="performTest" />
+<input type="hidden" name="testId" value="${ elem.id }" />
+
+<input type="submit" value="<fmt:message key="root.button.perform" />"/>
+</form>
+
+</td>
+</c:if>
+
 </tr>
 
 </c:forEach>
+<c:if test="${role == 'tutor' or role == 'root' }"> 
+<form name="add_test_form" method="POST" action="controller">
+	<input type="hidden" name="command" value="addTest" />
+	<input name="testId" type="hidden" value="${test.id }" />
+	
+	
+					<td>
+					=>
+					</td>
+					
+					<td>
+					<textarea rows="4" cols="25" name="testTitle" placeholder="<fmt:message key="test.label.addTestTitle" />" ></textarea>
+					</td>
+					
+					<td>
+					<textarea rows="4" cols="25" name="testDescription" placeholder="<fmt:message key="test.label.addTestDescription" />" ></textarea>
+					</td>
+										
+					<td  colspan = "2">
+					<input type="submit" value="<fmt:message key="edit.button.add" />"/>
+					</td>
+	</form>	
+</c:if>
 </table>
 
 </c:if>
  
-
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
 <c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 
 

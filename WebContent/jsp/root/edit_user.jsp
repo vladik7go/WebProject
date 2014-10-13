@@ -53,7 +53,7 @@ ${person.firstName }
 		</tr>
 	</table>
 <c:if test="${errorNonNumberMessage !=null }"><fmt:message key="edit.label.nonnumbererror"/></c:if>
-
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
 
 </div>
 </body>

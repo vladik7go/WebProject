@@ -27,6 +27,7 @@
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
@@ -35,8 +36,8 @@
       
  <c:if test="${personsList != null }">     
       
- <table border="1">
-<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th>
+ <table border="3">
+<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th><th colspan="2"> Command </th>
 <c:forEach var="elem" items="${personsList}" >
 
 <tr>

@@ -19,10 +19,16 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="showQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
+               	<option value="editQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
+               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               		<c:if test="${role == 'root' }">
+               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		</c:if>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
+            <input name="testId" type="hidden" value="${test.id }" />
+            ${test.id }
         </form>
 
 <table >
@@ -50,7 +56,7 @@
 			
 		</tr>
 	</table>
-
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
 
 </div>
 </body>

@@ -17,19 +17,16 @@ import by.epam.web.application.pool.ConnectionPool;
 public class DaoPerson extends Dao {
 	public static Logger log = Logger.getLogger(DaoPerson.class);
 
-	private static final String SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD = "select login, password, role_type from person where login=? and password=?";
+	private static final String SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD = "select * from person where login=? and password=?";
 	private static final String SQL_ADD_PERSON = "INSERT INTO person (role_type, first_name, second_name, login, password) VALUES (?,?,?,?,?)";
 	private static final String SQL_EDIT_PERSON = "update person SET role_type=?, first_name=?, second_name=?, login=?, password=? where id=?";
 	private static final String SQL_SHOW_PERSONS = "SELECT * FROM person";
 	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
 	private static final String SQL_DELETE_PERSON_BY_ID = "DELETE from person where id= ?";
 
-	
-
-	
 	/*
-	 * This method return the role of the user in case, if proper login and password was entered.
-	 * Otherwise - return zero.
+	 * This method return the role of the user in case, if proper login and
+	 * password was entered. Otherwise - return zero.
 	 */
 	public int checkLogin(String name, String password) {
 
@@ -118,6 +115,33 @@ public class DaoPerson extends Dao {
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
 
+		return person;
+	}
+
+	public Person showPerson(String name, String password) throws TechnicalException {
+		Connection cn = null;
+		PreparedStatement st = null;
+		Person person = new Person();
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_SELECT_USER_BY_LOGIN_AND_PASSWORD);
+			st.setString(1, name);
+			st.setString(2, password);
+			ResultSet result = st.executeQuery();
+			result.next();
+			person.setId(result.getInt("id"));
+			person.setRoleType(result.getInt("role_type"));
+			person.setFirstName(result.getString("first_name"));
+			person.setSecondName(result.getString("second_name"));
+			person.setLogin(result.getString("login"));
+			person.setPassword(result.getString("password"));
+		} catch (SQLException e) {
+			throw new TechnicalException(e);
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+	
 		return person;
 	}
 

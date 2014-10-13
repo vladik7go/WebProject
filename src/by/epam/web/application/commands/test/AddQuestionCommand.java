@@ -5,34 +5,31 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 
 import by.epam.web.application.commands.ActionCommand;
-import by.epam.web.application.commands.person.EditWritePersonCommand;
 import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.resource.ConfigurationManager;
 
-public class EditWriteTestCommand implements ActionCommand {
-	public static Logger log = Logger.getLogger(EditWriteTestCommand.class);
-	private static final String PARAM_NAME_ID = "id";
-	private static final String PARAM_NAME_TITLE = "title";
-	private static final String PARAM_NAME_DESCRIPTION = "description";
+public class AddQuestionCommand implements ActionCommand {
+	public static Logger log = Logger.getLogger(AddQuestionCommand.class);
+	private static final String PARAM_NAME_TEST_ID = "testId";
+	private static final String PARAM_NAME_QUESTION_CONTENT = "questionContent";
 
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		int id = Integer.parseInt(request.getParameter(PARAM_NAME_ID).trim());
-		String title = request.getParameter(PARAM_NAME_TITLE).trim();
-		String description = request.getParameter(PARAM_NAME_DESCRIPTION).trim();
-
+		int testId = Integer.parseInt(request.getParameter(PARAM_NAME_TEST_ID));
+		String questionContent = request.getParameter(
+				PARAM_NAME_QUESTION_CONTENT).trim();
 		// Checking for empty fields
 		DaoTest dao = new DaoTest();
-		if (title.length() * description.length() * id != 0) {
-
-			boolean result = dao.editTest(id, title, description);
+		if (questionContent.length() * testId != 0) {
+			boolean result = dao.addQuestion(testId, questionContent);
 			if (result) {
-				page = ConfigurationManager.getProperty("path.page.main_tutor");
+				page = ConfigurationManager
+						.getProperty("path.page.edit_questions");
 				request.setAttribute("successfullyPerformedAction", "1");
 				try {
-					request.setAttribute("testsList", dao.showTests());
+					request.setAttribute("test", dao.showTest(testId));
 				} catch (TechnicalException e) {
 					log.error(e);
 				}
@@ -42,13 +39,14 @@ public class EditWriteTestCommand implements ActionCommand {
 			}
 
 		} else {
-			page = ConfigurationManager.getProperty("path.page.edit_test");
 			request.setAttribute("errorEmptyFieldMessage", "true");
 			try {
-				request.setAttribute("test", dao.showTest(id));
+				request.setAttribute("test", dao.showTest(testId));
+
 			} catch (TechnicalException e) {
 				log.error(e);
 			}
+			page = ConfigurationManager.getProperty("path.page.edit_questions");
 		}
 
 		return page;
