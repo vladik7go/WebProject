@@ -8,6 +8,7 @@ import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.exceptions.TechnicalException;
+import by.epam.web.application.logic.TestLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 
 public class TempCommand implements ActionCommand {
@@ -15,19 +16,26 @@ public class TempCommand implements ActionCommand {
 	private static final String PARAM_NAME_ANSWER_VARIANT = "answerVariant";
 	private static final String PARAM_TEST_ID = "testId";
 	private static final String PARAM_NAME_QUESTION_ID = "questionId";
-	
+
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		
-		String[] answerValues=request.getParameterValues(PARAM_NAME_ANSWER_VARIANT);
+
+		String[] answerValues = request
+				.getParameterValues(PARAM_NAME_ANSWER_VARIANT);
 		DaoTest dao = new DaoTest();
 		DaoPerson daoPerson = new DaoPerson();
+		TestLogic logic = new TestLogic();
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
-		
+		int questionId = Integer.parseInt(request
+				.getParameter(PARAM_NAME_QUESTION_ID));
+
 		try {
 			for (int i = 0; answerValues.length > i; i++) {
 				log.debug("value " + i + " = " + answerValues[i]);
+				boolean result = logic.checkQuestion(questionId, answerValues);
+				log.debug("result = "+ result);
+
 			}
 		} catch (NullPointerException e) {
 			log.error("the checkbox is empty", e);
@@ -40,8 +48,6 @@ public class TempCommand implements ActionCommand {
 			}
 			page = ConfigurationManager.getProperty("path.page.perform_test");
 		}
-
-		
 		return page;
 	}
 
