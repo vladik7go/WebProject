@@ -15,9 +15,7 @@
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
 
-
 <table border="3">
-
 <td colspan = "5">
 Student name: ${person.firstName }  ${person.secondName }
 </td>
@@ -29,42 +27,53 @@ Number of questions: ${fn:length(test.questions)}
 
 <tr/>
 <tr/>
+</table>
 
-<th> current question number </th><th> Questions </th><th colspan = "2"> Command </th>
-
-<c:forEach var="elem" items="${test.questions}" varStatus="status">
-
-<tr>
-<td><c:out value="${ status.count }" /></td>
-<td><c:out value="${ elem.content }" /></td>
-
-
-
-
-</tr>
-
-</c:forEach>
+<table border="3">
+				<th> <fmt:message key="test.label.answering.question" />  </th><th> Command </th>
+					<tr>
+						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
+						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
+			
+					<tr/>
 
 </table>
 
+	<table border="3">
 
-
-
-
-
-
-
-
-
-
-объект тест: ${test }
-объект персон: ${person }
-роль: ${role }
-персон Ид: ${personId }
-
+					<th> ID </th><th> Variant of answer </th><th> Correct </th>
+					<tr></tr>
+				<form name="show_answer_form" method="POST" action="controller">
+				<input name="testId" type="hidden" value="${test.id }" />
+					<input type="hidden" name="command" value="tempCommand" />
+					<input type="hidden" name="questionId" value="${ question.id }" />
+			<c:forEach var="elem" items="${question.answers}" >
+					<tr>
+					<td><c:out value="${ elem.id }" /></td>
+					<td>
+					
+					<input type="hidden" name="answerId" value="${ elem.id }" />
+					<textarea readonly="readonly" rows="2" cols="35" name="answerContent" >${ elem.answer } </textarea>
+					 <!--  input type="text" name="answerContent" value="${ elem.answer }" /--> 
+					</td>
+					
+					<td>  
+							<input type="checkbox" name="answerVariant" value="${ elem.id }">
+					</td>
+						
+					</tr>
+					
+	</c:forEach>
+</table>
+	<input type="submit" value="<fmt:message key="edit.button.save" />" />
+</form>		
+<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></br></c:if>
+объект тест: ${test }</br>
+объект персон: ${person }</br>
+роль: ${role }</br>
+персон Ид: ${personId }</br>
+объект вопрос: ${question } </br>
 perform_test.jsp
-
-
 
 </div>
 </body>

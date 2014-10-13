@@ -24,6 +24,7 @@ import by.epam.web.application.commands.test.EditTestCommand;
 import by.epam.web.application.commands.test.EditWriteTestCommand;
 import by.epam.web.application.commands.test.ShowResultCommand;
 import by.epam.web.application.commands.test.ShowTestsCommand;
+import by.epam.web.application.commands.test.TempCommand;
 
 
 public enum CommandEnum {
@@ -50,7 +51,8 @@ public enum CommandEnum {
 	EDITWRITEANSWER(new EditWriteAnswerCommand()),
 	DELETEANSWER(new DeleteAnswerCommand()),
 	SHOWRESULT(new ShowResultCommand()),
-	LOGOUT(	new LogoutCommand());
+	LOGOUT(	new LogoutCommand()),
+	TEMPCOMMAND(new TempCommand());
 
 	private final ActionCommand command;// Reference on the variable with type - interface 
 
