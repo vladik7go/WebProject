@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.commands.person.ShowPersonsCommand;
+import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.entity.test.Question;
 import by.epam.web.application.entity.test.Test;
@@ -17,30 +18,35 @@ import by.epam.web.application.resource.ConfigurationManager;
 
 public class ShowTestsCommand implements ActionCommand {
 	public static Logger log = Logger.getLogger(ShowTestsCommand.class);
+
 	@Override
-	
-	
-	
 	public String execute(HttpServletRequest request) {
 
 		List<Test> tests = null;
 		String page = null;
 		DaoTest dao = new DaoTest();
-		
+		DaoPerson daoPerson = new DaoPerson();
+
 		try {
 			tests = dao.showTests();
 			log.debug("list of tests = " + tests);
 			request.setAttribute("testsList", tests);
 			request.setAttribute("successfullyPerformedAction",
 					request.getParameter("successfullyPerformedAction"));
-			String role =(String)request.getSession().getAttribute("role");
-			switch (role){
+			String role = (String) request.getSession().getAttribute("role");
+			int personId = Integer.parseInt((String) request.getSession()
+					.getAttribute("personId"));
+
+			switch (role) {
 			case "student":
-				// In order to place in the request - "result" attribute (HashMap
+				// In order to place in the request - "result" attribute
+				// (HashMap
 				// object)
 				ShowResultCommand showResult = new ShowResultCommand();
 				showResult.execute(request);
-				page = ConfigurationManager.getProperty("path.page.main_student");
+				request.setAttribute("person", daoPerson.showPerson(personId));
+				page = ConfigurationManager
+						.getProperty("path.page.main_student");
 				break;
 			case "tutor":
 				page = ConfigurationManager.getProperty("path.page.main_tutor");
@@ -53,7 +59,7 @@ public class ShowTestsCommand implements ActionCommand {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
-		
+
 		return page;
 	}
 

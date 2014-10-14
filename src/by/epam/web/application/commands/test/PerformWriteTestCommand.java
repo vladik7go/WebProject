@@ -14,8 +14,8 @@ import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.logic.TestLogic;
 import by.epam.web.application.resource.ConfigurationManager;
 
-public class TempCommand implements ActionCommand {
-	public static Logger log = Logger.getLogger(TempCommand.class);
+public class PerformWriteTestCommand implements ActionCommand {
+	public static Logger log = Logger.getLogger(PerformWriteTestCommand.class);
 	private static final String PARAM_NAME_ANSWER_VARIANT = "answerVariant";
 	private static final String PARAM_TEST_ID = "testId";
 	private static final String PARAM_NAME_QUESTION_ID = "questionId";
@@ -38,14 +38,13 @@ public class TempCommand implements ActionCommand {
 			testResultInt = Integer.parseInt(request
 					.getParameter(PARAM_NAME_TEST_RESULT));
 		} catch (NumberFormatException e2) {
-			log.error("Technical exception ", e2);
+			log.error("Technical exception in PerformWriteTestCommand", e2);
 			testResultInt = 0;
 		}
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 		int questionId = Integer.parseInt(request
 				.getParameter(PARAM_NAME_QUESTION_ID));
-		questionsIdList.remove(0);
-
+//qil
 		try {
 			// for (int i = 0; answerValues.length > i; i++) {
 			// log.debug("value " + i + " = " + answerValues[i]);
@@ -64,13 +63,14 @@ public class TempCommand implements ActionCommand {
 
 		}
 		try {
+			questionsIdList.remove(0);
 			request.setAttribute("question",
 					dao.showQuestion(questionsIdList.get(0)));
 			request.setAttribute("test", dao.showTest(testId));
 			request.setAttribute(PARAM_NAME_QUESTIONS_ID_LIST, questionsIdList);
 			page = ConfigurationManager.getProperty("path.page.perform_test");
 		} catch (TechnicalException | IndexOutOfBoundsException e1) {
-			log.error(e1);
+			log.error("Technical exception in PerformWriteTestCommand. ", e1);
 			int testResultFinal = logic.calculateResult(testResultInt, testId);
 			page = ConfigurationManager.getProperty("path.page.show_result");
 			request.setAttribute("testResultFinal", testResultFinal);

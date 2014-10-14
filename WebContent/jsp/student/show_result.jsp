@@ -15,6 +15,20 @@
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
+
+<form name="choose_action_form" method="POST" action="controller">
+            <select id="choose_action" name="command" onchange="submit()">
+               	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
+               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               		<c:if test="${role == 'root' }">
+               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		</c:if>
+               	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
+                <option value="Logout"><fmt:message key="login.label.logout" /></option>
+            </select>
+             <input name="personId" type="hidden" value="${person.id }" />
+        </form>
+
 ${resultMap }
 ${testResultFinal }</br>
 show_result.jsp
