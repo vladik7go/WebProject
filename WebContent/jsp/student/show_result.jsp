@@ -32,7 +32,16 @@
 ${resultMap }
 ${testResultFinal }</br>
 show_result.jsp
-
+---------</br>
+объект тест: ${test }</br>
+объект персон: ${person }</br>
+роль: ${role }</br>
+персон Ид: ${personId }</br>
+объект вопрос: ${question } </br>
+объект questionsIdList: ${questionsIdList } </br>
+attribute questionId: ${question.id } </br>
+---- ${questionsIdList[0] }</br>
+аттрибут тесеРезалт: ${testResult }</br>
 
 </div>
 

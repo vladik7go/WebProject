@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import by.epam.web.application.commands.ActionCommand;
 import by.epam.web.application.dao.DaoPerson;
 import by.epam.web.application.dao.DaoTest;
+import by.epam.web.application.entity.test.Test;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.logic.TestLogic;
 import by.epam.web.application.resource.ConfigurationManager;
@@ -21,11 +22,14 @@ public class PerformWriteTestCommand implements ActionCommand {
 	private static final String PARAM_NAME_QUESTION_ID = "questionId";
 	private static final String PARAM_NAME_QUESTIONS_ID_LIST = "questionsIdList";
 	private static final String PARAM_NAME_TEST_RESULT = "testResult";
+	private static final String PARAM_NAME_ID = "personId";
 
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
 		int testResultInt = 0;
+		int personId = Integer.parseInt(((String) request.getSession()
+				.getAttribute(PARAM_NAME_ID)).trim());
 		ArrayList<Integer> questionsIdList = (ArrayList<Integer>) request
 				.getSession().getAttribute(PARAM_NAME_QUESTIONS_ID_LIST);
 
@@ -44,16 +48,16 @@ public class PerformWriteTestCommand implements ActionCommand {
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 		int questionId = Integer.parseInt(request
 				.getParameter(PARAM_NAME_QUESTION_ID));
-//qil
+		
 		try {
 			// for (int i = 0; answerValues.length > i; i++) {
 			// log.debug("value " + i + " = " + answerValues[i]);
 			int result = logic.checkQuestion(questionId, answerValues);
-			log.debug("result = " + result);
+			log.debug("From PerformWriteTest: result(within this question) = " + result);
 			if (result > 0) {
 				testResultInt += result;
 			}
-			log.debug("testResult =  " + testResultInt);
+			log.debug("From PerformWriteTest: testResult(summary) =  " + testResultInt);
 			request.setAttribute("testResult", testResultInt);
 
 			// }
@@ -68,12 +72,18 @@ public class PerformWriteTestCommand implements ActionCommand {
 					dao.showQuestion(questionsIdList.get(0)));
 			request.setAttribute("test", dao.showTest(testId));
 			request.setAttribute(PARAM_NAME_QUESTIONS_ID_LIST, questionsIdList);
+			request.setAttribute("person", daoPerson.showPerson(personId));
 			page = ConfigurationManager.getProperty("path.page.perform_test");
 		} catch (TechnicalException | IndexOutOfBoundsException e1) {
 			log.error("Technical exception in PerformWriteTestCommand. ", e1);
 			int testResultFinal = logic.calculateResult(testResultInt, testId);
 			page = ConfigurationManager.getProperty("path.page.show_result");
 			request.setAttribute("testResultFinal", testResultFinal);
+			try {
+				request.setAttribute("test", dao.showTest(testId));
+			} catch (TechnicalException e) {
+				log.error(e);
+			}
 
 		}
 		return page;

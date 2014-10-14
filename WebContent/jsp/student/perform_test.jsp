@@ -23,7 +23,8 @@ Student name: ${person.firstName }  ${person.secondName }
 <tr/>
 
 <td colspan = "5">
-Number of questions: ${fn:length(test.questions)}
+Quantity of questions(total in test): ${fn:length(test.questions)}</br>
+Quantity of questions(remain): ${fn:length(questionsIdList)}
 </td>
 
 <tr/>

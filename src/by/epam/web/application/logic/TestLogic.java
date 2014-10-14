@@ -62,7 +62,7 @@ public class TestLogic {
 		}
 
 		for (Answer elem : answersList) {
-			log.debug("answerId = " + elem.getId() + " ; answer value = "
+			log.debug("From TestLogic.checkQuestion: answerId = " + elem.getId() + " ; answer value = "
 					+ elem.getValue());
 			counterForTrue += elem.getValue();
 
@@ -101,7 +101,7 @@ public class TestLogic {
 				List<Answer> answers = question.getAnswers();
 
 				for (Answer answer : answers) {
-					log.debug("answers from logic= " + answer.getValue());
+					log.debug("From TestLogic.calculateResult: answers(real) from logic= " + answer.getValue());
 					counter += answer.getValue();
 
 				}
@@ -110,10 +110,7 @@ public class TestLogic {
 			log.error(e);
 		}
 
-		System.out.println(testResult);
-		System.out.println(counter);
 		finalResult = (int) (((double) testResult / counter) * 5);
-
 		return finalResult;
 
 	}
