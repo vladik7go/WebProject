@@ -24,7 +24,7 @@ public class ShowResultCommand implements ActionCommand {
 		int personId = Integer.parseInt(((String) request.getSession().getAttribute(PARAM_NAME_ID)).trim());
 		DaoTest dao = new DaoTest();
 		try {
-			resultMap = dao.showResult(personId);
+			resultMap = dao.showResults(personId);
 		} catch (TechnicalException e) {
 			log.error(e);
 		}

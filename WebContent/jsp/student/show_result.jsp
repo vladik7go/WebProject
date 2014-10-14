@@ -19,6 +19,7 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
+               	<option value="writeResult" ><fmt:message key="test.label.writeResult" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' }">
                		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
@@ -27,24 +28,33 @@
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
              <input name="personId" type="hidden" value="${person.id }" />
+             <input name="testId" type="hidden" value="${test.id }" />
+             <input name="testMark" type="hidden" value="${testResultFinal }" />
         </form>
 
-${resultMap }
-${testResultFinal }</br>
-show_result.jsp
----------</br>
-объект тест: ${test }</br>
-объект персон: ${person }</br>
-роль: ${role }</br>
-персон Ид: ${personId }</br>
-объект вопрос: ${question } </br>
-объект questionsIdList: ${questionsIdList } </br>
-attribute questionId: ${question.id } </br>
----- ${questionsIdList[0] }</br>
-аттрибут тесеРезалт: ${testResult }</br>
+
+<h1>Test completed</h1>
+<table border="3">
+
+<th >
+Test title:
+</th>
+<th>
+Test description: 
+</th>
+<th>
+Final result: 
+</th>
+<tr>
+
+<td>${test.title }</td>
+<td>${test.description}</td>
+<td>   ${testResultFinal }</td>
+</tr>
+</table>
+
+<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
 
 </div>
-
-
 </body>
 </html>

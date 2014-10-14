@@ -68,6 +68,9 @@ public class PerformTestCommand implements ActionCommand {
 		} catch (TechnicalException e) {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");
+		}catch (IndexOutOfBoundsException e){
+			log.error("---empty questions set for this test---", e);
+			page = ConfigurationManager.getProperty("path.page.login");
 		}
 
 		return page;

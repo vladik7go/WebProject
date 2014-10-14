@@ -20,6 +20,7 @@ import by.epam.web.application.entity.Person;
 import by.epam.web.application.entity.test.Answer;
 import by.epam.web.application.entity.test.Question;
 import by.epam.web.application.entity.test.Test;
+import by.epam.web.application.exceptions.LogicException;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.pool.ConnectionPool;
 
@@ -27,7 +28,7 @@ public class DaoTest extends Dao {
 	public static Logger log = Logger.getLogger(DaoTest.class);
 
 	private static final String SQL_SHOW_TEST_BY_ID = "SELECT * FROM test where id=? ";
-	private static final String SQL_SHOW_RESULT_BY_PERSON = "SELECT * FROM result where person_type=? ";
+	private static final String SQL_SHOW_RESULTS_BY_PERSON = "SELECT * FROM result where person_type=? ";
 	private static final String SQL_SHOW_QUESTION_BY_ID = "SELECT * FROM question where id=? ";
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
@@ -35,10 +36,12 @@ public class DaoTest extends Dao {
 	private static final String SQL_ADD_ANSWER = "insert into answer (question_type, answer, value) values (?, ?, ?)";
 	private static final String SQL_ADD_QUESTION = "insert into question (test_type, content) values (?, ?)";
 	private static final String SQL_ADD_TEST = "insert into test (title, description) values (?, ?)";
+	private static final String SQL_ADD_RESULT = "insert into result (person_type, test_type, mark) values (?, ?, ?)";
 	private static final String SQL_EDIT_TEST = "update test SET title=?, description=? where id=?";
 	private static final String SQL_EDIT_QUESTION = "update question SET content=? where id=?";
 	private static final String SQL_EDIT_ANSWER = "update answer SET answer=?, value=? where id=?";
 	private static final String SQL_DELETE_ANSWER_BY_ID = "DELETE from answer where id= ?";
+	private static final String SQL_DELETE_RESULT_BY_PERSONID_TESTID = "DELETE from result where person_type= ? and test_type=?";
 	private static final String SQL_DELETE_QUESTION_BY_ID = "DELETE from question where id= ?";
 	private static final String SQL_DELETE_TEST_BY_ID = "DELETE from test where id= ?";
 
@@ -72,7 +75,6 @@ public class DaoTest extends Dao {
 			while (resultQuestions.next()) {
 
 				int typeOfQuestion = resultQuestions.getInt("id");
-				
 
 				// ---Extracting from table "answer" all answers according to
 				// type of the question, and save them in object "answer".
@@ -90,7 +92,7 @@ public class DaoTest extends Dao {
 					answer.setValue(resultAnswers.getInt("value"));
 					// Save already filled object "answer" in the List.
 					answersList.add(answer);
-					
+
 				}
 				// ---Extracting from table "question" all questions according
 				// to type of the test, and save them in object "question"
@@ -194,7 +196,7 @@ public class DaoTest extends Dao {
 		return question;
 	}
 
-	public Map<String, Integer> showResult(int personId)
+	public Map<String, Integer> showResults(int personId)
 			throws TechnicalException {
 		Map<String, Integer> resultMap = new HashMap<String, Integer>();
 		Connection cn = null;
@@ -202,7 +204,7 @@ public class DaoTest extends Dao {
 
 		try {
 			cn = ConnectionPool.getSinglePool().getConnection();
-			st = cn.prepareStatement(SQL_SHOW_RESULT_BY_PERSON);
+			st = cn.prepareStatement(SQL_SHOW_RESULTS_BY_PERSON);
 			st.setInt(1, personId);
 			ResultSet result = st.executeQuery();
 			while (result.next()) {
@@ -332,6 +334,30 @@ public class DaoTest extends Dao {
 		return true;
 	}
 
+	public boolean addResult(int personId, int testId, int testMark)
+			throws LogicException {
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_ADD_RESULT);
+			st.setInt(1, personId);
+			st.setInt(2, testId);
+			st.setInt(3, testMark);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			throw new LogicException(
+					"From daoTest.addResult: pair 'personId===testType' already exist. Should be unique ",
+					e);
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
+	}
+
 	public boolean editAnswer(int answerId, int answerValue,
 			String answerContent) {
 		Connection cn = null;
@@ -372,6 +398,27 @@ public class DaoTest extends Dao {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
+	}
+
+	public boolean deleteResult(int personId, int testId) {
+		Connection cn = null;
+		PreparedStatement st = null;
+		cn = ConnectionPool.getSinglePool().getConnection();
+
+		try {
+			st = cn.prepareStatement(SQL_DELETE_RESULT_BY_PERSONID_TESTID);
+			st.setInt(1, personId);
+			st.setInt(2, testId);
+			st.executeUpdate();
+			return true;
+		} catch (SQLException e) {
+			log.error(e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
 	}
 
 	public boolean deleteQuestion(int id) {

@@ -13,6 +13,7 @@ import by.epam.web.application.dao.DaoTest;
 import by.epam.web.application.entity.test.Answer;
 import by.epam.web.application.entity.test.Question;
 import by.epam.web.application.entity.test.Test;
+import by.epam.web.application.exceptions.LogicException;
 import by.epam.web.application.exceptions.TechnicalException;
 
 public class TestLogic {
@@ -62,8 +63,8 @@ public class TestLogic {
 		}
 
 		for (Answer elem : answersList) {
-			log.debug("From TestLogic.checkQuestion: answerId = " + elem.getId() + " ; answer value = "
-					+ elem.getValue());
+			log.debug("From TestLogic.checkQuestion: answerId = "
+					+ elem.getId() + " ; answer value = " + elem.getValue());
 			counterForTrue += elem.getValue();
 
 			for (String s : answerValues) {
@@ -101,7 +102,8 @@ public class TestLogic {
 				List<Answer> answers = question.getAnswers();
 
 				for (Answer answer : answers) {
-					log.debug("From TestLogic.calculateResult: answers(real) from logic= " + answer.getValue());
+					log.debug("From TestLogic.calculateResult: answers(real) from logic= "
+							+ answer.getValue());
 					counter += answer.getValue();
 
 				}
@@ -110,8 +112,30 @@ public class TestLogic {
 			log.error(e);
 		}
 
-		finalResult = (int) (((double) testResult / counter) * 5);
+		finalResult = (int) (((double) testResult / counter) * 10);
 		return finalResult;
 
+	}
+
+	public boolean writeResult(int personId, int testId, int testMark) {
+
+		DaoTest dao = new DaoTest();
+		try {
+			dao.addResult(personId, testId, testMark);
+		} catch (LogicException e) {
+			log.error(
+					"From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique",
+					e);
+			dao.deleteResult(personId, testId);
+			log.debug("From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted");
+			try {
+				dao.addResult(personId, testId, testMark);
+			} catch (LogicException e1) {
+				log.error(e1);
+			}
+			log.debug("From TestLogic.writeResult: NEW pair 'personId===testType' successfully added");
+		}
+
+		return true;
 	}
 }

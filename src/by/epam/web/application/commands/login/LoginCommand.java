@@ -89,7 +89,7 @@ public class LoginCommand implements ActionCommand {
 		}
 		try {
 			request.setAttribute("person", dao.showPerson(login, pass));
-
+			request.getSession().setAttribute("personId", String.valueOf(dao.showPerson(login, pass).getId()));
 		} catch (TechnicalException e) {
 			log.error(e);
 		}
