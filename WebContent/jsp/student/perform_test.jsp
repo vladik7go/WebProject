@@ -33,9 +33,9 @@
 
 
 <table border="3">
-				<th> <fmt:message key="test.label.answering.question" />  </th><th> <fmt:message key="login.label.command" /> </th>
+				<th> <fmt:message key="test.label.answering.question" />  </th>
 					<tr>
-						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
+						<td><textarea readonly="readonly" rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
 						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
 			
 					<tr/>
@@ -71,7 +71,7 @@
 					
 						</c:forEach>
 </table>
-	<input type="submit" value="<fmt:message key="edit.button.save" />" />
+	<input type="submit" value="<fmt:message key="root.button.nextQuestion" />" />
 </form>		
 
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></br></c:if>
