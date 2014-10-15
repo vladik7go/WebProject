@@ -20,6 +20,7 @@
 <c:redirect url="controller">
 <c:param name="command" value="showPersons"/>
 <c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
+<c:param name="errorEmptyResultTableMessage" value="${errorEmptyResultTableMessage}"/>
 </c:redirect>
 </c:if>
 
@@ -37,7 +38,7 @@
  <c:if test="${personsList != null }">     
       
  <table border="3">
-<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th><th colspan="2"> Command </th>
+<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th><th colspan="3"> Command </th>
 <c:forEach var="elem" items="${personsList}" >
 
 <tr>
@@ -52,26 +53,36 @@
 <td><c:out value="${ elem.secondName }" /></td>
 <td><c:out value="${ elem.login }" /></td>
 <td><c:out value="${ elem.password }" /></td>
-<td>
 
+<c:if test="${role == 'root' }">
+<td>
 <form name="edit_person_form" method="POST" action="controller">
 <input type="hidden" name="command" value="editPerson" />
 <input type="hidden" name="personId" value="${ elem.id }" />
-
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
 </form>
-
 </td>
-<td>
 
+<td>
 <form name="delete_person_form" method="POST" action="controller">
 <input type="hidden" name="command" value="deletePerson" />
 <input type="hidden" name="personId" value="${ elem.id }" />
-
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
+</form>
+</td>
+</c:if>
+
+
+<td>
+
+<form name="show_results_form" method="POST" action="controller">
+<input type="hidden" name="command" value="showResults" />
+<input type="hidden" name="personId" value="${ elem.id }" />
+<input type="submit" value="<fmt:message key="root.button.show.results" />"/>
 </form>
 
 </td>
+
 </tr>
 
 </c:forEach>
@@ -80,11 +91,8 @@
 </c:if>
 
 <c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
+<c:if test="${errorEmptyResultTableMessage != null and errorEmptyResultTableMessage eq '1' }"><fmt:message key="message.errorEmptyResultTableMessage"/></c:if>
 
-<c:if test="${personsList == null }"> 
-<div><img align="middle" src="images/1234.jpeg" alt="picture about sysadmins"></div>
-main root page Картинка про админа
-</c:if>
 
 </div>
 

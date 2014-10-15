@@ -196,7 +196,7 @@ public class DaoTest extends Dao {
 		return question;
 	}
 
-	public Map<String, Integer> showResults(int personId)
+	public Map<String, Integer> showResult(int personId)
 			throws TechnicalException {
 		Map<String, Integer> resultMap = new HashMap<String, Integer>();
 		Connection cn = null;

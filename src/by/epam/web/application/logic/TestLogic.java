@@ -18,37 +18,6 @@ import by.epam.web.application.exceptions.TechnicalException;
 
 public class TestLogic {
 	public static Logger log = Logger.getLogger(TestLogic.class);
-	int counter;
-
-	public Map<Question, List<Answer>> enumerateQuestions(Test t) {
-		List<Answer> answers = new ArrayList<>();
-		Map<Question, List<Answer>> quiz = new HashMap<>();
-		Set<Question> questions = null;
-		Question question = null;
-		Test test = t;
-		questions = test.getQuestions();
-		for (Question elem : questions) {
-			answers = elem.getAnswers();
-
-		}
-		return quiz;
-	}
-
-	public Question testPerformer(Test t) {
-		Question question = null;
-		Set<Question> questions = null;
-		Test test = t;
-		counter = test.getQuestions().size();
-		questions = test.getQuestions();
-		for (Question elem : questions) {
-			question = elem;
-			System.out
-					.println("number of answers= " + elem.getAnswers().size());
-
-		}
-
-		return question;
-	}
 
 	public int checkQuestion(int questionId, String[] answerValues) {
 		int tmpResult = 0;
