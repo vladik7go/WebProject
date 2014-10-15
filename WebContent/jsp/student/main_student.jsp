@@ -50,8 +50,8 @@ Number of tests: ${fn:length(testsList)}
 <td><c:out value="${ elem.id }" /></td>
 <td><c:out value="${ elem.title }" /></td>
 <td><c:out value="${ elem.description }" /></td>
-<td><c:out value="${resultMap[elem.id.toString()]}" />
-<c:if test="${empty resultMap[elem.id.toString()]}">not performed yet</c:if>
+<td><c:out value="${resultMap[elem.id]}" />
+<c:if test="${empty resultMap[elem.id]}">not performed yet</c:if>
 </td>
 <td>
 <form name="perform_test_form" method="POST" action="controller">
