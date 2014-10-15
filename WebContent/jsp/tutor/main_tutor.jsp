@@ -39,7 +39,7 @@ ${resultMap }
  <c:if test="${testsList != null }">     
       
  <table border="3">
-<th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
+<th> # </th><th> <fmt:message key="edit.label.test.title" /> </th><th> <fmt:message key="edit.labelt.test.description" /> </th><th colspan="2"> <fmt:message key="login.label.command"/> </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>

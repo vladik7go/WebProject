@@ -31,18 +31,18 @@ ${role }
 <table border="3">
 
 <td colspan = "5">
-Student name: ${resultsList[0][0]} ${resultsList[0][1]}
+<fmt:message key="label.studentName" />: ${resultsList[0][0]} ${resultsList[0][1]}
 </td>
 <tr/>
 
 <td colspan = "5">
-Number of performed tests: ${fn:length(resultsList)}
+<fmt:message key="label.nmbrOfPerformedTests" />: ${fn:length(resultsList)}
 </td>
 
 <tr/>
 <tr/>
 
-<th> Title </th><th> Description </th><th> Mark </th>
+<th> <fmt:message key="edit.label.test.title" /> </th><th> <fmt:message key="edit.labelt.test.description" /> </th><th> <fmt:message key="label.mark" /> </th>
 <c:forEach var="elem" items="${resultsList}" varStatus="status" >
 <tr>
 

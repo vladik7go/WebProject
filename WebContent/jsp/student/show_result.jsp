@@ -33,17 +33,17 @@
         </form>
 
 
-<h1>Test completed</h1>
+<h1><fmt:message key="label.TestCompleted" /></h1>
 <table border="3">
 
 <th >
-Test title:
+<fmt:message key="edit.label.test.title" />:
 </th>
 <th>
-Test description: 
+<fmt:message key="edit.labelt.test.description" />: 
 </th>
 <th>
-Final result: 
+<fmt:message key="label.mark" />: 
 </th>
 <tr>
 

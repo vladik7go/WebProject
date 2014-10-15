@@ -40,7 +40,7 @@
 					<input name="testId" type="hidden" value="${testId }" />
           			 <input type="hidden" name="questionId" value="${ question.id }" />
 <table border="3">
-				<th> <fmt:message key="edit.label.editing.question" />  </th><th> Command </th>
+				<th> <fmt:message key="edit.label.editing.question" />  </th><th> <fmt:message key="login.label.command"/> </th>
 					<tr>
 						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
 						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
@@ -56,7 +56,7 @@
 					
 	<table border="3">
 
-					<th> ID </th><th> Variant of answer </th><th> True of False </th><th colspan = "2"> Command </th>
+					<th> # </th><th> <fmt:message key="label.vatiantOfAnswer" /> </th><th> <fmt:message key="label.correct" /> </th><th colspan = "2"> <fmt:message key="login.label.command"/> </th>
 					<tr></tr>
 				<c:forEach var="elem" items="${question.answers}" >
 				

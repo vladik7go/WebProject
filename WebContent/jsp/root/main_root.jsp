@@ -38,7 +38,7 @@
  <c:if test="${personsList != null }">     
       
  <table border="3">
-<th> ID </th><th> Role_type </th><th> First name </th><th> Second name </th><th> login </th><th> Password </th><th colspan="3"> Command </th>
+<th> # </th><th> <fmt:message key="login.label.role"/> </th><th><fmt:message key="login.label.firstname"/> </th><th> <fmt:message key="login.label.secondname"/> </th><th> <fmt:message key="login.label.login"/> </th><th> <fmt:message key="login.label.password"/></th><th colspan="3"> <fmt:message key="login.label.command"/> </th>
 <c:forEach var="elem" items="${personsList}" >
 
 <tr>

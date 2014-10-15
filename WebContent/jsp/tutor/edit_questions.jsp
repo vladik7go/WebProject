@@ -36,19 +36,19 @@ Page: edit questions.
 
 <table border="3">
 <td colspan = "4">
-Test title: ${test.title }
+<fmt:message key="edit.label.test.title" />: ${test.title }
 </td>
 <tr/>
 
 <td colspan = "4">
-Number of questions: ${fn:length(test.questions)}
+<fmt:message key="label.QuantityOfQuestions.Total" />: ${fn:length(test.questions)}
 </td>
 
 <tr/>
 <tr/>
 
 
-<th> ID </th><th> Questions </th><th colspan = "2"> Command </th>
+<th> # </th><th> <fmt:message key="label.Questions" /> </th><th colspan = "2"> <fmt:message key="login.label.command" /> </th>
 
 <c:forEach var="elem" items="${test.questions}" >
 

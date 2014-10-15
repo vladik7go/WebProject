@@ -32,18 +32,18 @@ ${role }
 <table border="3">
 
 <td colspan = "5">
-Student name: ${person.firstName }  ${person.secondName }
+<fmt:message key="label.studentName" />: ${person.firstName }  ${person.secondName }
 </td>
 <tr/>
 
 <td colspan = "5">
-Number of tests: ${fn:length(testsList)}
+<fmt:message key="label.nmbrOfTests" />: ${fn:length(testsList)}
 </td>
 
 <tr/>
 <tr/>
 
-<th> ID </th><th> Title </th><th> Description </th><th> Mark </th><th > Command </th>
+<th> # </th><th> <fmt:message key="edit.label.test.title" /> </th><th> <fmt:message key="edit.labelt.test.description" /> </th><th> <fmt:message key="label.mark" /> </th><th > <fmt:message key="login.label.command"/> </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>
@@ -51,7 +51,7 @@ Number of tests: ${fn:length(testsList)}
 <td><c:out value="${ elem.title }" /></td>
 <td><c:out value="${ elem.description }" /></td>
 <td><c:out value="${resultMap[elem.id]}" />
-<c:if test="${empty resultMap[elem.id]}">not performed yet</c:if>
+<c:if test="${empty resultMap[elem.id]}"><fmt:message key="label.notPerformedYet" /></c:if>
 </td>
 <td>
 <form name="perform_test_form" method="POST" action="controller">
