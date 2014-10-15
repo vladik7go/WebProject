@@ -27,7 +27,7 @@ ${resultMap }
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
-               		<c:if test="${role == 'root' }">
+               		<c:if test="${role == 'root' or role == 'tutor' }">
                		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
                	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
@@ -39,7 +39,7 @@ ${resultMap }
  <c:if test="${testsList != null }">     
       
  <table border="3">
-<th> ID </th><th> Title </th><th> Description </th><th colspan="2"> Command </th>
+<th> # </th><th> <fmt:message key="edit.label.test.title" /> </th><th> <fmt:message key="edit.labelt.test.description" /> </th><th colspan="2"> <fmt:message key="login.label.command"/> </th>
 <c:forEach var="elem" items="${testsList}" >
 
 <tr>

@@ -18,13 +18,13 @@
 
 <table border="3">
 <td colspan = "5">
-Student name: ${person.firstName }  ${person.secondName }
+<fmt:message key="label.studentName" />: ${person.firstName }  ${person.secondName }
 </td>
 <tr/>
 
 <td colspan = "5">
-Quantity of questions(total in test): ${fn:length(test.questions)}</br>
-Quantity of questions(remain): ${fn:length(questionsIdList)}
+<fmt:message key="label.QuantityOfQuestions.Total" />: ${fn:length(test.questions)}</br>
+<fmt:message key="label.QuantityOfQuestions.Remain" />: ${fn:length(questionsIdList)}
 </td>
 
 <tr/>
@@ -33,9 +33,9 @@ Quantity of questions(remain): ${fn:length(questionsIdList)}
 
 
 <table border="3">
-				<th> <fmt:message key="test.label.answering.question" />  </th><th> Command </th>
+				<th> <fmt:message key="test.label.answering.question" />  </th>
 					<tr>
-						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
+						<td><textarea readonly="readonly" rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
 						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
 			
 					<tr/>
@@ -44,7 +44,7 @@ Quantity of questions(remain): ${fn:length(questionsIdList)}
 
 	<table border="3">
 
-					<th> ID </th><th> Variant of answer </th><th> Correct </th>
+					<th> # </th><th> <fmt:message key="label.vatiantOfAnswer" /> </th><th> <fmt:message key="label.correct" /> </th>
 					<tr></tr>
 				<form name="show_answer_form" method="POST" action="controller">
 					<input name="testId" type="hidden" value="${test.id }" />
@@ -71,7 +71,7 @@ Quantity of questions(remain): ${fn:length(questionsIdList)}
 					
 						</c:forEach>
 </table>
-	<input type="submit" value="<fmt:message key="edit.button.save" />" />
+	<input type="submit" value="<fmt:message key="root.button.nextQuestion" />" />
 </form>		
 
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></br></c:if>

@@ -15,6 +15,7 @@
 <br/>
 
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
+<c:if test="${errorDuplicateEntryMessage !=null }"><fmt:message key="registration.label.duplicateEntryError"/></c:if>
 
 <br/>
 

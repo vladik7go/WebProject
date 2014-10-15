@@ -9,6 +9,7 @@ import by.epam.web.application.commands.person.DeletePersonCommand;
 import by.epam.web.application.commands.person.ShowPersonsCommand;
 import by.epam.web.application.commands.person.EditPersonCommand;
 import by.epam.web.application.commands.person.EditWritePersonCommand;
+import by.epam.web.application.commands.person.ShowResultsCommand;
 import by.epam.web.application.commands.test.AddAnswerCommand;
 import by.epam.web.application.commands.test.AddQuestionCommand;
 import by.epam.web.application.commands.test.AddTestCommand;
@@ -53,6 +54,7 @@ public enum CommandEnum {
 	EDITWRITEANSWER(new EditWriteAnswerCommand()),
 	DELETEANSWER(new DeleteAnswerCommand()),
 	SHOWRESULT(new ShowResultCommand()),
+	SHOWRESULTS(new ShowResultsCommand()),
 	WRITERESULT(new WriteResultCommand()),
 	LOGOUT(	new LogoutCommand());
 

@@ -20,11 +20,11 @@ public class ShowResultCommand implements ActionCommand {
 	@Override
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		Map<String, Integer> resultMap = null;
+		Map<Integer, Integer> resultMap = null;
 		int personId = Integer.parseInt(((String) request.getSession().getAttribute(PARAM_NAME_ID)).trim());
 		DaoTest dao = new DaoTest();
 		try {
-			resultMap = dao.showResults(personId);
+			resultMap = dao.showResult(personId);
 		} catch (TechnicalException e) {
 			log.error(e);
 		}

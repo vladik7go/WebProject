@@ -196,9 +196,9 @@ public class DaoTest extends Dao {
 		return question;
 	}
 
-	public Map<String, Integer> showResults(int personId)
+	public Map<Integer, Integer> showResult(int personId)
 			throws TechnicalException {
-		Map<String, Integer> resultMap = new HashMap<String, Integer>();
+		Map<Integer, Integer> resultMap = new HashMap<>();
 		Connection cn = null;
 		PreparedStatement st = null;
 
@@ -208,10 +208,9 @@ public class DaoTest extends Dao {
 			st.setInt(1, personId);
 			ResultSet result = st.executeQuery();
 			while (result.next()) {
-				int intKey = result.getInt("test_type");
-				String stringKey = String.valueOf(intKey);
+				Integer intKey = result.getInt("test_type");
 				Integer value = result.getInt("mark");
-				resultMap.put(stringKey, value);
+				resultMap.put(intKey, value);
 			}
 
 		} catch (SQLException e) {

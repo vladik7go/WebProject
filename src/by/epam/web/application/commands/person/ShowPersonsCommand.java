@@ -28,6 +28,8 @@ public class ShowPersonsCommand implements ActionCommand {
 			request.setAttribute("personsList", persons);
 			request.setAttribute("successfullyPerformedAction",
 					request.getParameter("successfullyPerformedAction"));
+			request.setAttribute("errorEmptyResultTableMessage",
+					request.getParameter("errorEmptyResultTableMessage"));
 		} catch (TechnicalException e) {
 			log.error(e);
 			page = ConfigurationManager.getProperty("path.page.login");

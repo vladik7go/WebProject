@@ -11,6 +11,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import by.epam.web.application.entity.Person;
+import by.epam.web.application.exceptions.LogicException;
 import by.epam.web.application.exceptions.TechnicalException;
 import by.epam.web.application.pool.ConnectionPool;
 
@@ -23,6 +24,11 @@ public class DaoPerson extends Dao {
 	private static final String SQL_SHOW_PERSONS = "SELECT * FROM person";
 	private static final String SQL_SHOW_PERSON_BY_ID = "SELECT * FROM person where id=? ";
 	private static final String SQL_DELETE_PERSON_BY_ID = "DELETE from person where id= ?";
+	private static final String SQL_SHOW_RESULTS_BY_PERSON_ID = "SELECT person.first_name, person.second_name, test.title, test.description, result.mark "
+			+ "FROM result "
+			+ "JOIN person ON result.person_type=person.id "
+			+ "JOIN test ON result.test_type=test.id "
+			+ "WHERE result.person_type=?";
 
 	/*
 	 * This method return the role of the user in case, if proper login and
@@ -90,6 +96,41 @@ public class DaoPerson extends Dao {
 
 	}
 
+	public List<List<String>> showResults(int personId) {
+		List<List<String>> resultsList = new ArrayList<>();
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_SHOW_RESULTS_BY_PERSON_ID);
+			st.setInt(1, personId);
+			ResultSet result = st.executeQuery();
+			// result.next();
+			// resultsList.add(result.getString(1));
+			// resultsList.add(result.getString(2));
+
+			while (result.next()) {
+				List<String> list = new ArrayList<>();
+				list.add(result.getString(1));
+				list.add(result.getString(2));
+				list.add(result.getString(3));
+				list.add(result.getString(4));
+				list.add(String.valueOf(result.getInt(5)));
+
+				resultsList.add(list);
+			}
+
+		} catch (SQLException e) {
+			log.error(e);
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return resultsList;
+	}
+
 	public Person showPerson(int id) throws TechnicalException {
 		Connection cn = null;
 		PreparedStatement st = null;
@@ -118,7 +159,8 @@ public class DaoPerson extends Dao {
 		return person;
 	}
 
-	public Person showPerson(String name, String password) throws TechnicalException {
+	public Person showPerson(String name, String password)
+			throws TechnicalException {
 		Connection cn = null;
 		PreparedStatement st = null;
 		Person person = new Person();
@@ -141,7 +183,7 @@ public class DaoPerson extends Dao {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
 		}
-	
+
 		return person;
 	}
 

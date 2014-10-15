@@ -7,11 +7,10 @@
 <html>
 <head>
 
-<title>show_result.jsp</title>
+<title>show_results.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>
 <body>
-
 <fmt:setLocale value="${language }" />
 <fmt:setBundle basename="resources.messages_bundle" />
 <div class="login-card">
@@ -19,41 +18,42 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="writeResult" ><fmt:message key="test.label.writeResult" /></option>
                	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
-               		<c:if test="${role == 'root' }">
+               		<c:if test="${role == 'root' or role == 'tutor' }">
                		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
                	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
-             <input name="personId" type="hidden" value="${person.id }" />
-             <input name="testId" type="hidden" value="${test.id }" />
-             <input name="testMark" type="hidden" value="${testResultFinal }" />
         </form>
 
-
-<h1><fmt:message key="label.TestCompleted" /></h1>
+${role }   
 <table border="3">
 
-<th >
-<fmt:message key="edit.label.test.title" />:
-</th>
-<th>
-<fmt:message key="edit.labelt.test.description" />: 
-</th>
-<th>
-<fmt:message key="label.mark" />: 
-</th>
+<td colspan = "5">
+<fmt:message key="label.studentName" />: ${resultsList[0][0]} ${resultsList[0][1]}
+</td>
+<tr/>
+
+<td colspan = "5">
+<fmt:message key="label.nmbrOfPerformedTests" />: ${fn:length(resultsList)}
+</td>
+
+<tr/>
+<tr/>
+
+<th> <fmt:message key="edit.label.test.title" /> </th><th> <fmt:message key="edit.labelt.test.description" /> </th><th> <fmt:message key="label.mark" /> </th>
+<c:forEach var="elem" items="${resultsList}" varStatus="status" >
 <tr>
 
-<td>${test.title }</td>
-<td>${test.description}</td>
-<td>   ${testResultFinal }</td>
-</tr>
-</table>
+<td><c:out value="${ elem[2]}" /></td>
+<td><c:out value="${ elem[3]}" /></td>
+<td><c:out value="${ elem[4]}" /></td>
 
-<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
+<tr/>
+</c:forEach>
+
+</table>
 
 </div>
 </body>
