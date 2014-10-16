@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static by.epam.web.application.controller.Controller.log;
+//import static by.epam.web.application.controller.Controller.log;
 
 public class ConnectionPool {
 	private static Lock lock = new ReentrantLock();
