@@ -9,6 +9,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.apache.log4j.Logger;
 
+import by.epam.project.exception.TechnicalException;
+
 public class ConnectionPool {
 	public static Logger log = Logger.getLogger(ConnectionPool.class);
 	private static Lock lock = new ReentrantLock();
@@ -55,12 +57,12 @@ public class ConnectionPool {
 	}
 
 	// Gain a connection from the pool, queue is decreasing by one.
-	public Connection getConnection() {
+	public Connection getConnection() throws TechnicalException {
 		Connection connection = null;
 		try {
 			connection = pool.take();
 		} catch (InterruptedException e) {
-			log.error("Technical Exception", e);
+			throw new TechnicalException("check connection for null ", e);
 		}
 		log.debug("pool size = " + pool.size());
 		return connection;

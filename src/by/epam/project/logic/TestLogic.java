@@ -47,12 +47,9 @@ public class TestLogic {
 
 			}
 		}
-		if (counterForTrue == tmpResult) {
-			return tmpResult;
 
-		} else {
-			return tmpResult;
-		}
+		return tmpResult;
+
 	}
 
 	public int calculateResult(int testResult, int testId) {

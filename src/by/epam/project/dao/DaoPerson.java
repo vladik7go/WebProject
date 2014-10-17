@@ -51,7 +51,7 @@ public class DaoPerson extends Dao {
 			resultSet.getString("password");
 			roleType = resultSet.getInt("role_type");
 
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return 0;
 		} finally {
@@ -69,8 +69,8 @@ public class DaoPerson extends Dao {
 		Connection cn = null;
 		Statement st = null;
 
-		cn = ConnectionPool.getSinglePool().getConnection();
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.createStatement();
 			ResultSet result = st.executeQuery(SQL_SHOW_PERSONS);
 			while (result.next()) {
@@ -121,7 +121,7 @@ public class DaoPerson extends Dao {
 				resultsList.add(list);
 			}
 
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 		} finally {
 			Dao.closeStatement(st);
@@ -202,7 +202,7 @@ public class DaoPerson extends Dao {
 			st.setString(5, password);
 
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -228,7 +228,7 @@ public class DaoPerson extends Dao {
 			st.setInt(6, id);
 			log.debug("edit user, id = " + id);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -242,13 +242,13 @@ public class DaoPerson extends Dao {
 	public boolean deletePerson(int id) {
 		Connection cn = null;
 		PreparedStatement st = null;
-		cn = ConnectionPool.getSinglePool().getConnection();
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_DELETE_PERSON_BY_ID);
 			st.setInt(1, id);
 			st.executeUpdate();
 			return true;
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 			return false;
 		} finally {

@@ -235,7 +235,7 @@ public class DaoTest extends Dao {
 			st.setString(2, description);
 			st.setInt(3, id);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -256,7 +256,7 @@ public class DaoTest extends Dao {
 			st.setString(1, content);
 			st.setInt(2, id);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -280,7 +280,7 @@ public class DaoTest extends Dao {
 			st.setString(2, answerContent);
 			st.setInt(3, answerValue);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -301,7 +301,7 @@ public class DaoTest extends Dao {
 			st.setInt(1, testId);
 			st.setString(2, questionContent);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -322,7 +322,7 @@ public class DaoTest extends Dao {
 			st.setString(1, testTitle);
 			st.setString(2, testDescription);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -345,7 +345,7 @@ public class DaoTest extends Dao {
 			st.setInt(2, testId);
 			st.setInt(3, testMark);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			throw new LogicException(
 					"From daoTest.addResult: pair 'personId===testType' already exist. Should be unique ",
 					e);
@@ -369,7 +369,7 @@ public class DaoTest extends Dao {
 			st.setInt(2, answerValue);
 			st.setInt(3, answerId);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
 			return false;
 		} finally {
@@ -383,14 +383,14 @@ public class DaoTest extends Dao {
 	public boolean deleteAnswer(int id) {
 		Connection cn = null;
 		PreparedStatement st = null;
-		cn = ConnectionPool.getSinglePool().getConnection();
 
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_DELETE_ANSWER_BY_ID);
 			st.setInt(1, id);
 			st.executeUpdate();
 			return true;
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 			return false;
 		} finally {
@@ -402,15 +402,15 @@ public class DaoTest extends Dao {
 	public boolean deleteResult(int personId, int testId) {
 		Connection cn = null;
 		PreparedStatement st = null;
-		cn = ConnectionPool.getSinglePool().getConnection();
 
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_DELETE_RESULT_BY_PERSONID_TESTID);
 			st.setInt(1, personId);
 			st.setInt(2, testId);
 			st.executeUpdate();
 			return true;
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 			return false;
 		} finally {
@@ -424,13 +424,13 @@ public class DaoTest extends Dao {
 
 		Connection cn = null;
 		PreparedStatement st = null;
-		cn = ConnectionPool.getSinglePool().getConnection();
 
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_DELETE_QUESTION_BY_ID);
 			st.setInt(1, id);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 			return false;
 		} finally {
@@ -446,13 +446,13 @@ public class DaoTest extends Dao {
 
 		Connection cn = null;
 		PreparedStatement st = null;
-		cn = ConnectionPool.getSinglePool().getConnection();
 
 		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
 			st = cn.prepareStatement(SQL_DELETE_TEST_BY_ID);
 			st.setInt(1, id);
 			st.executeUpdate();
-		} catch (SQLException e) {
+		} catch (SQLException | TechnicalException e) {
 			log.error(e);
 			return false;
 		} finally {
