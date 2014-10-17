@@ -37,7 +37,7 @@
       
  <c:if test="${personsList != null }">     
       
- <table border="3">
+ <table  border="3">
 <th> # </th><th> <fmt:message key="login.label.role"/> </th><th><fmt:message key="login.label.firstname"/> </th><th> <fmt:message key="login.label.secondname"/> </th><th> <fmt:message key="login.label.login"/> </th><th> <fmt:message key="login.label.password"/></th><th colspan="3"> <fmt:message key="login.label.command"/> </th>
 <c:forEach var="elem" items="${personsList}" >
 
@@ -52,7 +52,7 @@
 <td><c:out value="${ elem.firstName }" /></td>
 <td><c:out value="${ elem.secondName }" /></td>
 <td><c:out value="${ elem.login }" /></td>
-<td><c:out value="${ elem.password }" /></td>
+<!-- td ><c:out value="${ elem.password }" /></td-->
 
 <c:if test="${role == 'root' }">
 <td>

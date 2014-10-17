@@ -3,7 +3,7 @@
   <display-name>WebProject</display-name>
   <servlet>
     <servlet-name>Controller</servlet-name>
-    <servlet-class>by.epam.web.application.controller.Controller</servlet-class>
+    <servlet-class>by.epam.project.controller.Controller</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Controller</servlet-name>
@@ -22,7 +22,7 @@
   </error-page>
   <filter>
     <filter-name>filterUTF8</filter-name>
-    <filter-class>by.epam.web.application.filter.EncodingFilter</filter-class>
+    <filter-class>by.epam.project.filter.EncodingFilter</filter-class>
     <init-param>
       <param-name>encoding</param-name>
       <param-value>UTF-8</param-value>
@@ -34,7 +34,7 @@
   </filter-mapping>
   <filter>
     <filter-name>redirectfilter</filter-name>
-    <filter-class>by.epam.web.application.filter.PageRedirectSecurityFilter</filter-class>
+    <filter-class>by.epam.project.filter.PageRedirectSecurityFilter</filter-class>
     <init-param>
       <param-name>INDEX_PATH</param-name>
       <param-value>/index.jsp</param-value>
