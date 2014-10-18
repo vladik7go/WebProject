@@ -40,7 +40,7 @@ class DBConnector {
 		try {
 			// Register the driver
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-
+			
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

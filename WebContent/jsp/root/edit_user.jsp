@@ -3,17 +3,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
+<fmt:setLocale value="${language }" />
+<fmt:setBundle basename="resources.messages_bundle" />
 
 <html>
 <head>
 
-<title>page edit_user.jsp</title>
+<title><fmt:message key="page.title.edit_user" /></title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </head>
 <body>
 <div class="login-card">
-<fmt:setLocale value="${language }" />
-<fmt:setBundle basename="resources.messages_bundle" />
+
 
 
 page edit_user
