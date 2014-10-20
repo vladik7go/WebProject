@@ -22,9 +22,9 @@ Page: edit questions.
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' }">
-               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
@@ -59,7 +59,7 @@ Page: edit questions.
 <td>
 
 <form name="edit_question_form" method="POST" action="controller">
-<input type="hidden" name="command" value="editQuestion" />
+<input type="hidden" name="command" value="edit_Question" />
 <input type="hidden" name="questionId" value="${ elem.id }" />
 <input type="hidden" name="testId" value="${ test.id }" />
 
@@ -70,7 +70,7 @@ Page: edit questions.
 <td>
 
 <form name="delete_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="deleteQuestion" />
+<input type="hidden" name="command" value="delete_Question" />
 <input type="hidden" name="questionId" value="${ elem.id }" />
 <input type="hidden" name="testId" value="${ test.id }" />
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
@@ -82,7 +82,7 @@ Page: edit questions.
 </c:forEach>
 
 <form name="add_question_form" method="POST" action="controller">
-	<input type="hidden" name="command" value="addQuestion" />
+	<input type="hidden" name="command" value="add_Question" />
 	<input name="testId" type="hidden" value="${test.id }" />
 	
 	

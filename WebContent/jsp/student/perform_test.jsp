@@ -51,7 +51,7 @@
 				<form name="show_answer_form" method="POST" action="controller">
 					<input name="testId" type="hidden" value="${test.id }" />
 					<input name="testResult" type="hidden" value="${testResult }" />
-					<input type="hidden" name="command" value="performWriteTest" />
+					<input type="hidden" name="command" value="perform_Write_Test" />
 					<input type="hidden" name="questionId" value="${ questionsIdList[0] }" />
 					
 					<c:set var="questionsIdList" value="${questionsIdList }" scope="session" />

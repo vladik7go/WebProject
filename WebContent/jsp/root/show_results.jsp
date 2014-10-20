@@ -20,9 +20,9 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' or role == 'tutor' }">
-               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
                	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>

@@ -20,10 +20,10 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="editQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="edit_Questions" ><fmt:message key="test.label.showAllQuestions" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' }">
-               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
@@ -36,7 +36,7 @@
 <tr>
 <td >
 				<form action="controller" method="post">
-					<input name="command" type="hidden" value="editWriteTest" />
+					<input name="command" type="hidden" value="edit_Write_Test" />
 					<input name="id" type="hidden" value="${test.id }" />
 					<fieldset>
 						

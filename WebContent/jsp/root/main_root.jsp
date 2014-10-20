@@ -20,7 +20,7 @@
 
 <c:if test="${personsList == null }">
 <c:redirect url="controller">
-<c:param name="command" value="showPersons"/>
+<c:param name="command" value="show_Persons"/>
 <c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
 <c:param name="errorEmptyResultTableMessage" value="${errorEmptyResultTableMessage}"/>
 </c:redirect>
@@ -29,8 +29,8 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
@@ -59,7 +59,7 @@
 <c:if test="${role == 'root' }">
 <td>
 <form name="edit_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="editPerson" />
+<input type="hidden" name="command" value="edit_Person" />
 <input type="hidden" name="personId" value="${ elem.id }" />
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
 </form>
@@ -67,7 +67,7 @@
 
 <td>
 <form name="delete_person_form" method="POST" action="controller">
-<input type="hidden" name="command" value="deletePerson" />
+<input type="hidden" name="command" value="delete_Person" />
 <input type="hidden" name="personId" value="${ elem.id }" />
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
 </form>
@@ -78,7 +78,7 @@
 <td>
 
 <form name="show_results_form" method="POST" action="controller">
-<input type="hidden" name="command" value="showResults" />
+<input type="hidden" name="command" value="show_Results" />
 <input type="hidden" name="personId" value="${ elem.id }" />
 <input type="submit" value="<fmt:message key="root.button.show.results" />"/>
 </form>

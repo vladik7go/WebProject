@@ -26,7 +26,7 @@ ${person.firstName }
 <tr>
 <td >
 				<form action="controller" method="post">
-					<input name="command" type="hidden" value="editWritePerson" />
+					<input name="command" type="hidden" value="edit_Write_Person" />
 					<input name="id" type="hidden" value="${person.id }" />
 					<fieldset>
 						

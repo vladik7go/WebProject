@@ -26,7 +26,7 @@
 <tr>
 <td >
 				<form action="controller" method="post">
-					<input name="command" type="hidden" value="addperson" />
+					<input name="command" type="hidden" value="add_person" />
 					<input name="role" type="hidden" value="3" />
 					<fieldset>
 						

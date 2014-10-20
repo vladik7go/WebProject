@@ -21,10 +21,10 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="editQuestions" ><fmt:message key="test.label.showAllQuestions" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="edit_Questions" ><fmt:message key="test.label.showAllQuestions" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' }">
-               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
 				<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
@@ -37,7 +37,7 @@
 
 
 <form action="controller" method="post">
-					<input name="command" type="hidden" value="editWriteQuestion" />
+					<input name="command" type="hidden" value="edit_Write_Question" />
 					<input name="testId" type="hidden" value="${testId }" />
           			 <input type="hidden" name="questionId" value="${ question.id }" />
 <table border="3">
@@ -63,7 +63,7 @@
 				
 				<form name="edit_answer_form" method="POST" action="controller">
 				<input name="testId" type="hidden" value="${testId }" />
-					<input type="hidden" name="command" value="editWriteAnswer" />
+					<input type="hidden" name="command" value="edit_Write_Answer" />
 					<input type="hidden" name="questionId" value="${ question.id }" />
 					<tr>
 					<td><c:out value="${ elem.id }" /></td>
@@ -88,7 +88,7 @@
 										
 					<td>
 			<form name="delete_answer_form" method="POST" action="controller">
-					<input type="hidden" name="command" value="deleteAnswer" />
+					<input type="hidden" name="command" value="delete_Answer" />
 					<input type="hidden" name="answerId" value="${ elem.id }" />
 					<input type="hidden" name="questionId" value="${ question.id }" />
 					<input name="testId" type="hidden" value="${testId }" />
@@ -100,7 +100,7 @@
 	</c:forEach>
 	
 	<form name="add_answer_form" method="POST" action="controller">
-	<input type="hidden" name="command" value="addAnswer" />
+	<input type="hidden" name="command" value="add_Answer" />
 	<input name="testId" type="hidden" value="${testId }" />
 	<input type="hidden" name="questionId" value="${ question.id }" />
 	

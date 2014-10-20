@@ -20,7 +20,7 @@ ${resultMap }
 
  <c:if test="${testsList == null }">
 <c:redirect url="controller">
-<c:param name="command" value="showTests"/>
+<c:param name="command" value="show_Tests"/>
 <c:param name="successfullyPerformedAction" value="${successfullyPerformedAction}"/>
 </c:redirect>
 </c:if>
@@ -28,9 +28,9 @@ ${resultMap }
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
-               	<option value="showTests" ><fmt:message key="test.label.showAllTests" /></option>
+               	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' or role == 'tutor' }">
-               		<option value="showPersons" ><fmt:message key="edit.label.showAllPersons" /></option>
+               		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
                		</c:if>
                	<!-- option value=""> <fmt:message key="login.button.tologin" /></option-->
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
@@ -53,7 +53,7 @@ ${resultMap }
 <td>
 
 <form name="edit_test_form" method="POST" action="controller">
-<input type="hidden" name="command" value="editTest" />
+<input type="hidden" name="command" value="edit_Test" />
 <input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.edit" />"/>
@@ -63,7 +63,7 @@ ${resultMap }
 <td>
 
 <form name="delete_test_form" method="POST" action="controller">
-<input type="hidden" name="command" value="deleteTest" />
+<input type="hidden" name="command" value="delete_Test" />
 <input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.delete" />"/>
@@ -77,7 +77,7 @@ ${resultMap }
 <td>
 
 <form name="perform_test_form" method="POST" action="controller">
-<input type="hidden" name="command" value="performTest" />
+<input type="hidden" name="command" value="perform_Test" />
 <input type="hidden" name="testId" value="${ elem.id }" />
 
 <input type="submit" value="<fmt:message key="root.button.perform" />"/>
@@ -91,7 +91,7 @@ ${resultMap }
 </c:forEach>
 <c:if test="${role == 'tutor' or role == 'root' }"> 
 <form name="add_test_form" method="POST" action="controller">
-	<input type="hidden" name="command" value="addTest" />
+	<input type="hidden" name="command" value="add_Test" />
 	<input name="testId" type="hidden" value="${test.id }" />
 	
 	
