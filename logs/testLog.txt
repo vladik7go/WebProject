@@ -1,1065 +1,152 @@
-20.10.2014 15:18:39 [http-bio-8080-exec-7] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 15:18:39 [http-bio-8080-exec-7] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:18:41 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:18:41 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:18:41 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:18:41 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:18:41 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@60d3f659
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@531a2ff4
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3de29e3a
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@20ea1be3
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@697e7a37
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:18:54 [http-bio-8080-exec-10] DEBUG ShowTestsCommand:execute:32 - list of tests = [by.epam.project.entity.test.Test@60d3f659, by.epam.project.entity.test.Test@531a2ff4, by.epam.project.entity.test.Test@3de29e3a, by.epam.project.entity.test.Test@20ea1be3, by.epam.project.entity.test.Test@697e7a37]
-20.10.2014 15:19:21 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:21 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@713c362e
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1a485fdc
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@32010b7b
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7bb5ebc
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4014d47a
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:24 [http-bio-8080-exec-4] DEBUG ShowTestsCommand:execute:32 - list of tests = [by.epam.project.entity.test.Test@713c362e, by.epam.project.entity.test.Test@1a485fdc, by.epam.project.entity.test.Test@32010b7b, by.epam.project.entity.test.Test@7bb5ebc, by.epam.project.entity.test.Test@4014d47a]
-20.10.2014 15:19:30 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:30 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:19:30 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:30 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:32 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:32 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:19:32 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:32 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:41 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:41 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@181c581a
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1b264407
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@13804fe0
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@64508fe8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@2cde39a5
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ShowResultCommand:execute:31 - debug{1=10, 2=3, 3=4, 9=0, 10=7}
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:19:45 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:05 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:24:05 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@721fb0f3
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1bf0a88d
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@58ed5883
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1f0b538a
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@8a67ead
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ShowResultCommand:execute:31 - debug{1=10, 2=3, 3=4, 9=0, 10=7}
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:24:06 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:07 [http-bio-8080-exec-11] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-20.10.2014 15:40:07 [http-bio-8080-exec-11] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 15:40:07 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:08 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4d9257dd
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1aa82f65
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5068ca95
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3fefb28c
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7a5cfc49
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:09 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Test ---- had been performed
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@72930942
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:15 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:40:15 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 55 ; answer value = 1
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@30a48d70
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 61 ; answer value = 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5f662a12
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 53 ; answer value = 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@f9135f2
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:16 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@eccbd20
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- write_Result ---- had been performed
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:18 [http-bio-8080-exec-11] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
-by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId===testType' already exist. Should be unique 
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:349)
-	at by.epam.project.logic.TestLogic.writeResult(TestLogic.java:90)
-	at by.epam.project.command.test.WriteResultCommand.execute(WriteResultCommand.java:28)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '8-9' for key 'person_type_test_type'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
-	at com.mysql.jdbc.Util.getInstance(Util.java:383)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4226)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:347)
-	... 25 more
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG TestLogic:writeResult:96 - From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG TestLogic:writeResult:102 - From TestLogic.writeResult: NEW pair 'personId===testType' successfully added
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:18 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1ba8f4ff
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5217d273
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1837cb45
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@676ae62a
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3e5db426
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@407b354e
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ShowTestsCommand:execute:32 - list of tests = [by.epam.project.entity.test.Test@5217d273, by.epam.project.entity.test.Test@1837cb45, by.epam.project.entity.test.Test@676ae62a, by.epam.project.entity.test.Test@3e5db426, by.epam.project.entity.test.Test@407b354e]
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ShowResultCommand:execute:31 - debug{1=10, 2=3, 3=4, 9=0, 10=7}
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:40:20 [http-bio-8080-exec-11] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:17 [http-bio-8080-exec-14] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-20.10.2014 15:43:18 [http-bio-8080-exec-14] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 15:43:18 [http-bio-8080-exec-14] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:18 [http-bio-8080-exec-14] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4000b01c
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@53fd2f98
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@58e9b7b5
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@30b7721c
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5d58e2db
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:19 [http-bio-8080-exec-20] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Test ---- had been performed
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3c750584
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:20 [http-bio-8080-exec-16] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:43:22 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 77 ; answer value = 1
-20.10.2014 15:43:22 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@21774c73
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:22 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:43:23 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 74 ; answer value = 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@20b441f8
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-20.10.2014 15:43:23 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 71 ; answer value = 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:23 [http-bio-8080-exec-24] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@8c12e60
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:23 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@574c75f1
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- write_Result ---- had been performed
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:25 [http-bio-8080-exec-24] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
-by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId===testType' already exist. Should be unique 
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:349)
-	at by.epam.project.logic.TestLogic.writeResult(TestLogic.java:90)
-	at by.epam.project.command.test.WriteResultCommand.execute(WriteResultCommand.java:28)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '8-10' for key 'person_type_test_type'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
-	at com.mysql.jdbc.Util.getInstance(Util.java:383)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4226)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:347)
-	... 25 more
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG TestLogic:writeResult:96 - From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG TestLogic:writeResult:102 - From TestLogic.writeResult: NEW pair 'personId===testType' successfully added
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:25 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1fce9eb5
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4a717d9d
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@18018a10
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@38066cb6
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3ef1754b
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1a015df
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@4a717d9d, by.epam.project.entity.test.Test@18018a10, by.epam.project.entity.test.Test@38066cb6, by.epam.project.entity.test.Test@3ef1754b, by.epam.project.entity.test.Test@1a015df]
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:27 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:31 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:31 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7aba38f2
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5b9b100c
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3ae46075
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@61342d19
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@54d2a505
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:34 [http-bio-8080-exec-24] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@7aba38f2, by.epam.project.entity.test.Test@5b9b100c, by.epam.project.entity.test.Test@3ae46075, by.epam.project.entity.test.Test@61342d19, by.epam.project.entity.test.Test@54d2a505]
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@585e685c
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@511d78fd
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@77034c05
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@6be1dcf3
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@2658a383
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:38 [http-bio-8080-exec-24] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@585e685c, by.epam.project.entity.test.Test@511d78fd, by.epam.project.entity.test.Test@77034c05, by.epam.project.entity.test.Test@6be1dcf3, by.epam.project.entity.test.Test@2658a383]
-20.10.2014 15:43:48 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:48 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:43:48 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:48 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:51 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:51 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:43:51 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:51 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:43:55 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:43:55 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:43:55 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:43:55 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:44:01 [http-bio-8080-exec-24] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:44:01 [http-bio-8080-exec-24] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:44:01 [http-bio-8080-exec-24] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:44:01 [http-bio-8080-exec-24] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@323da5a8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7328527f
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@52597e67
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@66e2da2e
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4fce080b
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:13 [http-bio-8080-exec-27] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@323da5a8, by.epam.project.entity.test.Test@7328527f, by.epam.project.entity.test.Test@52597e67, by.epam.project.entity.test.Test@66e2da2e, by.epam.project.entity.test.Test@4fce080b]
-20.10.2014 15:46:15 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:15 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:46:15 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:15 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:17 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:19 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:21 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:22 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:22 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:46:22 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:22 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:29 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:29 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@26269791
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@4107fe98
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@6a5088a4
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7af47d24
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5995a3c9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:32 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@396796d3
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@76f84cb7
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@19a7b2a0
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@41e72102
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 8
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@39eecdd3
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@396796d3, by.epam.project.entity.test.Test@76f84cb7, by.epam.project.entity.test.Test@19a7b2a0, by.epam.project.entity.test.Test@41e72102, by.epam.project.entity.test.Test@39eecdd3]
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:36 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:38 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:38 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:41 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:46 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:46 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 15:46:46 [http-bio-8080-exec-27] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 15:46:46 [http-bio-8080-exec-27] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 15:46:52 [http-bio-8080-exec-27] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 15:46:52 [http-bio-8080-exec-27] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:18:39 [http-bio-8080-exec-7] DEBUG ConnectionPool:createPool:39 - pool size = 10
+20.10.2014 19:18:39 [http-bio-8080-exec-7] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:20:15 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:20:15 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:20:17 [http-bio-8080-exec-3] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
+20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG ConnectionPool:createPool:39 - pool size = 10
+20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:21:28 [http-bio-8080-exec-2] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
+20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:43 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:43 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:21:46 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:55 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:55 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
+20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG ConnectionPool:createPool:39 - pool size = 10
+20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
+20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:02 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:02 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:36:03 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
+20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:12 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:12 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 19:36:13 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10

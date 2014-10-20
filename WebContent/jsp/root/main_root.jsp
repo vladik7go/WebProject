@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="ctg" uri="customtags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <fmt:setLocale value="${language }" />
@@ -75,7 +76,7 @@
 </c:if>
 
 
-<td>
+<!-- td>
 
 <form name="show_results_form" method="POST" action="controller">
 <input type="hidden" name="command" value="show_Results" />
@@ -83,6 +84,10 @@
 <input type="submit" value="<fmt:message key="root.button.show.results" />"/>
 </form>
 
+</td-->
+
+<td>
+<ctg:showResults personId="${ elem.id }" language="${language }" />
 </td>
 
 </tr>
@@ -92,7 +97,7 @@
 
 </c:if>
 
-<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><fmt:message key="edit.label.successfullyPerformedAction"/></c:if>
+<c:if test="${successfullyPerformedAction != null and successfullyPerformedAction eq '1' }"><ctg:successAction language="${language }" /></c:if>
 <c:if test="${errorEmptyResultTableMessage != null and errorEmptyResultTableMessage eq '1' }"><fmt:message key="message.errorEmptyResultTableMessage"/></c:if>
 
 

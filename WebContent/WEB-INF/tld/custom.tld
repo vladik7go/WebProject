@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib version="2.1"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+<tlib-version>1.0</tlib-version>
+<short-name>ctg</short-name>
+<uri>customtags</uri>
+<tag>
+<name>successAction</name>
+<tag-class>by.epam.project.tag.SuccessfullyPerformedActionTag</tag-class>
+<body-content>empty</body-content>
+	<attribute>
+	<name>language</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+<name>showResults</name>
+<tag-class>by.epam.project.tag.ShowResultsTag</tag-class>
+<body-content>empty</body-content>
+	<attribute>
+	<name>personId</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+	<name>language</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+</taglib>
