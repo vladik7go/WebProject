@@ -1,5 +1,6 @@
 package by.epam.project.command.login;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,6 +14,7 @@ import by.epam.project.command.test.ShowResultCommand;
 import by.epam.project.command.test.ShowTestsCommand;
 import by.epam.project.dao.DaoPerson;
 import by.epam.project.dao.DaoTest;
+import by.epam.project.entity.test.Test;
 import by.epam.project.exception.TechnicalException;
 import by.epam.project.logic.LoginLogic;
 import by.epam.project.resource.ConfigurationManager;
@@ -29,6 +31,7 @@ public class LoginCommand implements ActionCommand {
 
 	private static final String PARAM_NAME_LOGIN = "login";
 	private static final String PARAM_NAME_PASSWORD = "password";
+	private static final String PARAM_NAME_ID = "personId";
 
 	@Override
 	public String execute(HttpServletRequest request) {
@@ -37,11 +40,12 @@ public class LoginCommand implements ActionCommand {
 		// Extracting from the request login and password
 		String login = request.getParameter(PARAM_NAME_LOGIN);
 		String pass = request.getParameter(PARAM_NAME_PASSWORD);
+		String personId = null;
 
 		// check the login and the password
 		LoginLogic logic = new LoginLogic();
 		DaoPerson dao = new DaoPerson();
-
+		DaoTest daoTest = new DaoTest();
 		switch (logic.checkLogin(login, pass)) {
 		case 3:
 			page = ConfigurationManager.getProperty("path.page.main_student");
@@ -49,7 +53,7 @@ public class LoginCommand implements ActionCommand {
 			try {
 
 				String passMd5 = logic.getHash(pass);
-				String personId = String.valueOf(dao.showPerson(login, passMd5)
+				personId = String.valueOf(dao.showPerson(login, passMd5)
 						.getId());
 				request.getSession().setAttribute("personId", personId);
 			} catch (TechnicalException e1) {
@@ -57,13 +61,36 @@ public class LoginCommand implements ActionCommand {
 			}
 			// In order to place in the request - "testsList" attribute
 			// (ArrayList object)
-			ShowTestsCommand showTestsCommand = new ShowTestsCommand();
-			showTestsCommand.execute(request);
+			List<Test> tests = null;
+			try {
+				tests = daoTest.showTests();
+			} catch (TechnicalException e1) {
+				log.error(e1);
+			}
+			request.setAttribute("testsList", tests);
+			/*
+			 * Previous variant, called another command from the current
+			 * command. Not appropriate, cause - ruins MVC pattern. **
+			 * ShowTestsCommand showTestsCommand = new ShowTestsCommand();
+			 * showTestsCommand.execute(request);
+			 */
 			// In order to place in the request - "result" attribute (HashMap
 			// object)
-			ShowResultCommand showResult = new ShowResultCommand();
-			showResult.execute(request);
+			Map<Integer, Integer> resultMap = null;
+			int persId = Integer.parseInt(personId);
+			try {
+				resultMap = daoTest.showResult(persId);
+			} catch (TechnicalException e1) {
+				log.error(e1);
+			}
+			request.setAttribute("resultMap", resultMap);
 
+			/*
+			 * Previous variant, called another command from the current
+			 * command. Not appropriate, cause - ruins MVC pattern. **
+			 * ShowResultCommand showResult = new ShowResultCommand();
+			 * showResult.execute(request);
+			 */
 			break;
 		case 2:
 			page = ConfigurationManager.getProperty("path.page.main_tutor");

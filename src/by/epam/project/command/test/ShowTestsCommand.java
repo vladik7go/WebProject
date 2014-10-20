@@ -1,6 +1,7 @@
 package by.epam.project.command.test;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +24,7 @@ public class ShowTestsCommand implements ActionCommand {
 	public String execute(HttpServletRequest request) {
 
 		List<Test> tests = null;
+		Map<Integer, Integer> resultMap = null;
 		String page = null;
 		DaoTest dao = new DaoTest();
 		DaoPerson daoPerson = new DaoPerson();
@@ -39,11 +41,12 @@ public class ShowTestsCommand implements ActionCommand {
 
 			switch (role) {
 			case "student":
-				// In order to place in the request - "result" attribute
-				// (HashMap
-				// object)
-				ShowResultCommand showResult = new ShowResultCommand();
-				showResult.execute(request);
+				/*
+				 * In order to place in the request - "result" and "person"
+				 * attribute (HashMap object and bean object)
+				 */
+				resultMap = dao.showResult(personId);
+				request.setAttribute("resultMap", resultMap);
 				request.setAttribute("person", daoPerson.showPerson(personId));
 				page = ConfigurationManager
 						.getProperty("path.page.main_student");
