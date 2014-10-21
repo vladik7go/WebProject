@@ -1,0 +1,18 @@
+digraph "C:/Workspace_Java_SE_3/Project/src/by/epam/project/command" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_d0a5fcba9f43674a434d49a672afc364 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="project" fontname="FreeSans", fontsize="10", URL="dir_d0a5fcba9f43674a434d49a672afc364.html"]
+  subgraph clusterdir_f5c7764a6571c5e1f8670ce08ac82de3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f5c7764a6571c5e1f8670ce08ac82de3.html"];
+    dir_f5c7764a6571c5e1f8670ce08ac82de3 [shape=plaintext label="command"];
+    dir_e5436040dc02b6756253260e63dc2162 [shape=box label="client" color="black" fillcolor="white" style="filled" URL="dir_e5436040dc02b6756253260e63dc2162.html"];
+    dir_a8d4622db4b40b08546305bdf8092da2 [shape=box label="factory" color="black" fillcolor="white" style="filled" URL="dir_a8d4622db4b40b08546305bdf8092da2.html"];
+    dir_1b127dca06a03d393aefd81cc62b263c [shape=box label="login" color="black" fillcolor="white" style="filled" URL="dir_1b127dca06a03d393aefd81cc62b263c.html"];
+    dir_08d1022b75b472a82e5fab7d178f9844 [shape=box label="person" color="black" fillcolor="white" style="filled" URL="dir_08d1022b75b472a82e5fab7d178f9844.html"];
+    dir_31c74f4f93c3b18534f86604e39afbb9 [shape=box label="test" color="black" fillcolor="white" style="filled" URL="dir_31c74f4f93c3b18534f86604e39afbb9.html"];
+  }
+  }
+}
