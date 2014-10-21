@@ -1,152 +1,104 @@
-20.10.2014 19:18:39 [http-bio-8080-exec-7] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 19:18:39 [http-bio-8080-exec-7] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:18:43 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:20:15 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:20:15 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:20:17 [http-bio-8080-exec-3] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:20:18 [http-bio-8080-exec-3] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:26 [http-bio-8080-exec-6] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:21:28 [http-bio-8080-exec-2] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:29 [http-bio-8080-exec-4] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:29 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:33 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:36 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:43 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:43 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:21:46 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:47 [http-bio-8080-exec-13] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:55 [http-bio-8080-exec-13] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:55 [http-bio-8080-exec-13] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:59 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:21:59 [http-bio-8080-exec-14] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG ConnectionPool:createPool:39 - pool size = 10
-20.10.2014 19:35:37 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:39 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:40 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:44 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:35:52 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:02 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:02 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:36:03 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:04 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:05 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:06 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:08 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:12 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:12 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-20.10.2014 19:36:13 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:getConnection:67 - pool size = 9
-20.10.2014 19:36:14 [http-bio-8080-exec-21] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:createPool:39 - pool size = 10
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:35 [http-bio-8080-exec-7] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:35 [http-bio-8080-exec-8] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:29:35 [http-bio-8080-exec-8] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:29:35 [http-bio-8080-exec-8] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:35 [http-bio-8080-exec-8] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:36 [http-bio-8080-exec-9] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:29:36 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Person ---- had been performed
+20.10.2014 22:29:36 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:36 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Person ---- had been performed
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:32 - String role = 2
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:36 - int role = 2
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG DaoPerson:editPerson:229 - edit user, id = 12
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:63 - command editWrite performed. Result = true
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:64 - 1
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:32 - attribute 'language' =  ru
+20.10.2014 22:29:38 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:37 - locale of resource bundle: ru  ---Locale loc = ru
+20.10.2014 22:29:56 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:29:56 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 22:29:58 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:00 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:01 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:30:01 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Person ---- had been performed
+20.10.2014 22:30:01 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:01 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Person ---- had been performed
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:32 - String role = 2
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:36 - int role = 2
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG DaoPerson:editPerson:229 - edit user, id = 12
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:63 - command editWrite performed. Result = true
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:64 - 1
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:32 - attribute 'language' =  en
+20.10.2014 22:30:02 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:37 - locale of resource bundle: ru  ---Locale loc = en
+20.10.2014 22:31:25 [http-bio-8080-exec-2] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
+20.10.2014 22:31:26 [http-bio-8080-exec-2] DEBUG ConnectionPool:createPool:39 - pool size = 10
+20.10.2014 22:31:26 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:31:26 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
+20.10.2014 22:31:27 [http-bio-8080-exec-4] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:31 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:31 [http-bio-8080-exec-8] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:31:31 [http-bio-8080-exec-8] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:31:31 [http-bio-8080-exec-8] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:31 [http-bio-8080-exec-8] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:32 [http-bio-8080-exec-8] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:31:32 [http-bio-8080-exec-8] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Person ---- had been performed
+20.10.2014 22:31:32 [http-bio-8080-exec-8] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:32 [http-bio-8080-exec-8] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Person ---- had been performed
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG EditWritePersonCommand:execute:32 - String role = 2
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG EditWritePersonCommand:execute:36 - int role = 2
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG DaoPerson:editPerson:229 - edit user, id = 12
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG EditWritePersonCommand:execute:63 - command editWrite performed. Result = true
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG EditWritePersonCommand:execute:64 - 1
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ConnectionPool:getConnection:67 - pool size = 9
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG ConnectionPool:returnConnection:80 - pool size = 10
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG SuccessfullyPerformedActionTag:doStartTag:32 - attribute 'language' =  en
+20.10.2014 22:31:33 [http-bio-8080-exec-14] DEBUG SuccessfullyPerformedActionTag:doStartTag:37 - locale of resource bundle: ru  ---Locale loc = en
+20.10.2014 22:32:11 [http-bio-8080-exec-11] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
+20.10.2014 22:32:11 [http-bio-8080-exec-11] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed

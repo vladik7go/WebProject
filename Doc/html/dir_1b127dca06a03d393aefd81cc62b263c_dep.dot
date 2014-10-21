@@ -1,0 +1,10 @@
+digraph "C:/Workspace_Java_SE_3/Project/src/by/epam/project/command/login" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_f5c7764a6571c5e1f8670ce08ac82de3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="command" fontname="FreeSans", fontsize="10", URL="dir_f5c7764a6571c5e1f8670ce08ac82de3.html"]
+  dir_1b127dca06a03d393aefd81cc62b263c [shape=box, label="login", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1b127dca06a03d393aefd81cc62b263c.html"];
+  }
+}

@@ -1,0 +1,14 @@
+digraph "C:/Workspace_Java_SE_3/Project/src" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_2e298b0beb3f8a91c523d6e27a88f247 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Project" fontname="FreeSans", fontsize="10", URL="dir_2e298b0beb3f8a91c523d6e27a88f247.html"]
+  subgraph clusterdir_58dcf00af7e20249dfdb587b85363f8c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_58dcf00af7e20249dfdb587b85363f8c.html"];
+    dir_58dcf00af7e20249dfdb587b85363f8c [shape=plaintext label="src"];
+    dir_a8bb8e61539b99973451c85ad05d9abb [shape=box label="by" color="red" fillcolor="white" style="filled" URL="dir_a8bb8e61539b99973451c85ad05d9abb.html"];
+  }
+  }
+}

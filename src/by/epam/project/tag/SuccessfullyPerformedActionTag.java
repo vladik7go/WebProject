@@ -28,7 +28,7 @@ public class SuccessfullyPerformedActionTag extends TagSupport {
 
 		try {
 			Locale loc = new Locale(language);
-			// Locale loc = new Locale("en", "EN");
+//			 Locale loc = new Locale("en");
 			log.debug("attribute 'language' =  " + language);
 
 			ResourceBundle rb = ResourceBundle.getBundle(
