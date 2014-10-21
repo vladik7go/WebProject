@@ -3,6 +3,7 @@ package by.epam.project.pool;
 
 import java.sql.Connection;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,7 +20,14 @@ public class TestConnectionPool {
 	public void getConnectionTest() throws TechnicalException {
 		
 		
-		ConfigurationManager.getProperty("sdf");
+		
+		ConnectionPool conPoolInstance = ConnectionPool.getSinglePool();
+		Connection connection = conPoolInstance.getConnection();
+		Assert.assertNotNull(connection);
+		
+		ResourceBundle resourceBundle = ResourceBundle
+				.getBundle("config");
+		
 		
 		
 	}
