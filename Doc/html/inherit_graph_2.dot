@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
   node [fontname="FreeSans",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="by.epam.project.command.factory.\lActionFactory",height=0.2,width=0.4,color="black",URL="$d6/d21/classby_1_1epam_1_1project_1_1command_1_1factory_1_1_action_factory.html"];
+  Node1 [label="by.epam.project.command.factory.\lActionFactory",height=0.2,width=0.4,color="black",URL="$classby_1_1epam_1_1project_1_1command_1_1factory_1_1_action_factory.html"];
 }

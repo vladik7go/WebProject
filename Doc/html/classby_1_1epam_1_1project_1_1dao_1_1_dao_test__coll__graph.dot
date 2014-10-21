@@ -1,0 +1,12 @@
+digraph "by.epam.project.dao.DaoTest"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{by.epam.project.dao.DaoTest\n|- SQL_SHOW_TEST_BY_ID\l- SQL_SHOW_RESULTS_BY\l_PERSON\l- SQL_SHOW_QUESTION_BY_ID\l- SQL_SHOW_QUESTIONS\l_BY_TEST_TYPE\l- SQL_SHOW_ANSWERS_BY\l_QUESTION_TYPE\l- SQL_SHOW_TESTS_ID\l- SQL_ADD_ANSWER\l- SQL_ADD_QUESTION\l- SQL_ADD_TEST\l- SQL_ADD_RESULT\land 7 more...\l|+ showTest()\l+ showTests()\l+ showQuestion()\l+ showResult()\l+ editTest()\l+ editQuestion()\l+ addAnswer()\l+ addQuestion()\l+ addTest()\l+ addResult()\l+ editAnswer()\l+ deleteAnswer()\l+ deleteResult()\l+ deleteQuestion()\l+ deleteTest()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{by.epam.project.dao.Dao\n||+ closeStatement()\l}",height=0.2,width=0.4,color="black",URL="$classby_1_1epam_1_1project_1_1dao_1_1_dao.html"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +log" ,arrowhead="odiamond",fontname="FreeSans"];
+  Node3 [label="{Logger\n||}",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +log" ,arrowhead="odiamond",fontname="FreeSans"];
+}

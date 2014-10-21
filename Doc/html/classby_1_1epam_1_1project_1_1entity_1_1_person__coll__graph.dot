@@ -1,0 +1,7 @@
+digraph "by.epam.project.entity.Person"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{by.epam.project.entity.Person\n|- id\l- roleType\l- firstName\l- secondName\l- login\l- password\l|+ getId()\l+ setId()\l+ getRoleType()\l+ setRoleType()\l+ getFirstName()\l+ setFirstName()\l+ getSecondName()\l+ setSecondName()\l+ getLogin()\l+ setLogin()\l+ getPassword()\l+ setPassword()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

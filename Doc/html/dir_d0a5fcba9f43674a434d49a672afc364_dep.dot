@@ -14,6 +14,7 @@ digraph "C:/Workspace_Java_SE_3/Project/src/by/epam/project" {
     dir_57770082d75ec0dd69e0f01a87132755 [shape=box label="entity" color="red" fillcolor="white" style="filled" URL="dir_57770082d75ec0dd69e0f01a87132755.html"];
     dir_eabe018250d46b8b7a4810e80c3cc0ac [shape=box label="exception" color="black" fillcolor="white" style="filled" URL="dir_eabe018250d46b8b7a4810e80c3cc0ac.html"];
     dir_5b04b7f28d1ae1d6fd34a74ca77c1c77 [shape=box label="filter" color="black" fillcolor="white" style="filled" URL="dir_5b04b7f28d1ae1d6fd34a74ca77c1c77.html"];
+    dir_703857fb8e67d7366a89f8ce53760956 [shape=box label="junit" color="black" fillcolor="white" style="filled" URL="dir_703857fb8e67d7366a89f8ce53760956.html"];
     dir_ffd97927472fdeb590dc8c9cba3b625f [shape=box label="logic" color="black" fillcolor="white" style="filled" URL="dir_ffd97927472fdeb590dc8c9cba3b625f.html"];
     dir_1255eeab8d30d8b727f694386683d2a2 [shape=box label="pool" color="black" fillcolor="white" style="filled" URL="dir_1255eeab8d30d8b727f694386683d2a2.html"];
     dir_57e9623f239e85275991b3ab35e704d4 [shape=box label="resource" color="black" fillcolor="white" style="filled" URL="dir_57e9623f239e85275991b3ab35e704d4.html"];
