@@ -23,13 +23,13 @@ class DBConnector {
 		String url = ConfigurationManager.getProperty("db.url");
 
 		// Filling properties.
-		properties.setProperty("user",
 		/*
 		 * Properties is a subclass of Hashtable. It is used to maintain lists
 		 * of values in which the key is a String and the value is also a
 		 * String.
 		 */
-		ConfigurationManager.getProperty("db.user"));
+		properties.setProperty("user",
+				ConfigurationManager.getProperty("db.user"));
 		properties.setProperty("password",
 				ConfigurationManager.getProperty("db.password"));
 		properties.setProperty("useUnicode",
@@ -40,7 +40,7 @@ class DBConnector {
 		try {
 			// Register the driver
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-			
+
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

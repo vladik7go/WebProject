@@ -10,6 +10,7 @@ import org.junit.Test;
 import by.epam.project.dao.DaoTest;
 import by.epam.project.exception.TechnicalException;
 import by.epam.project.pool.ConnectionPool;
+import by.epam.project.resource.ConfigurationManager;
 
 
 public class TestConnectionPool {
@@ -18,9 +19,7 @@ public class TestConnectionPool {
 	public void getConnectionTest() throws TechnicalException {
 		
 		
-		DaoTest dao = new DaoTest();
-		List<by.epam.project.entity.test.Test> tests = dao.showTests();
-		Assert.assertNotNull(tests);
+		ConfigurationManager.getProperty("sdf");
 		
 		
 	}
