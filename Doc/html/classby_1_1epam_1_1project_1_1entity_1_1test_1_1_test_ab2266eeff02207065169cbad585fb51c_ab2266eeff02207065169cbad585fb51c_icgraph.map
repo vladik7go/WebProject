@@ -1,0 +1,5 @@
+<map id="by.epam.project.entity.test.Test.getQuestions" name="by.epam.project.entity.test.Test.getQuestions">
+<area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1logic_1_1_test_logic_a9939ebbf475de38e4eedb4363b33982d.html#a9939ebbf475de38e4eedb4363b33982d" title="by.epam.project.logic.Test\lLogic.calculateResult" alt="" coords="247,5,421,47"/>
+<area shape="rect" id="node4" href="$classby_1_1epam_1_1project_1_1command_1_1test_1_1_perform_test_command_a5023dd200920d6478bfec52412d8283f.html#a5023dd200920d6478bfec52412d8283f" title="by.epam.project.command.test.\lPerformTestCommand.execute" alt="" coords="232,71,436,112"/>
+<area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1command_1_1test_1_1_perform_write_test_command_ac5d2383356a8b5edc332d90842f4b90b.html#ac5d2383356a8b5edc332d90842f4b90b" title="by.epam.project.command.test.\lPerformWriteTestCommand.execute" alt="" coords="484,5,715,47"/>
+</map>

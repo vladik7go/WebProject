@@ -1,0 +1,8 @@
+<map id="by.epam.project.controller.Controller.doGet" name="by.epam.project.controller.Controller.doGet">
+<area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1controller_1_1_controller_ad3b3a052bd1c1f9f8cdddf58eb756e3e.html#ad3b3a052bd1c1f9f8cdddf58eb756e3e" title="by.epam.project.controller.\lController.processRequest" alt="" coords="231,104,408,145"/>
+<area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1command_1_1factory_1_1_action_factory_a0aee50d2ee7ab4a69a5f11c68c302489.html#a0aee50d2ee7ab4a69a5f11c68c302489" title="by.epam.project.command.factory.\lActionFactory.defineCommand" alt="" coords="456,5,679,47"/>
+<area shape="rect" id="node5" href="$interfaceby_1_1epam_1_1project_1_1command_1_1_action_command_a34f4e1cb5f4aeba7bb6cb3f57443a07a.html#a34f4e1cb5f4aeba7bb6cb3f57443a07a" title="by.epam.project.command.\lActionCommand.execute" alt="" coords="478,71,657,112"/>
+<area shape="rect" id="node6" href="$classby_1_1epam_1_1project_1_1resource_1_1_message_manager_af5e4c99d6060e043f6a279528b1014b8.html#af5e4c99d6060e043f6a279528b1014b8" title="by.epam.project.resource.\lMessageManager.getProperty" alt="" coords="471,136,663,177"/>
+<area shape="rect" id="node7" href="$classby_1_1epam_1_1project_1_1resource_1_1_configuration_manager_a0cb31f0d7c19c2a0f2882f3e57d3a334.html#a0cb31f0d7c19c2a0f2882f3e57d3a334" title="by.epam.project.resource.\lConfigurationManager.getProperty" alt="" coords="458,201,677,243"/>
+<area shape="rect" id="node4" href="$enumby_1_1epam_1_1project_1_1command_1_1client_1_1_command_enum_a8673163b5d70a41ed85328f7e9a01dc4.html#a8673163b5d70a41ed85328f7e9a01dc4" title="by.epam.project.command.client.\lCommandEnum.getCurrentCommand" alt="" coords="727,5,961,47"/>
+</map>

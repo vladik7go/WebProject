@@ -1,0 +1,6 @@
+<map id="test.by.epam.project.TestConnectionPool.getConnectionTest" name="test.by.epam.project.TestConnectionPool.getConnectionTest">
+<area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1pool_1_1_connection_pool_aee16f7b9980f5b475a4a292b44318845.html#aee16f7b9980f5b475a4a292b44318845" title="by.epam.project.pool.Connection\lPool.getConnection" alt="" coords="272,5,483,47"/>
+<area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1pool_1_1_connection_pool_ac6ff047648be53193e797aa92e9b5d6c.html#ac6ff047648be53193e797aa92e9b5d6c" title="by.epam.project.pool.Connection\lPool.getSinglePool" alt="" coords="272,71,483,112"/>
+<area shape="rect" id="node4" href="$classby_1_1epam_1_1project_1_1pool_1_1_connection_pool_a393a2e1a8ddff48f7c8b8b7518de5fbe.html#a393a2e1a8ddff48f7c8b8b7518de5fbe" title="by.epam.project.pool.Connection\lPool.ConnectionPool" alt="" coords="531,71,741,112"/>
+<area shape="rect" id="node5" href="$classby_1_1epam_1_1project_1_1pool_1_1_connection_pool_acc2715daf0ccd62589c15bff91c75bc2.html#acc2715daf0ccd62589c15bff91c75bc2" title="by.epam.project.pool.Connection\lPool.createPool" alt="" coords="789,71,1000,112"/>
+</map>

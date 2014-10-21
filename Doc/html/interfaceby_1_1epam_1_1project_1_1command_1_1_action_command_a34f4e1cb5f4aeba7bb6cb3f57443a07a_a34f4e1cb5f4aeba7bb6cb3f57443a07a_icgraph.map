@@ -1,0 +1,5 @@
+<map id="by.epam.project.command.ActionCommand.execute" name="by.epam.project.command.ActionCommand.execute">
+<area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1controller_1_1_controller_ad3b3a052bd1c1f9f8cdddf58eb756e3e.html#ad3b3a052bd1c1f9f8cdddf58eb756e3e" title="by.epam.project.controller.\lController.processRequest" alt="" coords="232,39,409,80"/>
+<area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1controller_1_1_controller_a5292fc023e83d01322d78babce5583a3.html#a5292fc023e83d01322d78babce5583a3" title="by.epam.project.controller.\lController.doGet" alt="" coords="457,5,635,47"/>
+<area shape="rect" id="node4" href="$classby_1_1epam_1_1project_1_1controller_1_1_controller_a383833280cbd8dc76722fc7ad89d037a.html#a383833280cbd8dc76722fc7ad89d037a" title="by.epam.project.controller.\lController.doPost" alt="" coords="457,71,635,112"/>
+</map>

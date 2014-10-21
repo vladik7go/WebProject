@@ -1,0 +1,6 @@
+<map id="by.epam.project.logic.LoginLogic.getHash" name="by.epam.project.logic.LoginLogic.getHash">
+<area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1logic_1_1_login_logic_a360d6cb131fce1f7a8426b2da4b3470a.html#a360d6cb131fce1f7a8426b2da4b3470a" title="by.epam.project.logic.Login\lLogic.checkLogin" alt="" coords="254,5,433,47"/>
+<area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1command_1_1login_1_1_login_command_a103277219360d03d4c93645dc243473d.html#a103277219360d03d4c93645dc243473d" title="by.epam.project.command.login.\lLoginCommand.execute" alt="" coords="503,35,713,76"/>
+<area shape="rect" id="node4" href="$classby_1_1epam_1_1project_1_1command_1_1person_1_1_edit_write_person_command_a7c467f3021a63a13e6bcddb046ee2356.html#a7c467f3021a63a13e6bcddb046ee2356" title="by.epam.project.command.person.\lEditWritePersonCommand.execute" alt="" coords="232,123,455,164"/>
+<area shape="rect" id="node5" href="$classby_1_1epam_1_1project_1_1command_1_1person_1_1_add_person_command_a74088dd67b016061c0590858d61c5fb1.html#a74088dd67b016061c0590858d61c5fb1" title="by.epam.project.command.person.\lAddPersonCommand.execute" alt="" coords="232,188,455,229"/>
+</map>
