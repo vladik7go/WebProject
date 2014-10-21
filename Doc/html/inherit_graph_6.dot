@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  bgcolor="transparent";
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="by.epam.project.entity.test.\lAnswer",height=0.2,width=0.4,color="black",URL="$dc/d92/classby_1_1epam_1_1project_1_1entity_1_1test_1_1_answer.html"];
-}
