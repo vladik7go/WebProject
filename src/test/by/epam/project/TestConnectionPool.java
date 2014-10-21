@@ -1,5 +1,4 @@
-package by.epam.project.pool;
-
+package test.by.epam.project;
 
 import java.sql.Connection;
 import java.util.List;
@@ -13,23 +12,15 @@ import by.epam.project.exception.TechnicalException;
 import by.epam.project.pool.ConnectionPool;
 import by.epam.project.resource.ConfigurationManager;
 
-
 public class TestConnectionPool {
 
 	@Test
 	public void getConnectionTest() throws TechnicalException {
-		
-		
-		
-		ConnectionPool conPoolInstance = ConnectionPool.getSinglePool();
-		Connection connection = conPoolInstance.getConnection();
+
+		ConnectionPool pool = ConnectionPool.getSinglePool();
+		Connection connection = pool.getConnection();
 		Assert.assertNotNull(connection);
-		
-		ResourceBundle resourceBundle = ResourceBundle
-				.getBundle("config");
-		
-		
-		
+
 	}
 
 }
