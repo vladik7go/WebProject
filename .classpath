@@ -14,5 +14,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Ivan/Google Диск/Java_links - копия/LIBs_for_servlets/junit-4.10.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -1,0 +1,11 @@
+digraph "by.epam.project.entity.test.Test"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{by.epam.project.entity.test.Test\n|- id\l- title\l- description\l|+ getId()\l+ setId()\l+ getTitle()\l+ setTitle()\l+ getDescription()\l+ setDescription()\l+ getQuestions()\l+ setQuestions()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -questions" ,arrowhead="odiamond",fontname="FreeSans"];
+  Node2 [label="{Set\< by.epam.project.entity.test.\lQuestion \>\n||}",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node2 [dir="back",color="orange",fontsize="10",style="solid",label=" \< by::epam::project\l::entity::test::Question \>" ,fontname="FreeSans"];
+  Node3 [label="{Set\n||}",height=0.2,width=0.4,color="grey75"];
+}

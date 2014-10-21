@@ -1,0 +1,9 @@
+digraph "by.epam.project.command.client.CommandEnum"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{by.epam.project.command.client.\lCommandEnum\n|+ LOGIN\l+ REGISTRATION\l+ ADD_PERSON\l+ DELETE_PERSON\l+ EDIT_PERSON\l+ EDIT_WRITE_PERSON\l+ SHOW_PERSONS\l+ PERFORM_TEST\l+ PERFORM_WRITE_TEST\l+ ADD_TEST\land 16 more...\l|+ getCurrentCommand()\l- CommandEnum()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -command" ,arrowhead="odiamond",fontname="FreeSans"];
+  Node2 [label="{by.epam.project.command.\lActionCommand\n||+ execute()\l}",height=0.2,width=0.4,color="black",URL="$interfaceby_1_1epam_1_1project_1_1command_1_1_action_command.html"];
+}

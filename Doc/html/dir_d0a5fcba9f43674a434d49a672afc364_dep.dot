@@ -1,0 +1,24 @@
+digraph "C:/Workspace_Java_SE_3/Project/src/by/epam/project" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_76d8b636dcb00554d5f83d4c96d2f932 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="epam" fontname="FreeSans", fontsize="10", URL="dir_76d8b636dcb00554d5f83d4c96d2f932.html"]
+  subgraph clusterdir_d0a5fcba9f43674a434d49a672afc364 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d0a5fcba9f43674a434d49a672afc364.html"];
+    dir_d0a5fcba9f43674a434d49a672afc364 [shape=plaintext label="project"];
+    dir_f5c7764a6571c5e1f8670ce08ac82de3 [shape=box label="command" color="red" fillcolor="white" style="filled" URL="dir_f5c7764a6571c5e1f8670ce08ac82de3.html"];
+    dir_31d90286291f9c98a9df1966b6e5aab9 [shape=box label="controller" color="black" fillcolor="white" style="filled" URL="dir_31d90286291f9c98a9df1966b6e5aab9.html"];
+    dir_f53917ff58d80ceb82389b6677301a9b [shape=box label="dao" color="black" fillcolor="white" style="filled" URL="dir_f53917ff58d80ceb82389b6677301a9b.html"];
+    dir_57770082d75ec0dd69e0f01a87132755 [shape=box label="entity" color="red" fillcolor="white" style="filled" URL="dir_57770082d75ec0dd69e0f01a87132755.html"];
+    dir_eabe018250d46b8b7a4810e80c3cc0ac [shape=box label="exception" color="black" fillcolor="white" style="filled" URL="dir_eabe018250d46b8b7a4810e80c3cc0ac.html"];
+    dir_5b04b7f28d1ae1d6fd34a74ca77c1c77 [shape=box label="filter" color="black" fillcolor="white" style="filled" URL="dir_5b04b7f28d1ae1d6fd34a74ca77c1c77.html"];
+    dir_703857fb8e67d7366a89f8ce53760956 [shape=box label="junit" color="black" fillcolor="white" style="filled" URL="dir_703857fb8e67d7366a89f8ce53760956.html"];
+    dir_ffd97927472fdeb590dc8c9cba3b625f [shape=box label="logic" color="black" fillcolor="white" style="filled" URL="dir_ffd97927472fdeb590dc8c9cba3b625f.html"];
+    dir_1255eeab8d30d8b727f694386683d2a2 [shape=box label="pool" color="black" fillcolor="white" style="filled" URL="dir_1255eeab8d30d8b727f694386683d2a2.html"];
+    dir_57e9623f239e85275991b3ab35e704d4 [shape=box label="resource" color="black" fillcolor="white" style="filled" URL="dir_57e9623f239e85275991b3ab35e704d4.html"];
+    dir_a22c4bb987659619fe6f0fc3b6d21cac [shape=box label="tag" color="black" fillcolor="white" style="filled" URL="dir_a22c4bb987659619fe6f0fc3b6d21cac.html"];
+  }
+  }
+}
