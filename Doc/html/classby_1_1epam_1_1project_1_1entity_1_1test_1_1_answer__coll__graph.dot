@@ -1,7 +1,0 @@
-digraph "by.epam.project.entity.test.Answer"
-{
-  bgcolor="transparent";
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="{by.epam.project.entity.test.\lAnswer\n|- id\l- questionType\l- answer\l- value\l|+ getId()\l+ setId()\l+ getQuestionType()\l+ setQuestionType()\l+ getAnswer()\l+ setAnswer()\l+ getValue()\l+ setValue()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}
