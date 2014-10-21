@@ -12,7 +12,7 @@ import by.epam.project.pool.ConnectionPool;
 public class TestConnectionPool {
 
 	@Test
-	public void GetConnectionTest() throws TechnicalException {
+	public void GetConnectionTest() throws TechnicalException  {
 		ConnectionPool pool = ConnectionPool.getSinglePool();
 		Connection connection = pool.getConnection();
 		Assert.assertNotNull(connection);
