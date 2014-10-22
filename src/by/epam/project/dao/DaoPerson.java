@@ -53,7 +53,7 @@ public class DaoPerson extends Dao {
 
 		} catch (SQLException | TechnicalException e) {
 			log.error("Technical Exception", e);
-			return 0;
+			
 		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);
