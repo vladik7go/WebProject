@@ -43,8 +43,8 @@
 						<p>
 							
 							
-							<fmt:message key="edit.label.test.title" />:<input type="text" name="title" value="${test.title }" /><br>
-							<fmt:message key="edit.labelt.test.description" />:<input type="text" name="description" value="${test.description }" /><br>
+							<fmt:message key="edit.label.test.title" />:<input type="text" name="title" value="${test.title } " pattern=".{1,50}$" required="required"/><br>
+							<fmt:message key="edit.labelt.test.description" />:<input type="text" name="description" value="${test.description }" pattern=".{1,240}$" required="required" /><br>
 							 
 							<input type="submit" value="<fmt:message key="edit.button.save" />" />
 						</p>

@@ -100,11 +100,11 @@ ${resultMap }
 					</td>
 					
 					<td>
-					<textarea rows="4" cols="25" name="testTitle" placeholder="<fmt:message key="test.label.addTestTitle" />" ></textarea>
+					<textarea  required="required" rows="4" cols="25" name="testTitle" placeholder="<fmt:message key="test.label.addTestTitle" />" ></textarea>
 					</td>
 					
 					<td>
-					<textarea rows="4" cols="25" name="testDescription" placeholder="<fmt:message key="test.label.addTestDescription" />" ></textarea>
+					<textarea  required="required" rows="4" cols="25" name="testDescription" placeholder="<fmt:message key="test.label.addTestDescription" />" ></textarea>
 					</td>
 										
 					<td  colspan = "2">

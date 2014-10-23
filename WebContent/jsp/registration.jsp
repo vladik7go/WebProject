@@ -31,11 +31,11 @@
 					<fieldset>
 						
 						<p>
-							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" /><br>
-							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" /><br>
+							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" pattern="[a-zA-Zа-яА-Я0-9@.]{1,20}$" required="required" /><br>
+							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br>
 							
-							<fmt:message key="login.label.login" />:<input type="text" name="login" /><br>
-							<fmt:message key="login.label.password" />: <input type="password" name="password" /><br> 
+							<fmt:message key="login.label.login" />:<input type="text" name="login" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br>
+							<fmt:message key="login.label.password" />: <input type="password" name="password" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br> 
 							<input type="submit" value="<fmt:message key="login.button.submit" />" />
 						</p>
 						

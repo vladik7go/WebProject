@@ -38,10 +38,10 @@ ${person.firstName }
                						<option <c:if test="${person.roleType != null and person.roleType eq '3' }">selected</c:if> value="3" ><fmt:message key="edit.label.student"/></option>
 								</select><br>
 							
-							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" value="${person.firstName }" /><br>
-							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" value="${person.secondName }" /><br>
-							<fmt:message key="login.label.login" />:<input type="text" name="login" value="${person.login }" /><br>
-							<fmt:message key="login.label.password" />: <input type="text" name="password" value="${person.password }" /><br> 
+							<fmt:message key="login.label.firstname" />:<input type="text" name="firstName" value="${person.firstName }" pattern="[a-zA-Zа-яА-Я0-9@.]{1,20}$" required="required" /><br>
+							<fmt:message key="login.label.secondname" />:<input type="text" name="secondName" value="${person.secondName }" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br>
+							<fmt:message key="login.label.login" />:<input type="text" name="login" value="${person.login }" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br>
+							<fmt:message key="login.label.password" />: <input type="text" name="password" value="${person.password }" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$" required="required" /><br> 
 							<input type="submit" value="<fmt:message key="login.button.submit" />" />
 						</p>
 						

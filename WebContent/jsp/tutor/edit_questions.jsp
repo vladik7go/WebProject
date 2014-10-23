@@ -91,7 +91,7 @@ Page: edit questions.
 					</td>
 					
 					<td>
-					<textarea rows="4" cols="35" name="questionContent" placeholder="<fmt:message key="test.label.addQuestion" />" ></textarea>
+					<textarea required="required" rows="4" cols="35" name="questionContent" placeholder="<fmt:message key="test.label.addQuestion" />" ></textarea>
 					</td>
 										
 					<td  colspan = "2">

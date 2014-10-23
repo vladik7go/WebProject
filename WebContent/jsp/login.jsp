@@ -32,9 +32,9 @@
 <input type="hidden" name="language" value="${language }" />
 
 <fmt:message key="login.label.login" />:<br/>
-<input type="text" name="login" value=""/>
+<input type="text" name="login" value="" required="required" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$"/>
 <br/><fmt:message key="login.label.password" />:<br/>
-<input type="password" name="password" value=""/>
+<input type="password" name="password" value="" required="required" pattern="[a-zA-Zа-яА-Я0-9@.]{1,45}$"/>
 <br/>
 
 <c:if test="${errorLoginPassMessage != null }"><fmt:message key="message.loginerror"/></c:if>

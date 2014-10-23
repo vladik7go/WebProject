@@ -43,7 +43,7 @@
 <table border="3">
 				<th> <fmt:message key="edit.label.editing.question" />  </th><th> <fmt:message key="login.label.command"/> </th>
 					<tr>
-						<td><textarea rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
+						<td><textarea required="required" rows="4" cols="35" name="questionContent" >${question.content }</textarea></td>
 						<!-- td><input type="text" name="questionContent" value="${question.content }" /></td-->
 						<td><input type="submit" value="<fmt:message key="edit.button.save" />" />	</td>
 				
@@ -109,7 +109,7 @@
 					</td>
 					
 					<td>
-					<textarea rows="4" cols="35" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" ></textarea>
+					<textarea required="required" rows="4" cols="35" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" ></textarea>
 					<!-- input type="text" name="answerContent" placeholder="<fmt:message key="test.label.addAnswer" />" /-->
 					</td>
 					
