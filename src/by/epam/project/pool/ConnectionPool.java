@@ -40,7 +40,11 @@ public class ConnectionPool {
 	}
 
 	// This method realize pool. Pattern singleton used
-	public static ConnectionPool getSinglePool() {
+	
+	/*
+	 * "Old version". Double check. Probably - antipattern. 
+	 */
+	/*public static ConnectionPool getSinglePool() {
 		if (instance == null) {
 
 			try {
@@ -54,8 +58,26 @@ public class ConnectionPool {
 			}
 		}
 		return instance;
-	}
+	}*/
 
+	
+	/*
+	 * "New version". Simple check for null.
+	 * Cause - there is only one initialization 
+	 * point: Controller.init method. That is it. 
+	 * Nobody else, nowhere have possibility to create pool.
+	 * So - not needed for double check. 
+	 * Used "not lazy" initialization of ConnectionPool. 
+	 */
+	public static ConnectionPool getSinglePool() {
+		if (instance == null) {
+			instance = new ConnectionPool();
+			
+		}
+		return instance;
+	}
+	
+	
 	// Gain a connection from the pool, queue is decreasing by one.
 	public Connection getConnection() throws TechnicalException {
 		Connection connection = null;

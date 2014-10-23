@@ -29,7 +29,7 @@
             </select>
         </form>
 
-${role }   
+
 <table border="3">
 
 <td colspan = "5">

@@ -29,7 +29,7 @@
                 <option value="Logout"><fmt:message key="login.label.logout" /></option>
             </select>
             <input name="testId" type="hidden" value="${test.id }" />
-            ${test.id }
+            
         </form>
 
 <table >

@@ -16,12 +16,6 @@
 <div class="login-card">
 
 
-
-page edit_user
-
-
-${person.id }
-${person.firstName }
 <table >
 <tr>
 <td >

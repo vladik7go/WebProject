@@ -16,7 +16,7 @@
 <body>
 
 <div class="login-card">
-${resultMap } ----- 
+
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
@@ -30,7 +30,7 @@ ${resultMap } -----
              <input name="personId" type="hidden" value="${person.id }" />
         </form>
 
-${role }   
+
 <table border="3">
 
 <td colspan = "5">
@@ -68,10 +68,6 @@ ${role }
 </c:forEach>
 
 </table>
-
-main student page
-
-
 
 </div>
 </body>

@@ -37,7 +37,7 @@ ${resultMap }
             </select>
         </form>
         
- ${role }   
+ 
  <c:if test="${testsList != null }">     
       
  <table border="3">

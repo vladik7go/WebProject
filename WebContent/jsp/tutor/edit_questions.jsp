@@ -18,7 +18,7 @@
 
 <div class="login-card">
 
-Page: edit questions.
+
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>

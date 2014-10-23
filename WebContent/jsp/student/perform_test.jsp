@@ -76,17 +76,6 @@
 	<input type="submit" value="<fmt:message key="root.button.nextQuestion" />" />
 </form>		
 
-<c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></br></c:if>
-объект тест: ${test }</br>
-объект персон: ${person }</br>
-роль: ${role }</br>
-персон Ид: ${personId }</br>
-объект вопрос: ${question } </br>
-объект questionsIdList: ${questionsIdList } </br>
-attribute questionId: ${question.id } </br>
----- ${questionsIdList[0] }</br>
-аттрибут тесеРезалт: ${testResult }</br>
-perform_test.jsp
 
 </div>
 </body>
