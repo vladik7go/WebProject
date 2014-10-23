@@ -7,9 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 
 import by.epam.project.command.ActionCommand;
-import by.epam.project.command.test.ShowResultCommand;
 import by.epam.project.dao.DaoPerson;
-import by.epam.project.exception.LogicException;
 import by.epam.project.resource.ConfigurationManager;
 
 public class ShowResultsCommand implements ActionCommand {
@@ -22,7 +20,7 @@ public class ShowResultsCommand implements ActionCommand {
 		List<List<String>> resultsList = null;
 		int personId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
 		DaoPerson dao = new DaoPerson();
-//		try {
+
 			resultsList = dao.showResults(personId);
 			if(resultsList.size()!=0){
 			page = ConfigurationManager.getProperty("path.page.show_results");
@@ -34,12 +32,7 @@ public class ShowResultsCommand implements ActionCommand {
 				page = ConfigurationManager.getProperty("path.page.main_root");
 			}
 
-//		} catch (LogicException e) {
-//			log.error(" Empty result table for this person", e);
-//			request.setAttribute("errorEmptyResultTableMessage", "1");
-//			page = ConfigurationManager.getProperty("path.page.main_root");
-//
-//		}
+
 
 		return page;
 	}
