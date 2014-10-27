@@ -104,4 +104,16 @@ public class TestLogic {
 
 		return true;
 	}
+
+	public boolean checkTestForPerformed(int testId) {
+		DaoTest dao = new DaoTest();
+		boolean result = dao.checkTest(testId);
+		if (result) {
+
+			return true;
+		} else {
+			return false;
+		}
+
+	}
 }

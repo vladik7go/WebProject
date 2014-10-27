@@ -29,6 +29,7 @@ public class DaoTest extends Dao {
 
 	private static final String SQL_SHOW_TEST_BY_ID = "SELECT * FROM test where id=? ";
 	private static final String SQL_SHOW_RESULTS_BY_PERSON = "SELECT * FROM result where person_type=? ";
+	private static final String SQL_SHOW_RESULTS_BY_TEST_ID = "SELECT * FROM result where test_type=? ";
 	private static final String SQL_SHOW_QUESTION_BY_ID = "SELECT * FROM question where id=? ";
 	private static final String SQL_SHOW_QUESTIONS_BY_TEST_TYPE = "SELECT * FROM question where test_type=? ";
 	private static final String SQL_SHOW_ANSWERS_BY_QUESTION_TYPE = "SELECT * FROM answer where question_type=? ";
@@ -461,6 +462,33 @@ public class DaoTest extends Dao {
 		}
 		return true;
 
+	}
+
+	/*
+	 * This method check, whether this test was performed at least one time.
+	 */
+	public boolean checkTest(int testId) {
+
+		Connection cn = null;
+		PreparedStatement st = null;
+
+		try {
+			cn = ConnectionPool.getSinglePool().getConnection();
+			st = cn.prepareStatement(SQL_SHOW_RESULTS_BY_TEST_ID);
+			st.setInt(1, testId);
+			ResultSet rs = st.executeQuery();
+			rs.next();
+			rs.getInt("id");
+
+		} catch (SQLException | TechnicalException e) {
+			log.error("Technical exception", e);
+			return false;
+		} finally {
+			Dao.closeStatement(st);
+			ConnectionPool.getSinglePool().returnConnection(cn);
+		}
+
+		return true;
 	}
 
 }

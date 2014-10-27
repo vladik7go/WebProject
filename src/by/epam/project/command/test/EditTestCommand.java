@@ -8,6 +8,7 @@ import by.epam.project.command.ActionCommand;
 import by.epam.project.dao.DaoTest;
 import by.epam.project.entity.test.Test;
 import by.epam.project.exception.TechnicalException;
+import by.epam.project.logic.TestLogic;
 import by.epam.project.resource.ConfigurationManager;
 
 public class EditTestCommand implements ActionCommand {
@@ -21,6 +22,9 @@ public class EditTestCommand implements ActionCommand {
 
 		try {
 			int testId = Integer.parseInt(request.getParameter(PARAM_NAME_ID));
+			TestLogic logic = new TestLogic();
+			boolean result = logic.checkTestForPerformed(testId);
+			request.setAttribute("testPerformedMarker", result);
 			DaoTest dao = new DaoTest();
 			test = dao.showTest(testId);
 			page = ConfigurationManager.getProperty("path.page.edit_test");

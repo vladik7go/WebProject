@@ -20,7 +20,9 @@
 <form name="choose_action_form" method="POST" action="controller">
             <select id="choose_action" name="command" onchange="submit()">
                	<option selected disabled><fmt:message key="edit.label.shooseAction" /></option>
+               	<c:if test="${testPerformedMarker == 'false' }">
                	<option value="edit_Questions" ><fmt:message key="test.label.showAllQuestions" /></option>
+               	</c:if>
                	<option value="show_Tests" ><fmt:message key="test.label.showAllTests" /></option>
                		<c:if test="${role == 'root' }">
                		<option value="show_Persons" ><fmt:message key="edit.label.showAllPersons" /></option>
@@ -31,6 +33,7 @@
             <input name="testId" type="hidden" value="${test.id }" />
             
         </form>
+        
 
 <table >
 <tr>
@@ -46,7 +49,10 @@
 							<fmt:message key="edit.label.test.title" />:<input type="text" name="title" value="${test.title } " pattern=".{1,50}$" required="required"/><br>
 							<fmt:message key="edit.labelt.test.description" />:<input type="text" name="description" value="${test.description }" pattern=".{1,240}$" required="required" /><br>
 							 
+							 <c:if test="${testPerformedMarker == 'false' }">
 							<input type="submit" value="<fmt:message key="edit.button.save" />" />
+							</c:if>
+							
 						</p>
 						
 						
@@ -57,6 +63,7 @@
 			
 		</tr>
 	</table>
+<c:if test="${testPerformedMarker == 'true' }"><fmt:message key="page.title.cant_edit_test"/></c:if>
 <c:if test="${errorEmptyFieldMessage !=null }"><fmt:message key="registration.label.emptyfielderror"/></c:if>
 
 </div>
