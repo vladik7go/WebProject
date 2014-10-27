@@ -561,6 +561,7 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 23.10.2014 20:40:15 [http-bio-8080-exec-12] ERROR LoginCommand:execute:126 - by.epam.project.exception.TechnicalException: java.sql.SQLException: Illegal operation on empty result set.
+<<<<<<< HEAD
 27.10.2014 18:39:19 [http-bio-8080-exec-16] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
 27.10.2014 18:39:30 [http-bio-8080-exec-13] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
 27.10.2014 18:39:39 [http-bio-8080-exec-15] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
@@ -916,6 +917,9 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 27.10.2014 19:07:23 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+=======
+24.10.2014 14:52:44 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+>>>>>>> origin/master
 java.lang.NumberFormatException: For input string: ""
 	at java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.lang.Integer.parseInt(Unknown Source)
@@ -944,7 +948,11 @@ java.lang.NumberFormatException: For input string: ""
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:07:23 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+=======
+24.10.2014 14:52:44 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+>>>>>>> origin/master
 java.lang.NullPointerException
 	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
 	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
@@ -971,7 +979,11 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+=======
+24.10.2014 14:52:45 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+>>>>>>> origin/master
 java.lang.NumberFormatException: For input string: ""
 	at java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.lang.Integer.parseInt(Unknown Source)
@@ -1000,7 +1012,11 @@ java.lang.NumberFormatException: For input string: ""
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+=======
+24.10.2014 14:52:45 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+>>>>>>> origin/master
 java.lang.NullPointerException
 	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
 	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
@@ -1027,6 +1043,7 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(Unknown Source)
@@ -1091,6 +1108,9 @@ java.sql.SQLException: Illegal operation on empty result set.
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 27.10.2014 19:08:27 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+=======
+24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+>>>>>>> origin/master
 java.lang.NumberFormatException: For input string: ""
 	at java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.lang.Integer.parseInt(Unknown Source)
@@ -1119,7 +1139,11 @@ java.lang.NumberFormatException: For input string: ""
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:08:27 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+=======
+24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+>>>>>>> origin/master
 java.lang.NullPointerException
 	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
 	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
@@ -1146,6 +1170,7 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:08:28 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
 java.lang.NumberFormatException: For input string: ""
 	at java.lang.NumberFormatException.forInputString(Unknown Source)
@@ -1179,6 +1204,13 @@ java.lang.NumberFormatException: For input string: ""
 java.lang.NullPointerException
 	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
 	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
+=======
+24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
+>>>>>>> origin/master
 	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
 	at by.epam.project.controller.Controller.doPost(Controller.java:60)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
@@ -1202,11 +1234,19 @@ java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
 27.10.2014 19:08:28 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(Unknown Source)
 	at java.util.ArrayList.get(Unknown Source)
 	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
+=======
+24.10.2014 14:52:54 [http-bio-8080-exec-2] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
+by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId===testType' already exist. Should be unique 
+	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:349)
+	at by.epam.project.logic.TestLogic.writeResult(TestLogic.java:90)
+	at by.epam.project.command.test.WriteResultCommand.execute(WriteResultCommand.java:28)
+>>>>>>> origin/master
 	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
 	at by.epam.project.controller.Controller.doPost(Controller.java:60)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
@@ -1230,3 +1270,25 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
+=======
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '8-9' for key 'person_type_test_type'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4226)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
+	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:347)
+	... 25 more
+>>>>>>> origin/master
