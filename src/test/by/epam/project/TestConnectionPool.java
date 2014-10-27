@@ -6,12 +6,14 @@ import java.util.ResourceBundle;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import by.epam.project.dao.DaoTest;
 import by.epam.project.exception.TechnicalException;
 import by.epam.project.pool.ConnectionPool;
 import by.epam.project.resource.ConfigurationManager;
 
+@RunWith(TestConnectionPoolRunner.class)
 public class TestConnectionPool {
 
 	@Test
