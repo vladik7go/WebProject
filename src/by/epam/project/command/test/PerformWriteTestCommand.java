@@ -44,7 +44,6 @@ public class PerformWriteTestCommand implements ActionCommand {
 		} catch (NumberFormatException e2) {
 			log.error("Technical exception in PerformWriteTestCommand", e2);
 			testResultInt = 0;
-			
 		}
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 		int questionId = Integer.parseInt(request

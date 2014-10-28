@@ -66,34 +66,17 @@
 					</td>
 					
 					<td>  
-							<input type="checkbox"  name="answerVariant" value="${ elem.id }">
+							<input type="checkbox" name="answerVariant" value="${ elem.id }">
 					</td>
 						
 					</tr>
 					
 						</c:forEach>
 </table>
-<script>
-var gr = document.getElementsByName('answerVariant');
-window.onclick = function() {
-  for(var i=0; i<gr.length; i++)
-    if (gr[i].checked) {
-    	document.getElementById('delButton').disabled = false;
-    } else {
-    	document.getElementById('delButton').disabled = true;
-    }
-}
-</script>
-
-
-	<input type="submit" id="delButton"  value="<fmt:message key="root.button.nextQuestion" />" />
+	<input type="submit" value="<fmt:message key="root.button.nextQuestion" />" />
 </form>		
 
 
-
 </div>
-
-
-
 </body>
 </html>
