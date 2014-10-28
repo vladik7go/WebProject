@@ -346,10 +346,12 @@ public class DaoTest extends Dao {
 			st.setInt(2, testId);
 			st.setInt(3, testMark);
 			st.executeUpdate();
-		} catch (SQLException | TechnicalException e) {
+		} catch (SQLException e) {
 			throw new LogicException(
 					"From daoTest.addResult: pair 'personId===testType' already exist. Should be unique ",
 					e);
+		} catch (TechnicalException e1) {
+			log.error("Technical exception from Dao.addResult", e1);
 		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);

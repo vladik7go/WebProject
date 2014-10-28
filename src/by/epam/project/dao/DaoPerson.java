@@ -52,7 +52,8 @@ public class DaoPerson extends Dao {
 			roleType = resultSet.getInt("role_type");
 
 		} catch (SQLException | TechnicalException e) {
-			log.error("Technical Exception", e);
+			throw new RuntimeException("Fatal error: "+ e.getMessage(), e);
+//			log.error("Technical Exception", e);
 			
 		} finally {
 			Dao.closeStatement(st);

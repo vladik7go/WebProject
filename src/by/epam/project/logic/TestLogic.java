@@ -89,19 +89,19 @@ public class TestLogic {
 		try {
 			dao.addResult(personId, testId, testMark);
 		} catch (LogicException e) {
-			log.error(
+			log.info(
 					"From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique",
 					e);
 			dao.deleteResult(personId, testId);
-			log.debug("From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted");
+			log.info("From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted");
 			try {
 				dao.addResult(personId, testId, testMark);
 			} catch (LogicException e1) {
-				log.error(e1);
+				log.error("Logic exception", e1);
 			}
-			log.debug("From TestLogic.writeResult: NEW pair 'personId===testType' successfully added");
-		}
+			log.info("From TestLogic.writeResult: NEW pair 'personId===testType' successfully added");
 
+		}
 		return true;
 	}
 

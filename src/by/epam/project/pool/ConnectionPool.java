@@ -29,6 +29,9 @@ public class ConnectionPool {
 		DBConnector dbConnector = new DBConnector();
 		for (int i = 0; i < POOL_SIZE; i++) {
 			Connection connection = dbConnector.getConnection();
+			if (connection == null){
+				throw new RuntimeException("No connections available, when creating connection pool");
+			}
 			try {
 				pool.put(connection);
 			} catch (InterruptedException e) {
@@ -84,7 +87,7 @@ public class ConnectionPool {
 		try {
 			connection = pool.take();
 		} catch (InterruptedException e) {
-			throw new TechnicalException("check connection for null ", e);
+			throw new TechnicalException("No available connections in connection pool " + e.getMessage(), e);
 		}
 		log.debug("pool size = " + pool.size());
 		return connection;

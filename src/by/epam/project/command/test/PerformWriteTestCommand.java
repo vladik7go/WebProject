@@ -42,27 +42,31 @@ public class PerformWriteTestCommand implements ActionCommand {
 			testResultInt = Integer.parseInt(request
 					.getParameter(PARAM_NAME_TEST_RESULT));
 		} catch (NumberFormatException e2) {
-			log.error("Technical exception in PerformWriteTestCommand", e2);
+			log.info(
+					"All checkboxes are empty. Logical exception in PerformWriteTestCommand",
+					e2);
 			testResultInt = 0;
 		}
 		int testId = Integer.parseInt(request.getParameter(PARAM_TEST_ID));
 		int questionId = Integer.parseInt(request
 				.getParameter(PARAM_NAME_QUESTION_ID));
-		
+
 		try {
 			// for (int i = 0; answerValues.length > i; i++) {
 			// log.debug("value " + i + " = " + answerValues[i]);
 			int result = logic.checkQuestion(questionId, answerValues);
-			log.debug("From PerformWriteTest: result(within this question) = " + result);
+			log.debug("From PerformWriteTest: result(within this question) = "
+					+ result);
 			if (result > 0) {
 				testResultInt += result;
 			}
-			log.debug("From PerformWriteTest: testResult(summary) =  " + testResultInt);
+			log.debug("From PerformWriteTest: testResult(summary) =  "
+					+ testResultInt);
 			request.setAttribute("testResult", testResultInt);
 
 			// }
 		} catch (NullPointerException e) {
-			log.error("the checkbox is empty", e);
+			log.info("Logical exception. The checkbox is empty", e);
 			request.setAttribute("errorEmptyFieldMessage", "true");
 
 		}
@@ -74,8 +78,10 @@ public class PerformWriteTestCommand implements ActionCommand {
 			request.setAttribute(PARAM_NAME_QUESTIONS_ID_LIST, questionsIdList);
 			request.setAttribute("person", daoPerson.showPerson(personId));
 			page = ConfigurationManager.getProperty("path.page.perform_test");
-		} catch (TechnicalException | IndexOutOfBoundsException e1) {
-			log.error("Technical exception in PerformWriteTestCommand. ", e1);
+		} catch (IndexOutOfBoundsException e1) {
+			log.info(
+					"Test finished. No questions available. Logical exception in PerformWriteTestCommand. ",
+					e1);
 			int testResultFinal = logic.calculateResult(testResultInt, testId);
 			page = ConfigurationManager.getProperty("path.page.show_result");
 			request.setAttribute("testResultFinal", testResultFinal);
@@ -85,6 +91,16 @@ public class PerformWriteTestCommand implements ActionCommand {
 				log.error(e);
 			}
 
+		} catch (TechnicalException e2) {
+			log.error(" Technical exception in PerformWriteTestCommand. ", e2);
+			int testResultFinal = logic.calculateResult(testResultInt, testId);
+			page = ConfigurationManager.getProperty("path.page.show_result");
+			request.setAttribute("testResultFinal", testResultFinal);
+			try {
+				request.setAttribute("test", dao.showTest(testId));
+			} catch (TechnicalException e) {
+				log.error(e);
+			}
 		}
 		return page;
 	}

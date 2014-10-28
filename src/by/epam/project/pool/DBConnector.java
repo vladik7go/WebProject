@@ -42,7 +42,7 @@ class DBConnector {
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 
 		} catch (SQLException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("Can't register SQL driver" + e.getMessage(), e);
 		}
 		return url;
 
