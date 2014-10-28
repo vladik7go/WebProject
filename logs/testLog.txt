@@ -1,184 +1,31 @@
-23.10.2014 20:32:31 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@75f85bcd
-23.10.2014 20:32:33 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:33 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Question ---- had been performed
-23.10.2014 20:32:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Answer ---- had been performed
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG EditWriteAnswerCommand:execute:37 - parameters, received by command 'EditWriteAnswer' = 87 : 0 : fff
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- delete_Answer ---- had been performed
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG DeleteAnswerCommand:execute:21 - in attribute question lies = null
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:38 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Question ---- had been performed
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:43 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:43 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Questions ---- had been performed
-23.10.2014 20:32:43 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:43 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:43 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@2d71adde
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- delete_Question ---- had been performed
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@44b4bb29
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:46 [http-bio-8080-exec-2] ERROR DeleteQuestionCommand:execute:35 - by.epam.project.exception.TechnicalException: java.sql.SQLException: Illegal operation on empty result set.
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@2130a171
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3c2391f6
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@40333b41
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@11206db
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@6a26fc5b
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:51 [http-bio-8080-exec-2] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@2130a171, by.epam.project.entity.test.Test@3c2391f6, by.epam.project.entity.test.Test@40333b41, by.epam.project.entity.test.Test@11206db, by.epam.project.entity.test.Test@6a26fc5b]
-23.10.2014 20:32:54 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:54 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:57 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:32:59 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:32:59 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-23.10.2014 20:32:59 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:32:59 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7ecce181
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@568c903
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3cd14ba8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5120952c
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@270e62e
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:04 [http-bio-8080-exec-2] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@7ecce181, by.epam.project.entity.test.Test@568c903, by.epam.project.entity.test.Test@3cd14ba8, by.epam.project.entity.test.Test@5120952c, by.epam.project.entity.test.Test@270e62e]
-23.10.2014 20:33:11 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:11 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:33:11 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:11 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@615eea89
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@6cf4ade4
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3db0c9df
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5a4be371
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@63c5e8bb
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:15 [http-bio-8080-exec-2] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@615eea89, by.epam.project.entity.test.Test@6cf4ade4, by.epam.project.entity.test.Test@3db0c9df, by.epam.project.entity.test.Test@5a4be371, by.epam.project.entity.test.Test@63c5e8bb]
-23.10.2014 20:33:20 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:20 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:33:20 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:20 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:21 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:22 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:22 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-23.10.2014 20:33:22 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:22 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:29 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:29 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7b417f9f
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@5affa48c
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@3e613c4d
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@2b6ef7e1
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@37b55e18
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:33 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Test ---- had been performed
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@346b58ad
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:34 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-23.10.2014 20:33:37 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+java.lang.NullPointerException
+	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
+	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
+	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
+	at by.epam.project.controller.Controller.doPost(Controller.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
 java.lang.NumberFormatException: For input string: ""
 	at java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.lang.Integer.parseInt(Unknown Source)
@@ -207,47 +54,90 @@ java.lang.NumberFormatException: For input string: ""
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 74 ; answer value = 1
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 75 ; answer value = 0
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 76 ; answer value = 0
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:56 - From PerformWriteTest: result(within this question) = 1
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:60 - From PerformWriteTest: testResult(summary) =  1
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@44045128
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:37 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 71 ; answer value = 1
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 72 ; answer value = 0
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 73 ; answer value = 0
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:56 - From PerformWriteTest: result(within this question) = 1
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:60 - From PerformWriteTest: testResult(summary) =  2
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@e4f5804
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:40 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- perform_Write_Test ---- had been performed
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 77 ; answer value = 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 78 ; answer value = 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 79 ; answer value = 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:checkQuestion:35 - From TestLogic.checkQuestion: answerId = 80 ; answer value = 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:56 - From PerformWriteTest: result(within this question) = 2
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG PerformWriteTestCommand:execute:60 - From PerformWriteTest: testResult(summary) =  4
-23.10.2014 20:33:44 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+java.lang.NullPointerException
+	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
+	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
+	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
+	at by.epam.project.controller.Controller.doPost(Controller.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
+	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
+	at by.epam.project.controller.Controller.doPost(Controller.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
+java.lang.NullPointerException
+	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
+	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
+	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
+	at by.epam.project.controller.Controller.doPost(Controller.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+28.10.2014 13:39:10 [http-bio-8080-exec-10] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(Unknown Source)
 	at java.util.ArrayList.get(Unknown Source)
@@ -275,29 +165,9 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@128aa514
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 1
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG TestLogic:calculateResult:71 - From TestLogic.calculateResult: answers(real) from logic= 0
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:44 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1b5c90ec
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- write_Result ---- had been performed
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:46 [http-bio-8080-exec-2] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
+28.10.2014 13:39:13 [http-bio-8080-exec-10] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
 by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId===testType' already exist. Should be unique 
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:349)
+	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:350)
 	at by.epam.project.logic.TestLogic.writeResult(TestLogic.java:90)
 	at by.epam.project.command.test.WriteResultCommand.execute(WriteResultCommand.java:28)
 	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
@@ -323,955 +193,6 @@ by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '8-10' for key 'person_type_test_type'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
-	at com.mysql.jdbc.Util.getInstance(Util.java:383)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4226)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:347)
-	... 25 more
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG TestLogic:writeResult:96 - From TestLogic.writeResult: existed pair 'personId===testType' successfully deleted
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG TestLogic:writeResult:102 - From TestLogic.writeResult: NEW pair 'personId===testType' successfully added
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:46 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@54d1d168
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@40d29a86
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@a4a3d50
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@535f57ca
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7257b662
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@7559883d
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@40d29a86, by.epam.project.entity.test.Test@a4a3d50, by.epam.project.entity.test.Test@535f57ca, by.epam.project.entity.test.Test@7257b662, by.epam.project.entity.test.Test@7559883d]
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:33:49 [http-bio-8080-exec-2] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:33:52 [http-bio-8080-exec-2] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:33:52 [http-bio-8080-exec-2] DEBUG ActionFactory:defineCommand:35 - Command ---- Logout ---- had been performed
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG Controller:init:34 - init method started (level DEBUG) ----------------------------------------------
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:createPool:39 - pool size = 10
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ActionFactory:defineCommand:35 - Command ---- login ---- had been performed
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:01 [http-bio-8080-exec-6] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:01 [http-bio-8080-exec-7] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-23.10.2014 20:36:01 [http-bio-8080-exec-7] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:36:01 [http-bio-8080-exec-7] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:01 [http-bio-8080-exec-7] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:04 [http-bio-8080-exec-8] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:04 [http-bio-8080-exec-8] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-23.10.2014 20:36:04 [http-bio-8080-exec-8] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:04 [http-bio-8080-exec-8] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:04 [http-bio-8080-exec-9] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-23.10.2014 20:36:04 [http-bio-8080-exec-9] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:36:04 [http-bio-8080-exec-9] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:04 [http-bio-8080-exec-9] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:06 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:06 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Results ---- had been performed
-23.10.2014 20:36:06 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:06 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:09 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:09 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:36:09 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:09 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:11 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:11 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Person ---- had been performed
-23.10.2014 20:36:11 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:11 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- edit_Write_Person ---- had been performed
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:32 - String role = 2
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:36 - int role = 2
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG DaoPerson:editPerson:229 - edit user, id = 12
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:63 - command editWrite performed. Result = true
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG EditWritePersonCommand:execute:64 - 1
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG Controller:doGet:49 - doGet method started--------------------------------------------------------------------------------------------------
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:32 - attribute 'language' =  
-23.10.2014 20:36:17 [http-bio-8080-exec-10] DEBUG SuccessfullyPerformedActionTag:doStartTag:37 - locale of resource bundle:   ---Locale loc = 
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Tests ---- had been performed
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@6244b28c
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1198d752
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@12c0a2b6
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@1524393d
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:getConnection:89 - pool size = 8
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 9
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG DaoTest:showTest:124 - DAO method 'showTest' performed and return = by.epam.project.entity.test.Test@57397da1
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:36:22 [http-bio-8080-exec-10] DEBUG ShowTestsCommand:execute:34 - list of tests = [by.epam.project.entity.test.Test@6244b28c, by.epam.project.entity.test.Test@1198d752, by.epam.project.entity.test.Test@12c0a2b6, by.epam.project.entity.test.Test@1524393d, by.epam.project.entity.test.Test@57397da1]
-23.10.2014 20:36:53 [http-bio-8080-exec-8] DEBUG Controller:doPost:59 - doPost method started DEBUG -------------------------------------------------------------------------
-23.10.2014 20:36:53 [http-bio-8080-exec-8] DEBUG ActionFactory:defineCommand:35 - Command ---- show_Persons ---- had been performed
-23.10.2014 20:36:53 [http-bio-8080-exec-8] DEBUG ConnectionPool:getConnection:89 - pool size = 9
-23.10.2014 20:36:53 [http-bio-8080-exec-8] DEBUG ConnectionPool:returnConnection:102 - pool size = 10
-23.10.2014 20:39:31 [http-bio-8080-exec-11] ERROR DaoPerson:checkLogin:55 - Technical Exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5768)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
-	at by.epam.project.dao.DaoPerson.checkLogin(DaoPerson.java:50)
-	at by.epam.project.logic.LoginLogic.checkLogin(LoginLogic.java:16)
-	at by.epam.project.command.login.LoginCommand.execute(LoginCommand.java:49)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-23.10.2014 20:39:31 [http-bio-8080-exec-11] ERROR LoginCommand:execute:126 - by.epam.project.exception.TechnicalException: java.sql.SQLException: Illegal operation on empty result set.
-23.10.2014 20:39:44 [http-bio-8080-exec-11] ERROR DaoPerson:checkLogin:55 - Technical Exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5768)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
-	at by.epam.project.dao.DaoPerson.checkLogin(DaoPerson.java:50)
-	at by.epam.project.logic.LoginLogic.checkLogin(LoginLogic.java:16)
-	at by.epam.project.command.login.LoginCommand.execute(LoginCommand.java:49)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-23.10.2014 20:39:44 [http-bio-8080-exec-11] ERROR LoginCommand:execute:126 - by.epam.project.exception.TechnicalException: java.sql.SQLException: Illegal operation on empty result set.
-23.10.2014 20:40:15 [http-bio-8080-exec-12] ERROR DaoPerson:checkLogin:55 - Technical Exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5768)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5688)
-	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5728)
-	at by.epam.project.dao.DaoPerson.checkLogin(DaoPerson.java:50)
-	at by.epam.project.logic.LoginLogic.checkLogin(LoginLogic.java:16)
-	at by.epam.project.command.login.LoginCommand.execute(LoginCommand.java:49)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-23.10.2014 20:40:15 [http-bio-8080-exec-12] ERROR LoginCommand:execute:126 - by.epam.project.exception.TechnicalException: java.sql.SQLException: Illegal operation on empty result set.
-<<<<<<< HEAD
-27.10.2014 18:39:19 [http-bio-8080-exec-16] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
-27.10.2014 18:39:30 [http-bio-8080-exec-13] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
-27.10.2014 18:39:39 [http-bio-8080-exec-15] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
-27.10.2014 18:39:48 [http-bio-8080-exec-22] ERROR DaoTest:checkTest:482 - java.sql.SQLException: Can not issue executeUpdate() for SELECTs
-27.10.2014 18:41:17 [http-bio-8080-exec-22] ERROR DaoTest:checkTest:482 - Technical exception
-java.sql.SQLException: Can not issue executeUpdate() for SELECTs
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2303)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:479)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:48:33 [http-bio-8080-exec-37] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:50:47 [http-bio-8080-exec-47] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:51:06 [http-bio-8080-exec-47] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:52:52 [http-bio-8080-exec-48] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:53:22 [http-bio-8080-exec-48] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 18:57:11 [http-bio-8080-exec-56] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:05:07 [http-bio-8080-exec-58] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:05:40 [http-bio-8080-exec-67] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:06:23 [http-bio-8080-exec-67] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:07:23 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-=======
-24.10.2014 14:52:44 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
->>>>>>> origin/master
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:07:23 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-=======
-24.10.2014 14:52:44 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
->>>>>>> origin/master
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-=======
-24.10.2014 14:52:45 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
->>>>>>> origin/master
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-=======
-24.10.2014 14:52:45 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
->>>>>>> origin/master
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:07:27 [http-bio-8080-exec-67] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:07:46 [http-bio-8080-exec-67] ERROR DaoTest:checkTest:484 - Technical exception
-java.sql.SQLException: Illegal operation on empty result set.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1094)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:997)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:983)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:928)
-	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:850)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2705)
-	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2846)
-	at by.epam.project.dao.DaoTest.checkTest(DaoTest.java:481)
-	at by.epam.project.logic.TestLogic.checkTestForPerformed(TestLogic.java:110)
-	at by.epam.project.command.test.EditTestCommand.execute(EditTestCommand.java:26)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:08:27 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-=======
-24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
->>>>>>> origin/master
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:08:27 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-=======
-24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
->>>>>>> origin/master
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:08:28 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:45 - Technical exception in PerformWriteTestCommand
-java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:42)
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-27.10.2014 19:08:28 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:65 - the checkbox is empty
-java.lang.NullPointerException
-	at by.epam.project.logic.TestLogic.checkQuestion(TestLogic.java:39)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:55)
-=======
-24.10.2014 14:52:46 [http-bio-8080-exec-2] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
->>>>>>> origin/master
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-27.10.2014 19:08:28 [http-bio-8080-exec-69] ERROR PerformWriteTestCommand:execute:78 - Technical exception in PerformWriteTestCommand. 
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at by.epam.project.command.test.PerformWriteTestCommand.execute(PerformWriteTestCommand.java:72)
-=======
-24.10.2014 14:52:54 [http-bio-8080-exec-2] ERROR TestLogic:writeResult:92 - From TestLogic.writeResult: pair 'personId===testType' already exist. Should be unique
-by.epam.project.exception.LogicException: From daoTest.addResult: pair 'personId===testType' already exist. Should be unique 
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:349)
-	at by.epam.project.logic.TestLogic.writeResult(TestLogic.java:90)
-	at by.epam.project.command.test.WriteResultCommand.execute(WriteResultCommand.java:28)
->>>>>>> origin/master
-	at by.epam.project.controller.Controller.processRequest(Controller.java:76)
-	at by.epam.project.controller.Controller.doPost(Controller.java:60)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at by.epam.project.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-<<<<<<< HEAD
-=======
 Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '8-9' for key 'person_type_test_type'
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1289,6 +210,6 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246)
-	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:347)
+	at by.epam.project.dao.DaoTest.addResult(DaoTest.java:348)
 	... 25 more
->>>>>>> origin/master
+28.10.2014 13:43:06 [http-bio-8080-exec-2] ERROR ActionFactory:defineCommand:40 - attempt to hack

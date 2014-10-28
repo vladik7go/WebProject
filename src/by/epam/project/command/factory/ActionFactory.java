@@ -15,20 +15,36 @@ public class ActionFactory {
 
 	public ActionCommand defineCommand(HttpServletRequest request) {
 		ActionCommand current = new EmptyCommand();
-		
-		//Extracting the name of the command from request
-		
+
+		// Extracting the name of the command from request
+
 		String action = request.getParameter("command");
-		
+		String role = (String) request.getSession().getAttribute("role");
+		log.debug("role: " + role);
+		log.debug("action: " + action);
+
+		// if command do not defined in current request
 		if (action == null || action.isEmpty()) {
-			
-			//if command do not defined in current request
+
 			return current;
 		}
-		
+
+		/*
+		 * This IF-block prevents direct access to ANY command, except Login,
+		 * Registration and Add_person. So, if a hacker would be able to
+		 * substitute request, anyhow - he would be redirected to login page.
+		 */
+		if ((role == null || role.isEmpty())
+				&& (!action.equals("login") && !action.equals("registration") && !action
+						.equals("add_person"))) {
+			log.info("attempt to hack");
+
+			return current;
+		}
+
 		// gaining the object, according to the command
 		try {
-			
+
 			CommandEnum currentEnum = CommandEnum.valueOf(action.toUpperCase());
 
 			current = currentEnum.getCurrentCommand();
@@ -36,7 +52,7 @@ public class ActionFactory {
 		} catch (IllegalArgumentException e) {
 			request.setAttribute("wrongAction", "true");
 		}
-		
+
 		return current;
 	}
 
