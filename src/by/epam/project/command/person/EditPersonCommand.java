@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 import by.epam.project.command.ActionCommand;
 import by.epam.project.dao.DaoPerson;
-import by.epam.project.entity.Person;
+import by.epam.project.entity.person.Person;
 import by.epam.project.exception.TechnicalException;
 import by.epam.project.resource.ConfigurationManager;
 

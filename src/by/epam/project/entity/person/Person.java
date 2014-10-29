@@ -1,6 +1,12 @@
-package by.epam.project.entity;
+package by.epam.project.entity.person;
 
-public class Person {
+import by.epam.project.entity.AbstractEntity;
+
+
+
+public class Person extends AbstractEntity {
+	
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private int roleType;
 	private String firstName;

@@ -2,7 +2,11 @@ package by.epam.project.entity.test;
 
 import java.util.Set;
 
-public class Test {
+import by.epam.project.entity.AbstractEntity;
+
+public class Test extends AbstractEntity {
+	
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String title;
 	private String description;

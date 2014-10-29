@@ -16,7 +16,7 @@ import org.apache.log4j.Logger;
 
 import com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH;
 
-import by.epam.project.entity.Person;
+import by.epam.project.entity.person.Person;
 import by.epam.project.entity.test.Answer;
 import by.epam.project.entity.test.Question;
 import by.epam.project.entity.test.Test;

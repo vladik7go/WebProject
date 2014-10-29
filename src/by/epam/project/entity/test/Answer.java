@@ -1,6 +1,10 @@
 package by.epam.project.entity.test;
 
-public class Answer {
+import by.epam.project.entity.AbstractEntity;
+
+public class Answer extends AbstractEntity {
+	
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private int questionType;
 	private String answer;

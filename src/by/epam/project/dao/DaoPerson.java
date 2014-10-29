@@ -10,7 +10,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import by.epam.project.entity.Person;
+import by.epam.project.entity.person.Person;
 import by.epam.project.exception.LogicException;
 import by.epam.project.exception.TechnicalException;
 import by.epam.project.pool.ConnectionPool;

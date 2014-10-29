@@ -18,7 +18,7 @@
 
 
 <!--  fmt:message key="login.lang.select" /-->
---- ${language }
+
 <form action="controller">
             <select id="language" name="language" onchange="submit()">
                	<option selected disabled><fmt:message key="login.lang.select" /></option>

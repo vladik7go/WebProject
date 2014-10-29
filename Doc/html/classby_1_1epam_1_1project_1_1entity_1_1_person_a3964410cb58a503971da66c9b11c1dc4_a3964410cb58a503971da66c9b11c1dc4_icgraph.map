@@ -1,4 +1,4 @@
-<map id="by.epam.project.entity.Person.setFirstName" name="by.epam.project.entity.Person.setFirstName">
+<map id="by.epam.project.entity.person.Person.setFirstName" name="by.epam.project.entity.person.Person.setFirstName">
 <area shape="rect" id="node2" href="$classby_1_1epam_1_1project_1_1dao_1_1_dao_person_a37600a3ba937af7f9e2b9d566417f62c.html#a37600a3ba937af7f9e2b9d566417f62c" title="by.epam.project.dao.DaoPerson.show\lPerson" alt="" coords="268,136,507,177"/>
 <area shape="rect" id="node3" href="$classby_1_1epam_1_1project_1_1command_1_1person_1_1_edit_person_command_a6becb741e9884669c93981e279bcbb2c.html#a6becb741e9884669c93981e279bcbb2c" title="by.epam.project.command.person.\lEditPersonCommand.execute" alt="" coords="559,5,781,47"/>
 <area shape="rect" id="node4" href="$classby_1_1epam_1_1project_1_1command_1_1test_1_1_show_tests_command_a566fec6bfc51ef0fb4565193ef75b325.html#a566fec6bfc51ef0fb4565193ef75b325" title="by.epam.project.command.test.\lShowTestsCommand.execute" alt="" coords="568,71,772,112"/>
