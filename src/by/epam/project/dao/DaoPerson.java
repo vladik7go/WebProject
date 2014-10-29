@@ -51,10 +51,12 @@ public class DaoPerson extends Dao {
 			resultSet.getString("password");
 			roleType = resultSet.getInt("role_type");
 
-		} catch (SQLException | TechnicalException e) {
-			throw new RuntimeException("Fatal error: "+ e.getMessage(), e);
-//			log.error("Technical Exception", e);
-			
+		} catch (TechnicalException e) {
+			throw new RuntimeException("Fatal error: " + e.getMessage(), e);
+
+		} catch (SQLException e1) {
+			log.info("Logical Exception", e1);
+
 		} finally {
 			Dao.closeStatement(st);
 			ConnectionPool.getSinglePool().returnConnection(cn);

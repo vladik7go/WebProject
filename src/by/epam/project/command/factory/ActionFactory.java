@@ -25,7 +25,7 @@ public class ActionFactory {
 
 		// if command do not defined in current request
 		if (action == null || action.isEmpty()) {
-
+			log.debug("Command ---- EmptyCommand ---- had been performed");
 			return current;
 		}
 
@@ -38,7 +38,7 @@ public class ActionFactory {
 				&& (!action.equals("login") && !action.equals("registration") && !action
 						.equals("add_person"))) {
 			log.info("attempt to hack");
-
+			log.debug("Command ---- EmptyCommand ---- had been performed");
 			return current;
 		}
 

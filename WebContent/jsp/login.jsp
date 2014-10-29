@@ -19,7 +19,7 @@
 
 <!--  fmt:message key="login.lang.select" /-->
 --- ${language }
-<form>
+<form action="controller">
             <select id="language" name="language" onchange="submit()">
                	<option selected disabled><fmt:message key="login.lang.select" /></option>
                 <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
